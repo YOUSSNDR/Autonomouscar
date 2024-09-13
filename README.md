@@ -1,1 +1,39 @@
 # Autonomouscar
+
+### Introdruction
+Here you will find all our work on the project of an autonomous. The first goal of this car will be to be able to follow a moving target. (the target in this project will be a person detaining a key sending a signal to the car).
+
+In the different directories of this repository you will find the different élement to build your own Autonomous car.
+
+### The car
+#### Frame
+All the info on the car frame will be found in the [CAO folder]().
+
+#### Electronic
+For the different electronic connection, they will be available in the [Electronic]() repository.
+The different electronic component needed for this project are the following:
+
+|Module|pieces|Tension(V)|Intensity(A)|
+|------|------|---------|-------|
+|[DWM1001_DEV]()|3|5|0.5|
+|[LIDAR]()|1|5|0.23|
+|[MPU6050]()|1|5|0.02|
+|[MOTOR]()|2|6|0.35|
+|[Raspberry]()|1|5|3|
+
+The battery will have to supply a voltage of 6V and as we aim to fully use the robot for half an hour, We will need a capacity of at least 2,73A/h.(We need at least 16,38Wh). 
+*(this is purely theoric)
+
+The best batteries found are the following:
+
+|Battery|Tension(V)|Capacity(mA/h)|Number needed|price(€)|
+|-------|----------|--------------|-------------|-----|
+|[RoaringTop](https://www.amazon.fr/dp/B0CQLPSYJH/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B0CQLPSYJH&pd_rd_w=jautD&content-id=amzn1.sym.d15aafde-9691-4d5f-85f2-056701d026bf&pf_rd_p=d15aafde-9691-4d5f-85f2-056701d026bf&pf_rd_r=RZWWWTWBQBWE7Z58CRMW&pd_rd_wg=Bb1E2&pd_rd_r=d12ca1cb-8461-43d6-8207-998c9ebf3e62&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)|7,4|3000/6000(2sold)|1|35|
+|[AMZZN](https://www.amazon.fr/dp/B0CY4RR9TQ/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B0CY4RR9TQ&pd_rd_w=iPaLO&content-id=amzn1.sym.2295e42d-cd2a-4ee8-906d-272916f85e0f&pf_rd_p=2295e42d-cd2a-4ee8-906d-272916f85e0f&pf_rd_r=AANTYGM66JGX3JZWP72S&pd_rd_wg=8gY4z&pd_rd_r=9e76b041-9a30-4f2f-a665-2bed7f3fdace&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy)|7,4|2000/4000(2sold)|2|33|
+|[EEMB](https://www.amazon.fr/EEMB-103395-Rechargeable-Navigation-Enregistreur/dp/B08215B4KK/ref=pd_bxgy_thbs_d_sccl_1/260-1578461-0157465?pd_rd_w=xq9lj&content-id=amzn1.sym.cff2227d-f2f4-453e-8d37-b217535012a4&pf_rd_p=cff2227d-f2f4-453e-8d37-b217535012a4&pf_rd_r=4MED1ABWRB22CEQ6X35Z&pd_rd_wg=cbtG7&pd_rd_r=156d6414-ba8d-4357-ae8b-3c748a8d8292&pd_rd_i=B08215B4KK&psc=1)|(2*)3,7|3700|2|30|
+
+An other criteria for the choice will be the size of the batterie which will be seen in the [README]() in the CAO file.
+
+#### Programmation
+
+The [Programm]() directory will be gathering all the programm needed for each component from the MPU6050 to the motors.
