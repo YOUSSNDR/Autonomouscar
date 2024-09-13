@@ -7,10 +7,10 @@ In the different directories of this repository you will find the different éle
 
 ### The car
 #### Frame
-All the info on the car frame will be found in the [CAO folder]().
+All the info on the car frame will be found in the [CAO folder](https://github.com/YOUSSNDR/Autonomouscar/tree/main/CAO).
 
 #### Electronic
-For the different electronic connection, they will be available in the [Electronic]() repository.
+For the different electronic connection, they will be available in the [Electronic](https://github.com/YOUSSNDR/Autonomouscar/tree/main/Electronic) repository.
 The different electronic component needed for this project are the following:
 
 |Module|pieces|Tension(V)|Intensity(A)|
@@ -36,4 +36,4 @@ An other criteria for the choice will be the size of the batterie which will be 
 
 #### Programmation
 
-The [Programm]() directory will be gathering all the programm needed for each component from the MPU6050 to the motors.
+The [Programm](https://github.com/YOUSSNDR/Autonomouscar/tree/main/Programm) directory will be gathering all the programm needed for each component from the MPU6050 to the motors.
