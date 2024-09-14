@@ -15,11 +15,11 @@ The different electronic component needed for this project are the following:
 
 |Module|pieces|Tension(V)|Intensity(A)|
 |------|------|---------|-------|
-|[DWM1001_DEV]()|3|5|0.5|
-|[LIDAR]()|1|5|0.23|
-|[MPU6050]()|1|5|0.02|
-|[MOTOR]()|2|6|0.35|
-|[Raspberry]()|1|5|3|
+|[DWM1001_DEV](https://www.mouser.fr/ProductDetail/Qorvo/DWM1001-DEV?qs=TiOZkKH1s2T4sar5INj0ew%3D%3D&srsltid=AfmBOorqy5ZnZvl6puMKr_-_Af3t4eY71g53g9BRfKSXkqYK-x9jgRT1)|3|5|0.5|
+|[LIDAR](https://www.amazon.fr/Slamtec-RPLIDAR-num%C3%A9risation-bstacles-navigation/dp/B07TJW5SXF)|1|5|0.23|
+|[MPU6050](https://www.gotronic.fr/art-module-6-dof-sen-mpu6050-31492.htm)|1|5|0.02|
+|[MOTOR+encoder](https://www.gotronic.fr/art-kit-moteur-encodeur-fit0450-27583.htm)|2|6|0.35|
+|[Raspberry](https://www.amazon.fr/Raspberry-Pi-4595-mod%C3%A8les-Go/dp/B09TTNF8BT/ref=asc_df_B09TTNF8BT/?tag=googshopfr-21&linkCode=df0&hvadid=701511851267&hvpos=&hvnetw=g&hvrand=5788597801172693301&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9054962&hvtargid=pla-1679572971964&psc=1&mcid=e9453b632e653cdca350de98083c3cb0&gad_source=1)|1|5|3|
 
 The battery will have to supply a voltage of 6V and as we aim to fully use the robot for half an hour, We will need a capacity of at least 2,73A/h.(We need at least 16,38Wh). 
 *(this is purely theoric)
