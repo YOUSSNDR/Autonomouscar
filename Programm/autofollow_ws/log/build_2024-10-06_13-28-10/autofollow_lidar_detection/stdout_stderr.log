@@ -1,0 +1,30 @@
+running egg_info
+creating ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info
+writing ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/PKG-INFO
+writing dependency_links to ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/dependency_links.txt
+writing requirements to ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/requires.txt
+writing top-level names to ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/top_level.txt
+writing manifest file '../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/SOURCES.txt'
+reading manifest file '../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/SOURCES.txt'
+writing manifest file '../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build
+creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib
+creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib/autofollow_lidar_detection
+copying autofollow_lidar_detection/__init__.py -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib/autofollow_lidar_detection
+running install
+running install_lib
+creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection
+copying /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib/autofollow_lidar_detection/__init__.py -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection
+byte-compiling /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index
+creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index/resource_index
+creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index/resource_index/packages
+copying resource/autofollow_lidar_detection -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index/resource_index/packages
+copying package.xml -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/autofollow_lidar_detection
+running install_egg_info
+Copying ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info to /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/install.log'

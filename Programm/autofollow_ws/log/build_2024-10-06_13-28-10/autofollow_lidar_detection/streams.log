@@ -1,0 +1,32 @@
+[1.377s] Invoking command in '/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/src/autofollow_lidar_detection': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/autofollow_lidar_detection build --build-base /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build install --record /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/install.log --single-version-externally-managed install_data
+[1.625s] running egg_info
+[1.625s] creating ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info
+[1.645s] writing ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/PKG-INFO
+[1.645s] writing dependency_links to ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/dependency_links.txt
+[1.645s] writing requirements to ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/requires.txt
+[1.646s] writing top-level names to ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/top_level.txt
+[1.646s] writing manifest file '../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/SOURCES.txt'
+[1.683s] reading manifest file '../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/SOURCES.txt'
+[1.684s] writing manifest file '../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info/SOURCES.txt'
+[1.684s] running build
+[1.684s] running build_py
+[1.684s] creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build
+[1.684s] creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib
+[1.684s] creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib/autofollow_lidar_detection
+[1.684s] copying autofollow_lidar_detection/__init__.py -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib/autofollow_lidar_detection
+[1.684s] running install
+[1.689s] running install_lib
+[1.708s] creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection
+[1.708s] copying /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build/lib/autofollow_lidar_detection/__init__.py -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection
+[1.708s] byte-compiling /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection/__init__.py to __init__.cpython-312.pyc
+[1.708s] running install_data
+[1.708s] creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index
+[1.708s] creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index/resource_index
+[1.708s] creating /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index/resource_index/packages
+[1.709s] copying resource/autofollow_lidar_detection -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/ament_index/resource_index/packages
+[1.709s] copying package.xml -> /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/share/autofollow_lidar_detection
+[1.709s] running install_egg_info
+[1.727s] Copying ../../build/autofollow_lidar_detection/autofollow_lidar_detection.egg-info to /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages/autofollow_lidar_detection-0.0.0-py3.12.egg-info
+[1.728s] running install_scripts
+[1.844s] writing list of installed files to '/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/install.log'
+[1.868s] Invoked command in '/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/src/autofollow_lidar_detection' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/install/autofollow_lidar_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/autofollow_lidar_detection build --build-base /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/build install --record /home/younousse/Documents/Autonomouscar/Programm/autofollow_ws/build/autofollow_lidar_detection/install.log --single-version-externally-managed install_data
