@@ -1,0 +1,1 @@
+/home/user/Bureau/Autonomouscar/Programm/autofollow_ws/build/rplidar_ros/ament_cmake_environment_hooks/local_setup.bash

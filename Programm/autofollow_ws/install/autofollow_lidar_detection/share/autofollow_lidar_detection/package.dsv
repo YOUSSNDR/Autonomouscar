@@ -4,3 +4,6 @@ source;share/autofollow_lidar_detection/hook/pythonpath.sh
 source;share/autofollow_lidar_detection/hook/ament_prefix_path.ps1
 source;share/autofollow_lidar_detection/hook/ament_prefix_path.dsv
 source;share/autofollow_lidar_detection/hook/ament_prefix_path.sh
+source;../../build/autofollow_lidar_detection/share/autofollow_lidar_detection/hook/pythonpath_develop.ps1
+source;../../build/autofollow_lidar_detection/share/autofollow_lidar_detection/hook/pythonpath_develop.dsv
+source;../../build/autofollow_lidar_detection/share/autofollow_lidar_detection/hook/pythonpath_develop.sh
