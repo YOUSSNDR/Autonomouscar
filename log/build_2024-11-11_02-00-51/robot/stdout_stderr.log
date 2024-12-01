@@ -1,0 +1,17 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Ktimer_start[m[K(std::function<void()>, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:175:14:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::thread[m[K’ and ‘[01m[Kvoid[m[K’)
+  175 |     ).detach([01;31m[K)[m[K;
+      |              [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/13/thread:45[m[K,
+                 from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:4[m[K:
+[01m[K/usr/include/c++/13/bits/std_thread.h:183:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::thread& std::thread::[01;32m[Koperator=[m[K(std::thread&&)[m[K’
+  183 |     thread& [01;36m[Koperator[m[K=(thread&& __t) noexcept
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/std_thread.h:183:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvoid[m[K’ to ‘[01m[Kstd::thread&&[m[K’
+  183 |     thread& operator=([01;36m[Kthread&& __t[m[K) noexcept
+      |                       [01;36m[K~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

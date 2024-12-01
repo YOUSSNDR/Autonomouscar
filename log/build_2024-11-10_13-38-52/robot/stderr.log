@@ -1,0 +1,41 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:63:48:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kstatic void Encoders::[01;32m[Ksignal_handler[m[K(int)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   63 | static void Encoders::signal_handler(int signal[01;31m[K)[m[K
+      |                                                [01;31m[K^[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Ksignal_handler[m[K(int)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:67:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_M1A_GPIO[m[K’ in static member function
+   67 |     gpioPWM([01;31m[K_M1A_GPIO[m[K, 0);
+      |             [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:13[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:14:22:[m[K [01;36m[Knote: [m[Kdeclared here
+   14 |         unsigned int [01;36m[K_M1A_GPIO[m[K = 17;
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:68:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_is_running[m[K’ in static member function
+   68 |     [01;31m[K_is_running[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:37:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   37 |         bool [01;36m[K_is_running[m[K =  false;
+      |              [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K At global scope:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:162:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_on_channels[m[K()[m[K’
+  162 | void [01;31m[KEncoders[m[K::compute_rps_on_channels()
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:162:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_on_channels[m[K()[m[K’
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+    3 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_pin_as_output[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:31:56:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   31 |                 cout << gpio << "is a bad gpio pin" << [01;35m[Kendl[m[K;
+      |                                                        [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:32:13:[m[K [01;36m[Knote: [m[Khere
+   32 |             [01;36m[Kcase[m[K PI_BAD_MODE:
+      |             [01;36m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:33:57:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   33 |                 cout << "Bad mode for gpio " << gpio << [01;35m[Kendl[m[K;
+      |                                                         [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:34:13:[m[K [01;36m[Knote: [m[Khere
+   34 |             [01;36m[Kdefault[m[K:
+      |             [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

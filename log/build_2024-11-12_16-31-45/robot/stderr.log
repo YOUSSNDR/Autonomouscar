@@ -1,0 +1,26 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:32:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kconst[m[K’
+   32 |                     [01;31m[Kconst[m[K unsigned int &channel_B_gpio,
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:29:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&)[m[K’
+   29 | [01;31m[KEncoders[m[K::Encoders(const unsigned int &MxA_gpio,
+      | [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:22[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(Encoders&&)[m[K’
+    8 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const Encoders&)[m[K’
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:11:9:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&)[m[K’
+   11 |         [01;36m[KEncoders[m[K(const unsigned int &MxA_gpio,
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+    8 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:287:31:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_A_gpio[m[K’?
+  287 |     _channel_value = gpioRead([01;31m[K_channel_gpio[m[K);
+      |                               [01;31m[K^~~~~~~~~~~~~[m[K
+      |                               [32m[K_channel_A_gpio[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

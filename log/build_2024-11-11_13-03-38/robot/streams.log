@@ -1,0 +1,31 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.316s] [ 25%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[0.317s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[2.715s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[2.716s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:69:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoders::start_encoder()[m[K’
+[2.717s]    69 |     [01;31m[Kencoder_A.start_encoder()[m[K;
+[2.717s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.718s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:20[m[K:
+[2.719s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:16:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Encoders::[01;32m[Kstart_encoder[m[K(const unsigned int&)[m[K’
+[2.719s]    16 |         void [01;36m[Kstart_encoder[m[K(const unsigned int &interval);
+[2.720s]       |              [01;36m[K^~~~~~~~~~~~~[m[K
+[2.721s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:16:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.722s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:70:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoders::start_encoder()[m[K’
+[2.722s]    70 |     [01;31m[Kencoder_B.start_encoder()[m[K;
+[2.723s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.723s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:16:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Encoders::[01;32m[Kstart_encoder[m[K(const unsigned int&)[m[K’
+[2.724s]    16 |         void [01;36m[Kstart_encoder[m[K(const unsigned int &interval);
+[2.725s]       |              [01;36m[K^~~~~~~~~~~~~[m[K
+[2.725s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:16:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.726s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:46:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinterval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.726s]    46 |     const unsigned int [01;35m[Kinterval[m[K = 1000;
+[2.727s]       |                        [01;35m[K^~~~~~~~[m[K
+[2.729s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, std::string)[m[K’:
+[2.730s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:71:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinterval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.731s]    71 |     const unsigned int [01;35m[Kinterval[m[K = 1000;
+[2.731s]       |                        [01;35m[K^~~~~~~~[m[K
+[2.912s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/main.cpp.o] Error 1
+[2.913s] gmake[2]: *** Waiting for unfinished jobs....
+[3.424s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[3.425s] gmake: *** [Makefile:146: all] Error 2
+[3.433s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

@@ -1,0 +1,39 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_M1_GPIO[m[K’ was not declared in this scope; did you mean ‘[01m[KM1_GPIO[m[K’?
+   69 |     [01;31m[K_M1_GPIO[m[K = M1_GPIO;
+      |     [01;31m[K^~~~~~~~[m[K
+      |     [32m[KM1_GPIO[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:76:17:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’
+   76 |     timer_start([01;31m[Kcompute_rps[m[K, interval);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:22[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:11:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   11 |         void [01;36m[Kcompute_rps[m[K();
+      |              [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Ksignal_handler_callback[m[K(int)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:92:13:[m[K [01;31m[Kerror: [m[K‘[01m[K_M1_GPIO[m[K’ was not declared in this scope; did you mean ‘[01m[KM1_GPIO[m[K’?
+   92 |     gpioPWM([01;31m[K_M1_GPIO[m[K, 0);
+      |             [01;31m[K^~~~~~~~[m[K
+      |             [32m[KM1_GPIO[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:225:31:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_gpio[m[K’?
+  225 |     _channel_value = gpioRead([01;31m[K_channel[m[K);
+      |                               [01;31m[K^~~~~~~~[m[K
+      |                               [32m[K_channel_gpio[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:247:31:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_gpio[m[K’?
+  247 |     cout << "rps channel " << [01;31m[K_channel[m[K << " : " << rps << endl;
+      |                               [01;31m[K^~~~~~~~[m[K
+      |                               [32m[K_channel_gpio[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K At global scope:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:253:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_handler[m[K()[m[K’
+  253 | void [01;31m[KEncoders[m[K::compute_rps_handler()
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:253:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_handler[m[K()[m[K’
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+    3 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

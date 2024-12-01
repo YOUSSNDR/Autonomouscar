@@ -1,0 +1,17 @@
+[0.053s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.320s] [ 25%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[0.323s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[2.771s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K()[m[K’:
+[2.772s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:225:31:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_gpio[m[K’?
+[2.772s]   225 |     _channel_value = gpioRead([01;31m[K_channel[m[K);
+[2.772s]       |                               [01;31m[K^~~~~~~~[m[K
+[2.773s]       |                               [32m[K_channel_gpio[m[K
+[2.790s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’:
+[2.791s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:247:31:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_gpio[m[K’?
+[2.791s]   247 |     cout << "rps channel " << [01;31m[K_channel[m[K << " : " << rps << endl;
+[2.791s]       |                               [01;31m[K^~~~~~~~[m[K
+[2.792s]       |                               [32m[K_channel_gpio[m[K
+[3.063s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+[3.064s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[3.065s] gmake: *** [Makefile:146: all] Error 2
+[3.072s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

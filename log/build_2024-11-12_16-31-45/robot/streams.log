@@ -1,0 +1,31 @@
+[0.058s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.403s] [ 16%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[0.404s] [ 33%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[0.428s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[4.137s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:32:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kconst[m[K’
+[4.140s]    32 |                     [01;31m[Kconst[m[K unsigned int &channel_B_gpio,
+[4.141s]       |                     [01;31m[K^~~~~[m[K
+[4.142s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:29:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&)[m[K’
+[4.143s]    29 | [01;31m[KEncoders[m[K::Encoders(const unsigned int &MxA_gpio,
+[4.144s]       | [01;31m[K^~~~~~~~[m[K
+[4.144s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:22[m[K:
+[4.145s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(Encoders&&)[m[K’
+[4.146s]     8 | struct [01;36m[KEncoders[m[K
+[4.147s]       |        [01;36m[K^~~~~~~~[m[K
+[4.148s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const Encoders&)[m[K’
+[4.149s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:11:9:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&)[m[K’
+[4.150s]    11 |         [01;36m[KEncoders[m[K(const unsigned int &MxA_gpio,
+[4.150s]       |         [01;36m[K^~~~~~~~[m[K
+[4.151s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+[4.152s]     8 | struct [01;36m[KEncoders[m[K
+[4.153s]       |        [01;36m[K^~~~~~~~[m[K
+[4.201s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K()[m[K’:
+[4.202s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:287:31:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_A_gpio[m[K’?
+[4.203s]   287 |     _channel_value = gpioRead([01;31m[K_channel_gpio[m[K);
+[4.204s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[4.205s]       |                               [32m[K_channel_A_gpio[m[K
+[4.588s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+[4.588s] gmake[2]: *** Waiting for unfinished jobs....
+[23.396s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[23.397s] gmake: *** [Makefile:146: all] Error 2
+[23.405s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

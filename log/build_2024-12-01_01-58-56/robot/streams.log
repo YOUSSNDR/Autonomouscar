@@ -1,0 +1,43 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.199s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.179s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.256s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.458s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.509s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.576s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.651s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.955s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.965s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.337s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.627s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.695s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.151s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.152s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[3.152s] -- Configured cppcheck exclude dirs and/or files: 
+[3.156s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.156s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.160s] -- Added test 'lint_cmake' to check CMake code style
+[3.162s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.173s] -- Added test 'uncrustify' to check C / C++ code style
+[3.174s] -- Configured uncrustify additional arguments: 
+[3.177s] -- Added test 'xmllint' to check XML markup files
+[3.187s] -- Configuring done (3.0s)
+[3.290s] -- Generating done (0.1s)
+[3.301s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.492s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[7.344s] [100%] [32m[1mLinking CXX executable encoders[0m
+[8.053s] /usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `main':
+[8.054s] main.cpp:(.text+0xa4): undefined reference to `RPI4::init()'
+[8.054s] /usr/bin/ld: main.cpp:(.text+0x118): undefined reference to `Encoders::Encoders(unsigned int const&, unsigned int const&, unsigned int const&, unsigned int const&, unsigned int const&)'
+[8.055s] /usr/bin/ld: main.cpp:(.text+0x14c): undefined reference to `Encoders::Encoders(unsigned int const&, unsigned int const&, unsigned int const&, unsigned int const&, unsigned int const&)'
+[8.055s] /usr/bin/ld: main.cpp:(.text+0x160): undefined reference to `Encoders::set_rps(unsigned int const&)'
+[8.056s] /usr/bin/ld: main.cpp:(.text+0x174): undefined reference to `Encoders::set_rps(unsigned int const&)'
+[8.056s] /usr/bin/ld: main.cpp:(.text+0x180): undefined reference to `Encoders::start_encoder(unsigned int const&)'
+[8.057s] /usr/bin/ld: main.cpp:(.text+0x18c): undefined reference to `Encoders::start_encoder(unsigned int const&)'
+[8.058s] /usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `__static_initialization_and_destruction_0()':
+[8.058s] main.cpp:(.text+0x260): undefined reference to `RPI4::RPI4()'
+[8.075s] collect2: error: ld returned 1 exit status
+[8.082s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:173: encoders] Error 1
+[8.083s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[8.085s] gmake: *** [Makefile:146: all] Error 2
+[8.093s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

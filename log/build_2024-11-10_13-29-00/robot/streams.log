@@ -1,0 +1,84 @@
+[0.048s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.299s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[2.349s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:21:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kbool Encoders::[01;32m[KconfigurePinAsOutput[m[K(const unsigned int&)[m[K’
+[2.350s]    21 | bool [01;31m[KEncoders[m[K::configurePinAsOutput(const unsigned int &gpio)
+[2.350s]       |      [01;31m[K^~~~~~~~[m[K
+[2.351s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:21:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kbool Encoders::[01;32m[KconfigurePinAsOutput[m[K(const unsigned int&)[m[K’
+[2.351s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:13[m[K:
+[2.352s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+[2.352s]     3 | struct [01;36m[KEncoders[m[K
+[2.353s]       |        [01;36m[K^~~~~~~~[m[K
+[2.353s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:44:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kbool Encoders::[01;32m[KconfigurePins[m[K()[m[K’
+[2.353s]    44 | bool [01;31m[KEncoders[m[K::configurePins()
+[2.354s]       |      [01;31m[K^~~~~~~~[m[K
+[2.354s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:44:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kbool Encoders::[01;32m[KconfigurePins[m[K()[m[K’
+[2.354s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+[2.355s]     3 | struct [01;36m[KEncoders[m[K
+[2.355s]       |        [01;36m[K^~~~~~~~[m[K
+[2.356s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:63:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Encoders::[01;32m[KsignalHandler[m[K(int)[m[K’
+[2.356s]    63 | void [01;31m[KEncoders[m[K::signalHandler(int signal)
+[2.356s]       |      [01;31m[K^~~~~~~~[m[K
+[2.357s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:63:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Encoders::[01;32m[KsignalHandler[m[K(int)[m[K’
+[2.357s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+[2.358s]     3 | struct [01;36m[KEncoders[m[K
+[2.358s]       |        [01;36m[K^~~~~~~~[m[K
+[2.373s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kinit_pwm[m[K(const unsigned int&, const unsigned int&)[m[K’:
+[2.374s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_result[m[K’ was not declared in this scope
+[2.374s]    90 |     [01;31m[Kgpio_result[m[K = gpioPWM(gpio_number, duty_cycle);
+[2.375s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.387s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:96:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpin[m[K’ was not declared in this scope
+[2.388s]    96 |     cout << "PWM Success on gpio " << [01;31m[Kpin[m[K << endl;
+[2.388s]       |                                       [01;31m[K^~~[m[K
+[2.403s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kinit_pi_input_mode_on_gpio[m[K(const unsigned int&)[m[K’:
+[2.404s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_result[m[K’ was not declared in this scope
+[2.404s]   104 |     [01;31m[Kgpio_result[m[K = gpioSetMode(channel, PI_INPUT);
+[2.405s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.416s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:104:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kchannel[m[K’ was not declared in this scope; did you mean ‘[01m[K_A_channel[m[K’?
+[2.417s]   104 |     gpio_result = gpioSetMode([01;31m[Kchannel[m[K, PI_INPUT);
+[2.417s]       |                               [01;31m[K^~~~~~~[m[K
+[2.418s]       |                               [32m[K_A_channel[m[K
+[2.419s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:100:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kchannel_gpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.419s]   100 | bool Encoders::init_pi_input_mode_on_gpio([01;35m[Kconst unsigned int &channel_gpio[m[K)
+[2.419s]       |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[2.431s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&)[m[K’:
+[2.432s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:124:20:[m[K [01;31m[Kerror: [m[K‘[01m[KsignalHandler[m[K’ was not declared in this scope; did you mean ‘[01m[Ksignal_handler[m[K’?
+[2.432s]   124 |     signal(SIGINT, [01;31m[KsignalHandler[m[K);
+[2.433s]       |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[2.433s]       |                    [32m[Ksignal_handler[m[K
+[2.434s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:140:17:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kint Encoders::[01;32m[Kcompute_rps_on_channel[m[K()[m[K’
+[2.434s]   140 |     timer_start([01;31m[Kcompute_rps_on_channel[m[K, 1000);
+[2.435s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.435s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:45:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.436s]    45 |         int [01;36m[Kcompute_rps_on_channel[m[K();
+[2.436s]       |             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.446s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:141:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_isRunning[m[K’ was not declared in this scope; did you mean ‘[01m[K_is_running[m[K’?
+[2.446s]   141 |     [01;31m[K_isRunning[m[K = true;
+[2.447s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.447s]       |     [32m[K_is_running[m[K
+[2.460s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K()[m[K’:
+[2.460s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:147:20:[m[K [01;31m[Kerror: [m[K‘[01m[KsignalHandler[m[K’ was not declared in this scope; did you mean ‘[01m[Ksignal_handler[m[K’?
+[2.461s]   147 |     signal(SIGINT, [01;31m[KsignalHandler[m[K);
+[2.461s]       |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[2.462s]       |                    [32m[Ksignal_handler[m[K
+[2.462s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:156:17:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kint Encoders::[01;32m[Kcompute_rps_on_channel[m[K()[m[K’
+[2.462s]   156 |     timer_start([01;31m[Kcompute_rps_on_channel[m[K, 1000);
+[2.463s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.463s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:45:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.464s]    45 |         int [01;36m[Kcompute_rps_on_channel[m[K();
+[2.464s]       |             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.474s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:157:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_isRunning[m[K’ was not declared in this scope; did you mean ‘[01m[K_is_running[m[K’?
+[2.475s]   157 |     [01;31m[K_isRunning[m[K = true;
+[2.475s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.476s]       |     [32m[K_is_running[m[K
+[2.476s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K At global scope:
+[2.477s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:160:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_on_channels[m[K()[m[K’
+[2.477s]   160 | void [01;31m[KEncoders[m[K::compute_rps_on_channels()
+[2.477s]       |      [01;31m[K^~~~~~~~[m[K
+[2.478s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:160:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_on_channels[m[K()[m[K’
+[2.478s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+[2.478s]     3 | struct [01;36m[KEncoders[m[K
+[2.479s]       |        [01;36m[K^~~~~~~~[m[K
+[2.731s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+[2.732s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[2.733s] gmake: *** [Makefile:146: all] Error 2
+[2.740s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

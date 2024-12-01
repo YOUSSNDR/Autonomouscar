@@ -1,0 +1,58 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.369s] [ 16%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[11.366s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:3[m[K:
+[11.366s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:10:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[11.367s]    10 |         rclcpp::Publisher<[01;31m[Kstd_msgs[m[K::msg::String>::SharedPtr _publisher;
+[11.367s]       |                           [01;31m[K^~~~~~~~[m[K
+[11.367s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:10:48:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.368s]    10 |         rclcpp::Publisher<std_msgs::msg::String[01;31m[K>[m[K::SharedPtr _publisher;
+[11.368s]       |                                                [01;31m[K^[m[K
+[11.369s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:10:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.369s]    10 |       rclcpp::Publisher<std_msgs::msg::String>::[01;31m[KSharedPtr[m[K _publisher;
+[11.369s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[11.370s]       |                                                          [32m[K;[m[K
+[11.374s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:10:61:[m[K [01;31m[Kerror: [m[K‘[01m[K_publisher[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.375s]    10 | pp::Publisher<std_msgs::msg::String>::SharedPtr [01;31m[K_publisher[m[K;
+[11.375s]       |                                                 [01;31m[K^~~~~~~~~~[m[K
+[11.376s]       |                                                 [32m[Krmw_publisher_t[m[K
+[11.377s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:4[m[K:
+[11.379s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:5:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Encoders[m[K’
+[11.379s]     5 | struct [01;31m[KEncoders[m[K
+[11.380s]       |        [01;31m[K^~~~~~~~[m[K
+[11.380s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:2[m[K:
+[11.381s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:5:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Encoders[m[K’
+[11.381s]     5 | struct [01;36m[KEncoders[m[K
+[11.381s]       |        [01;36m[K^~~~~~~~[m[K
+[11.382s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In constructor ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(Encoders&)[m[K’:
+[11.382s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:6:57:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[11.383s]     6 | Encoders_publisher::Encoders_publisher(Encoders &encoder[01;31m[K)[m[K
+[11.383s]       |                                                         [01;31m[K^[m[K
+[11.383s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.384s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.384s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[11.385s]                  from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:1[m[K:
+[11.385s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const rclcpp::Node&, const std::string&)[m[K’
+[11.385s]  1629 |   [01;36m[KNode[m[K(
+[11.386s]       |   [01;36m[K^~~~[m[K
+[11.386s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[11.387s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const std::string&, const rclcpp::NodeOptions&)[m[K’
+[11.387s]   103 |   explicit [01;36m[KNode[m[K(
+[11.387s]       |            [01;36m[K^~~~[m[K
+[11.388s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[11.388s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const rclcpp::NodeOptions&)[m[K’
+[11.389s]    91 |   explicit [01;36m[KNode[m[K(
+[11.389s]       |            [01;36m[K^~~~[m[K
+[11.389s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[11.390s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:9:18:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEncoders[m[K’ and ‘[01m[KEncoders*[m[K’)
+[11.390s]     9 |     *_encoder = &[01;31m[Kencoder[m[K;
+[11.390s]       |                  [01;31m[K^~~~~~~[m[K
+[11.391s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:5:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders& Encoders::[01;32m[Koperator=[m[K(const Encoders&)[m[K’ (deleted)
+[11.391s]     5 | struct [01;36m[KEncoders[m[K
+[11.392s]       |        [01;36m[K^~~~~~~~[m[K
+[11.392s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:5:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEncoders*[m[K’ to ‘[01m[Kconst Encoders&[m[K’
+[11.392s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:5:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders& Encoders::[01;32m[Koperator=[m[K(Encoders&&)[m[K’ (deleted)
+[11.393s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:5:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEncoders*[m[K’ to ‘[01m[KEncoders&&[m[K’
+[14.267s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
+[14.268s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[14.268s] gmake: *** [Makefile:146: all] Error 2
+[14.276s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

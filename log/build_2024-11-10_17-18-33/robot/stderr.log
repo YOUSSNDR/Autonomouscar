@@ -1,0 +1,21 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/rpi4.cpp:[m[K In member function ‘[01m[Kbool RPI4::[01;32m[Kinit[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/rpi4.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+   12 |     [01;31m[Kcout[m[K<<"Using pigpio version :" << gpioVersion() << endl;
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/rpi4.cpp:3:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+    2 | #include <pigpio.h>
+  +++ |+[32m[K#include <iostream>[m[K
+    3 | 
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/rpi4.cpp:12:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   12 |     cout<<"Using pigpio version :" << gpioVersion() << [01;31m[Kendl[m[K;
+      |                                                        [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/rpi4.cpp:3:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+    2 | #include <pigpio.h>
+  +++ |+[32m[K#include <ostream>[m[K
+    3 | 
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/rpi4.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_result[m[K’ was not declared in this scope
+   22 |     [01;31m[Kgpio_result[m[K = gpioInitialise();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:104: CMakeFiles/encoders.dir/src/rpi4.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,32 @@
+[0.051s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.175s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.115s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.149s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.299s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.338s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.385s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.440s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.670s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.676s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.944s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.161s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.340s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[2.340s]   By not providing "Findstatistics_collector.cmake" in CMAKE_MODULE_PATH this
+[2.341s]   project has asked CMake to find a package configuration file provided by
+[2.341s]   "statistics_collector", but CMake did not find one.
+[2.342s] 
+[2.342s]   Could not find a package configuration file provided by
+[2.342s]   "statistics_collector" with any of the following names:
+[2.342s] 
+[2.343s]     statistics_collectorConfig.cmake
+[2.343s]     statistics_collector-config.cmake
+[2.343s] 
+[2.344s]   Add the installation prefix of "statistics_collector" to CMAKE_PREFIX_PATH
+[2.344s]   or set "statistics_collector_DIR" to a directory containing one of the
+[2.344s]   above files.  If "statistics_collector" provides a separate development
+[2.344s]   package or SDK, be sure it has been installed.
+[2.345s] 
+[2.345s] [0m
+[2.345s] -- Configuring incomplete, errors occurred!
+[2.373s] gmake: *** [Makefile:375: cmake_check_build_system] Error 1
+[2.380s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

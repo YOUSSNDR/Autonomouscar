@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable encoders[0m
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o: in function `Encoders_publisher::Encoders_publisher(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Encoders const&, unsigned int const&)::{lambda()#1}::operator()() const':
+encoders_publisher.cpp:(.text+0xcc): undefined reference to `Encoders::get_rps() const'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:173: encoders] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

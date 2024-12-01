@@ -1,0 +1,23 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In constructor ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(const std::string&, Encoders&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:10:17:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KEncoders& Encoders::[01;32m[Koperator=[m[K(const Encoders&)[m[K’
+   10 |     _encoder = e[01;31m[Kncoder;[m[K
+      |                 [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:2[m[K,
+                 from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:3[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[K‘[01m[KEncoders& Encoders::[01;32m[Koperator=[m[K(const Encoders&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+    8 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;31m[Kerror: [m[Knon-static const member ‘[01m[Kconst unsigned int Encoders::_PPR[m[K’, cannot use default assignment operator
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;31m[Kerror: [m[Knon-static const member ‘[01m[Kconst double Encoders::_gear_ratio[m[K’, cannot use default assignment operator
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::thread& std::thread::[01;32m[Koperator=[m[K(const std::thread&)[m[K’
+In file included from [01m[K/usr/include/c++/13/future:51[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:1[m[K:
+[01m[K/usr/include/c++/13/bits/std_thread.h:181:13:[m[K [01;36m[Knote: [m[Kdeclared here
+  181 |     thread& [01;36m[Koperator[m[K=(const thread&) = delete;
+      |             [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

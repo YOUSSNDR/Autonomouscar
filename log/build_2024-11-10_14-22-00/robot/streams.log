@@ -1,0 +1,32 @@
+[0.049s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.302s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[2.603s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_pin_as_output[m[K(const unsigned int&)[m[K’:
+[2.603s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:46:56:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[2.604s]    46 |                 cout << gpio << "is a bad gpio pin" << [01;35m[Kendl[m[K;
+[2.604s]       |                                                        [01;35m[K^~~~[m[K
+[2.605s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:47:13:[m[K [01;36m[Knote: [m[Khere
+[2.605s]    47 |             [01;36m[Kcase[m[K PI_BAD_MODE:
+[2.605s]       |             [01;36m[K^~~~[m[K
+[2.606s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:48:57:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[2.606s]    48 |                 cout << "Bad mode for gpio " << gpio << [01;35m[Kendl[m[K;
+[2.607s]       |                                                         [01;35m[K^~~~[m[K
+[2.607s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:49:13:[m[K [01;36m[Knote: [m[Khere
+[2.607s]    49 |             [01;36m[Kdefault[m[K:
+[2.608s]       |             [01;36m[K^~~~~~~[m[K
+[3.134s] [100%] [32m[1mLinking CXX executable encoders[0m
+[3.505s] /usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[3.505s] (.text+0x1c): undefined reference to `main'
+[3.506s] /usr/bin/ld: (.text+0x20): undefined reference to `main'
+[3.507s] /usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `Encoders::signal_handler(int)':
+[3.508s] encoders.cpp:(.text+0x7c): undefined reference to `Encoders::instance'
+[3.508s] /usr/bin/ld: encoders.cpp:(.text+0x80): undefined reference to `Encoders::instance'
+[3.508s] /usr/bin/ld: encoders.cpp:(.text+0x90): undefined reference to `Encoders::instance'
+[3.509s] /usr/bin/ld: encoders.cpp:(.text+0x94): undefined reference to `Encoders::instance'
+[3.509s] /usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `Encoders::compute_rps_on_channels_handler()':
+[3.509s] encoders.cpp:(.text+0xb34): undefined reference to `Encoders::instance'
+[3.510s] /usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o:encoders.cpp:(.text+0xb38): more undefined references to `Encoders::instance' follow
+[3.530s] collect2: error: ld returned 1 exit status
+[3.537s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:99: encoders] Error 1
+[3.538s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[3.539s] gmake: *** [Makefile:146: all] Error 2
+[3.548s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

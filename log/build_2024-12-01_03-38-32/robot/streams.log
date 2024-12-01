@@ -1,0 +1,28 @@
+[0.055s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.333s] [ 20%] [32mBuilding CXX object CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o[0m
+[0.394s] [ 40%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[0.494s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.494s]     2 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[0.495s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.495s] compilation terminated.
+[0.502s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o] Error 1
+[0.503s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+[0.503s] gmake[1]: *** Waiting for unfinished jobs....
+[12.301s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[12.302s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:47:14:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoders::Encoders()[m[K’
+[12.302s]    47 |     Encoders [01;31m[Ke[m[K;
+[12.303s]       |              [01;31m[K^[m[K
+[12.303s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:2[m[K,
+[12.304s]                  from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:14[m[K:
+[12.304s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:11:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&)[m[K’
+[12.304s]    11 |         [01;36m[KEncoders[m[K(const unsigned int &MxA_gpio,
+[12.305s]       |         [01;36m[K^~~~~~~~[m[K
+[12.305s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:11:9:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 0 provided
+[12.306s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(Encoders&&)[m[K’
+[12.306s]     8 | struct [01;36m[KEncoders[m[K
+[12.306s]       |        [01;36m[K^~~~~~~~[m[K
+[12.307s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[17.114s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
+[17.115s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/encoders.dir/all] Error 2
+[17.116s] gmake: *** [Makefile:146: all] Error 2
+[17.125s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

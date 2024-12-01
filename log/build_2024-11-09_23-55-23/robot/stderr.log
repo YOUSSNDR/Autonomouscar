@@ -1,0 +1,22 @@
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `configurePinAsOutput(unsigned int)':
+encoders.cpp:(.text+0x14): undefined reference to `gpioSetMode'
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `signalHandler(int)':
+encoders.cpp:(.text+0x1f8): undefined reference to `gpioPWM'
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `main':
+encoders.cpp:(.text+0x500): undefined reference to `gpioVersion'
+/usr/bin/ld: encoders.cpp:(.text+0x51c): undefined reference to `gpioCfgGetInternals'
+/usr/bin/ld: encoders.cpp:(.text+0x534): undefined reference to `gpioCfgSetInternals'
+/usr/bin/ld: encoders.cpp:(.text+0x568): undefined reference to `gpioInitialise'
+/usr/bin/ld: encoders.cpp:(.text+0x5ec): undefined reference to `gpioPWM'
+/usr/bin/ld: encoders.cpp:(.text+0x674): undefined reference to `gpioPWM'
+/usr/bin/ld: encoders.cpp:(.text+0x6fc): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0x798): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0x83c): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0x848): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0xa28): undefined reference to `gpioPWM'
+/usr/bin/ld: encoders.cpp:(.text+0xab4): undefined reference to `gpioRead'
+/usr/bin/ld: encoders.cpp:(.text+0xacc): undefined reference to `gpioRead'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:98: encoders] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

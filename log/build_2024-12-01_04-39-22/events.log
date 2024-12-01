@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.000459] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001719] (robot) JobStarted: {'identifier': 'robot'}
+[0.041599] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.044950] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.047900] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', '--', '-j4', '-l4'], 'cwd': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youss', 'SSH_CLIENT': '192.168.123.70 52052 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youss', 'OLDPWD': '/home/youss', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youss', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/youss/Documents/Projet/Autonomouscar/ros_ws/scripts', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '9', 'AMENT_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.123.70 52052 192.168.123.20 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099279] (-) TimerEvent: {}
+[0.199955] (-) TimerEvent: {}
+[0.300780] (-) TimerEvent: {}
+[0.371572] (robot) StdoutLine: {'line': b'[ 42%] Built target encoders\n'}
+[0.373564] (robot) StdoutLine: {'line': b'[ 71%] Built target listener\n'}
+[0.391259] (robot) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o\x1b[0m\n'}
+[0.400982] (-) TimerEvent: {}
+[0.501679] (-) TimerEvent: {}
+[0.602368] (-) TimerEvent: {}
+[0.702934] (-) TimerEvent: {}
+[0.803579] (-) TimerEvent: {}
+[0.904191] (-) TimerEvent: {}
+[1.004774] (-) TimerEvent: {}
+[1.105456] (-) TimerEvent: {}
+[1.206048] (-) TimerEvent: {}
+[1.306671] (-) TimerEvent: {}
+[1.407265] (-) TimerEvent: {}
+[1.507891] (-) TimerEvent: {}
+[1.608670] (-) TimerEvent: {}
+[1.709561] (-) TimerEvent: {}
+[1.810234] (-) TimerEvent: {}
+[1.910834] (-) TimerEvent: {}
+[2.011554] (-) TimerEvent: {}
+[2.112220] (-) TimerEvent: {}
+[2.212874] (-) TimerEvent: {}
+[2.313586] (-) TimerEvent: {}
+[2.414246] (-) TimerEvent: {}
+[2.514983] (-) TimerEvent: {}
+[2.615685] (-) TimerEvent: {}
+[2.716466] (-) TimerEvent: {}
+[2.817217] (-) TimerEvent: {}
+[2.917849] (-) TimerEvent: {}
+[3.018565] (-) TimerEvent: {}
+[3.119212] (-) TimerEvent: {}
+[3.219820] (-) TimerEvent: {}
+[3.320600] (-) TimerEvent: {}
+[3.421375] (-) TimerEvent: {}
+[3.521979] (-) TimerEvent: {}
+[3.622659] (-) TimerEvent: {}
+[3.723467] (-) TimerEvent: {}
+[3.824210] (-) TimerEvent: {}
+[3.924869] (-) TimerEvent: {}
+[4.025549] (-) TimerEvent: {}
+[4.126229] (-) TimerEvent: {}
+[4.226873] (-) TimerEvent: {}
+[4.327575] (-) TimerEvent: {}
+[4.428249] (-) TimerEvent: {}
+[4.528865] (-) TimerEvent: {}
+[4.629590] (-) TimerEvent: {}
+[4.730261] (-) TimerEvent: {}
+[4.830932] (-) TimerEvent: {}
+[4.931710] (-) TimerEvent: {}
+[5.032456] (-) TimerEvent: {}
+[5.133139] (-) TimerEvent: {}
+[5.233855] (-) TimerEvent: {}
+[5.334609] (-) TimerEvent: {}
+[5.435274] (-) TimerEvent: {}
+[5.535926] (-) TimerEvent: {}
+[5.636736] (-) TimerEvent: {}
+[5.737456] (-) TimerEvent: {}
+[5.838173] (-) TimerEvent: {}
+[5.938845] (-) TimerEvent: {}
+[6.039556] (-) TimerEvent: {}
+[6.140219] (-) TimerEvent: {}
+[6.240850] (-) TimerEvent: {}
+[6.341625] (-) TimerEvent: {}
+[6.442294] (-) TimerEvent: {}
+[6.542946] (-) TimerEvent: {}
+[6.643648] (-) TimerEvent: {}
+[6.744371] (-) TimerEvent: {}
+[6.845018] (-) TimerEvent: {}
+[6.945772] (-) TimerEvent: {}
+[7.046457] (-) TimerEvent: {}
+[7.147140] (-) TimerEvent: {}
+[7.247800] (-) TimerEvent: {}
+[7.348510] (-) TimerEvent: {}
+[7.449194] (-) TimerEvent: {}
+[7.549825] (-) TimerEvent: {}
+[7.650648] (-) TimerEvent: {}
+[7.751394] (-) TimerEvent: {}
+[7.852046] (-) TimerEvent: {}
+[7.952725] (-) TimerEvent: {}
+[8.053419] (-) TimerEvent: {}
+[8.154066] (-) TimerEvent: {}
+[8.254806] (-) TimerEvent: {}
+[8.355480] (-) TimerEvent: {}
+[8.456160] (-) TimerEvent: {}
+[8.556790] (-) TimerEvent: {}
+[8.657480] (-) TimerEvent: {}
+[8.758141] (-) TimerEvent: {}
+[8.858781] (-) TimerEvent: {}
+[8.959562] (-) TimerEvent: {}
+[9.060215] (-) TimerEvent: {}
+[9.160906] (-) TimerEvent: {}
+[9.261647] (-) TimerEvent: {}
+[9.362367] (-) TimerEvent: {}
+[9.463041] (-) TimerEvent: {}
+[9.563770] (-) TimerEvent: {}
+[9.664494] (-) TimerEvent: {}
+[9.765213] (-) TimerEvent: {}
+[9.865887] (-) TimerEvent: {}
+[9.966670] (-) TimerEvent: {}
+[10.067384] (-) TimerEvent: {}
+[10.168135] (-) TimerEvent: {}
+[10.268907] (-) TimerEvent: {}
+[10.369737] (-) TimerEvent: {}
+[10.470454] (-) TimerEvent: {}
+[10.571188] (-) TimerEvent: {}
+[10.671913] (-) TimerEvent: {}
+[10.772714] (-) TimerEvent: {}
+[10.873590] (-) TimerEvent: {}
+[10.974444] (-) TimerEvent: {}
+[11.075399] (-) TimerEvent: {}
+[11.176741] (-) TimerEvent: {}
+[11.277462] (-) TimerEvent: {}
+[11.378182] (-) TimerEvent: {}
+[11.478922] (-) TimerEvent: {}
+[11.579700] (-) TimerEvent: {}
+[11.680418] (-) TimerEvent: {}
+[11.781126] (-) TimerEvent: {}
+[11.881849] (-) TimerEvent: {}
+[11.982597] (-) TimerEvent: {}
+[12.083248] (-) TimerEvent: {}
+[12.183968] (-) TimerEvent: {}
+[12.284695] (-) TimerEvent: {}
+[12.385374] (-) TimerEvent: {}
+[12.486703] (-) TimerEvent: {}
+[12.587431] (-) TimerEvent: {}
+[12.688192] (-) TimerEvent: {}
+[12.788921] (-) TimerEvent: {}
+[12.889732] (-) TimerEvent: {}
+[12.990565] (-) TimerEvent: {}
+[13.091262] (-) TimerEvent: {}
+[13.192374] (-) TimerEvent: {}
+[13.293471] (-) TimerEvent: {}
+[13.394171] (-) TimerEvent: {}
+[13.494826] (-) TimerEvent: {}
+[13.595545] (-) TimerEvent: {}
+[13.696245] (-) TimerEvent: {}
+[13.797202] (-) TimerEvent: {}
+[13.898055] (-) TimerEvent: {}
+[13.998919] (-) TimerEvent: {}
+[14.099631] (-) TimerEvent: {}
+[14.200415] (-) TimerEvent: {}
+[14.301134] (-) TimerEvent: {}
+[14.401814] (-) TimerEvent: {}
+[14.503163] (-) TimerEvent: {}
+[14.603866] (-) TimerEvent: {}
+[14.704600] (-) TimerEvent: {}
+[14.805274] (-) TimerEvent: {}
+[14.905900] (-) TimerEvent: {}
+[15.006650] (-) TimerEvent: {}
+[15.107495] (-) TimerEvent: {}
+[15.208315] (-) TimerEvent: {}
+[15.307029] (robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable robot_controller\x1b[0m\n'}
+[15.308516] (-) TimerEvent: {}
+[15.409266] (-) TimerEvent: {}
+[15.509979] (-) TimerEvent: {}
+[15.610716] (-) TimerEvent: {}
+[15.711389] (-) TimerEvent: {}
+[15.811962] (-) TimerEvent: {}
+[15.912629] (-) TimerEvent: {}
+[16.013340] (-) TimerEvent: {}
+[16.113968] (-) TimerEvent: {}
+[16.214681] (-) TimerEvent: {}
+[16.262693] (robot) StdoutLine: {'line': b'[100%] Built target robot_controller\n'}
+[16.314964] (-) TimerEvent: {}
+[16.319062] (robot) CommandEnded: {'returncode': 0}
+[16.415160] (-) TimerEvent: {}
+[16.515790] (-) TimerEvent: {}
+[16.538558] (robot) JobProgress: {'identifier': 'robot', 'progress': 'install'}
+[16.591184] (robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot'], 'cwd': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youss', 'SSH_CLIENT': '192.168.123.70 52052 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youss', 'OLDPWD': '/home/youss', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youss', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/youss/Documents/Projet/Autonomouscar/ros_ws/scripts', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '9', 'AMENT_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.123.70 52052 192.168.123.20 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[16.616035] (-) TimerEvent: {}
+[16.632449] (robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.634274] (robot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.636070] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/encoders\n'}
+[16.637133] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/listener\n'}
+[16.637784] (robot) StdoutLine: {'line': b'-- Symlinking: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/robot_controller\n'}
+[16.686881] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot\n'}
+[16.688408] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot\n'}
+[16.689589] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.sh\n'}
+[16.690808] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.dsv\n'}
+[16.691936] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.sh\n'}
+[16.693166] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.dsv\n'}
+[16.694400] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.bash\n'}
+[16.695565] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.sh\n'}
+[16.696726] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.zsh\n'}
+[16.697886] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.dsv\n'}
+[16.698591] (robot) StdoutLine: {'line': b'-- Symlinking: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv\n'}
+[16.716239] (-) TimerEvent: {}
+[16.749236] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/packages/robot\n'}
+[16.750329] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig.cmake\n'}
+[16.751301] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig-version.cmake\n'}
+[16.752379] (robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.xml\n'}
+[16.759005] (robot) CommandEnded: {'returncode': 0}
+[16.816424] (-) TimerEvent: {}
+[16.917116] (-) TimerEvent: {}
+[17.017896] (-) TimerEvent: {}
+[17.053124] (robot) JobEnded: {'identifier': 'robot', 'rc': 0}
+[17.055903] (-) EventReactorShutdown: {}

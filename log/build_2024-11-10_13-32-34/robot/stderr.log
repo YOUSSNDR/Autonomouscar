@@ -1,0 +1,88 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:63:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Encoders::[01;32m[KsignalHandler[m[K(int)[m[K’
+   63 | void [01;31m[KEncoders[m[K::signalHandler(int signal)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:63:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Encoders::[01;32m[KsignalHandler[m[K(int)[m[K’
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:13[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+    3 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kinit_pwm[m[K(const unsigned int&, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_result[m[K’ was not declared in this scope
+   90 |     [01;31m[Kgpio_result[m[K = gpioPWM(gpio_number, duty_cycle);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:96:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpin[m[K’ was not declared in this scope
+   96 |     cout << "PWM Success on gpio " << [01;31m[Kpin[m[K << endl;
+      |                                       [01;31m[K^~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kinit_pi_input_mode_on_gpio[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_result[m[K’ was not declared in this scope
+  104 |     [01;31m[Kgpio_result[m[K = gpioSetMode(channel, PI_INPUT);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:104:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kchannel[m[K’ was not declared in this scope; did you mean ‘[01m[K_A_channel[m[K’?
+  104 |     gpio_result = gpioSetMode([01;31m[Kchannel[m[K, PI_INPUT);
+      |                               [01;31m[K^~~~~~~[m[K
+      |                               [32m[K_A_channel[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:100:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kchannel_gpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  100 | bool Encoders::init_pi_input_mode_on_gpio([01;35m[Kconst unsigned int &channel_gpio[m[K)
+      |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:124:20:[m[K [01;31m[Kerror: [m[K‘[01m[KsignalHandler[m[K’ was not declared in this scope; did you mean ‘[01m[Ksignal_handler[m[K’?
+  124 |     signal(SIGINT, [01;31m[KsignalHandler[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                    [32m[Ksignal_handler[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:132:14:[m[K [01;31m[Kerror: [m[K‘[01m[K_MIA_GPIO[m[K’ was not declared in this scope; did you mean ‘[01m[K_M1A_GPIO[m[K’?
+  132 |     init_pwm([01;31m[K_MIA_GPIO[m[K, _duty_cycle);
+      |              [01;31m[K^~~~~~~~~[m[K
+      |              [32m[K_M1A_GPIO[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:133:14:[m[K [01;31m[Kerror: [m[K‘[01m[K_MIB_GPIO[m[K’ was not declared in this scope; did you mean ‘[01m[K_M1B_GPIO[m[K’?
+  133 |     init_pwm([01;31m[K_MIB_GPIO[m[K, 0);
+      |              [01;31m[K^~~~~~~~~[m[K
+      |              [32m[K_M1B_GPIO[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:140:17:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kint Encoders::[01;32m[Kcompute_rps_on_channel[m[K()[m[K’
+  140 |     timer_start([01;31m[Kcompute_rps_on_channel[m[K, 1000);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:45:13:[m[K [01;36m[Knote: [m[Kdeclared here
+   45 |         int [01;36m[Kcompute_rps_on_channel[m[K();
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:141:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_isRunning[m[K’ was not declared in this scope; did you mean ‘[01m[K_is_running[m[K’?
+  141 |     [01;31m[K_isRunning[m[K = true;
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[K_is_running[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:147:20:[m[K [01;31m[Kerror: [m[K‘[01m[KsignalHandler[m[K’ was not declared in this scope; did you mean ‘[01m[Ksignal_handler[m[K’?
+  147 |     signal(SIGINT, [01;31m[KsignalHandler[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                    [32m[Ksignal_handler[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:156:17:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kint Encoders::[01;32m[Kcompute_rps_on_channel[m[K()[m[K’
+  156 |     timer_start([01;31m[Kcompute_rps_on_channel[m[K, 1000);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:45:13:[m[K [01;36m[Knote: [m[Kdeclared here
+   45 |         int [01;36m[Kcompute_rps_on_channel[m[K();
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:157:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_isRunning[m[K’ was not declared in this scope; did you mean ‘[01m[K_is_running[m[K’?
+  157 |     [01;31m[K_isRunning[m[K = true;
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[K_is_running[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K At global scope:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:160:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_on_channels[m[K()[m[K’
+  160 | void [01;31m[KEncoders[m[K::compute_rps_on_channels()
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:160:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps_on_channels[m[K()[m[K’
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:3:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+    3 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_pin_as_output[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:31:56:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   31 |                 cout << gpio << "is a bad gpio pin" << [01;35m[Kendl[m[K;
+      |                                                        [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:32:13:[m[K [01;36m[Knote: [m[Khere
+   32 |             [01;36m[Kcase[m[K PI_BAD_MODE:
+      |             [01;36m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:33:57:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   33 |                 cout << "Bad mode for gpio " << gpio << [01;35m[Kendl[m[K;
+      |                                                         [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:34:13:[m[K [01;36m[Knote: [m[Khere
+   34 |             [01;36m[Kdefault[m[K:
+      |             [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

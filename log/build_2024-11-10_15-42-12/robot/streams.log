@@ -1,0 +1,11 @@
+[0.050s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.307s] [ 50%] [32m[1mLinking CXX executable encoders[0m
+[0.625s] /usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `main':
+[0.625s] main.cpp:(.text+0x24): undefined reference to `Encoders::Encoders()'
+[0.626s] /usr/bin/ld: main.cpp:(.text+0x2c): undefined reference to `Encoders::count_number_of_changes_on_channels()'
+[0.627s] /usr/bin/ld: main.cpp:(.text+0x34): undefined reference to `Encoders::compute_rps_on_channels()'
+[0.639s] collect2: error: ld returned 1 exit status
+[0.646s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:99: encoders] Error 1
+[0.646s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[0.647s] gmake: *** [Makefile:146: all] Error 2
+[0.655s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

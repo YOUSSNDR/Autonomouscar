@@ -1,0 +1,17 @@
+[0.051s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.375s] [ 14%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/channel.cpp.o[0m
+[0.377s] [ 28%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[2.158s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/channel.cpp:[m[K In member function ‘[01m[Kvoid Channel::[01;32m[Kcount_number_of_changes[m[K()[m[K’:
+[2.159s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/channel.cpp:55:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_number_of_changes_on_channel[m[K’ was not declared in this scope
+[2.159s]    55 |         [01;31m[K_number_of_changes_on_channel[m[K+=1;
+[2.160s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.334s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/channel.cpp.o] Error 1
+[2.335s] gmake[2]: *** Waiting for unfinished jobs....
+[3.146s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’:
+[3.146s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:207:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_number_of_changes[m[K’ was not declared in this scope
+[3.147s]   207 |     [01;31m[Kcount_number_of_changes[m[K();
+[3.147s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.432s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:104: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+[3.432s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[3.433s] gmake: *** [Makefile:146: all] Error 2
+[3.441s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
