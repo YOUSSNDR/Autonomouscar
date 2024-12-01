@@ -8,7 +8,6 @@ struct Robot_controller : public rclcpp::Node{
         Robot_controller();
     private:
         int a = 2;
-        int b = 3;
 };
 
 #endif
