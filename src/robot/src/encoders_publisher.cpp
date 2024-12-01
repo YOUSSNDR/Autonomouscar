@@ -14,6 +14,10 @@
 #include "robot/encoders_publisher.h"
 #include "robot/encoders.h"
 
+/*
+    Code inspired from the creating a publisher/subscriber tutorial on the ROS documentation
+*/
+
 Encoders_publisher::Encoders_publisher(const std::string &node_name,
                                         const std::string &topic_name,
                                         const Encoders &encoder,
@@ -34,7 +38,7 @@ Encoders_publisher::Encoders_publisher(const std::string &node_name,
         unsigned int rps = this->_encoder.get_rps();
         message.data = rps;
 
-        RCLCPP_INFO(this->get_logger(), "Publishing: '%f'", message.data);
+        RCLCPP_INFO(this->get_logger(), "Publishing: '%f' - encoders_publisher", message.data);
 
         // Publish the message in the _topic_name topic
         this->_publisher->publish(message);

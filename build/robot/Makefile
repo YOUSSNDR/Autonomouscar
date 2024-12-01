@@ -236,6 +236,43 @@ robot_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/build
 .PHONY : robot_controller/fast
 
+#=============================================================================
+# Target rules for targets named position_publisher
+
+# Build rule for target.
+position_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 position_publisher
+.PHONY : position_publisher
+
+# fast build rule for target.
+position_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/build
+.PHONY : position_publisher/fast
+
+src/DWM1001_reader.o: src/DWM1001_reader.cpp.o
+.PHONY : src/DWM1001_reader.o
+
+# target to build an object file
+src/DWM1001_reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/src/DWM1001_reader.cpp.o
+.PHONY : src/DWM1001_reader.cpp.o
+
+src/DWM1001_reader.i: src/DWM1001_reader.cpp.i
+.PHONY : src/DWM1001_reader.i
+
+# target to preprocess a source file
+src/DWM1001_reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/src/DWM1001_reader.cpp.i
+.PHONY : src/DWM1001_reader.cpp.i
+
+src/DWM1001_reader.s: src/DWM1001_reader.cpp.s
+.PHONY : src/DWM1001_reader.s
+
+# target to generate assembly for a file
+src/DWM1001_reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/src/DWM1001_reader.cpp.s
+.PHONY : src/DWM1001_reader.cpp.s
+
 src/encoders.o: src/encoders.cpp.o
 .PHONY : src/encoders.o
 
@@ -349,7 +386,11 @@ help:
 	@echo "... uninstall"
 	@echo "... encoders"
 	@echo "... listener"
+	@echo "... position_publisher"
 	@echo "... robot_controller"
+	@echo "... src/DWM1001_reader.o"
+	@echo "... src/DWM1001_reader.i"
+	@echo "... src/DWM1001_reader.s"
 	@echo "... src/encoders.o"
 	@echo "... src/encoders.i"
 	@echo "... src/encoders.s"

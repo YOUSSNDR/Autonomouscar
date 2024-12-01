@@ -1,6 +1,7 @@
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/encoders
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/listener
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/robot_controller
+/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/position_publisher
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.sh

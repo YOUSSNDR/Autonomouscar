@@ -3,6 +3,7 @@
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/CMakeFiles/encoders.dir
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/CMakeFiles/listener.dir
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/CMakeFiles/robot_controller.dir
+/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/CMakeFiles/position_publisher.dir
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/CMakeFiles/test.dir
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/CMakeFiles/edit_cache.dir
 /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/CMakeFiles/rebuild_cache.dir

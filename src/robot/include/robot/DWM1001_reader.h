@@ -3,15 +3,48 @@
 #include <cstdlib>
 #include <cstring>
 
+#include "rclcpp/rclcpp.hpp"
+/*
+    Message to create a 3D point
+*/
+#include <geometry_msgs/msg/point.hpp>
+
 #ifndef DWM1001_READER_H
 #define DWM1001_READER_H
 
-struct DWM1001_reader
+#define NODE_NAME "DWM1001_node"
+#define TOPIC_NAME "position_topic"
+#define QUEUE_DEPTH 10
+
+/*
+    Publisher node
+    Publishes the x,y coordinates read from the Raspberry Pi Pico W via WIFI that the operator holds
+    We are in 2D thus z = 0
+*/
+
+struct DWM1001_reader : public rclcpp::Node
 {
     public:
         DWM1001_reader();
-    private:
 
+        /*
+            Functions for testing
+        */
+        void set_x(const double &x);
+        void set_y(const double &y);
+        DWM1001_reader(const bool &dummy);
+    
+    private:
+        /*
+            Creating a node to publish a point message
+        */
+        rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr _publisher;
+        rclcpp::TimerBase::SharedPtr _timer;
+        geometry_msgs::msg::Point _point;
+
+        /*
+            Read frm the raspberry pi pico W
+        */
         const char *_read_command = "python3 ./raspberry_pico_w_server.py";
         std::string _readings;
         char _buffer[128];
@@ -20,10 +53,14 @@ struct DWM1001_reader
         double _x = 0;
         double _y = 0;
     
+        /*
+            Main functions
+        */
         void read_data();
         void compute_x_from_readings();
         void compute_y_from_readings();
 
+        void update_point();
 };
 
 #endif

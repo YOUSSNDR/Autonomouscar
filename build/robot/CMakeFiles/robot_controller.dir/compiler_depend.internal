@@ -16,6 +16,12 @@ CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp
@@ -392,6 +398,12 @@ CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o
  /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp
  /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp
  /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/float32.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/tracetools/tracetools/config.h
  /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h
  /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp

@@ -8,7 +8,12 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+
+#Message packages
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -42,6 +47,10 @@ add_executable(robot_controller
               src/robot_controller.cpp
 )
 
+add_executable(position_publisher
+              src/DWM1001_reader.cpp
+)
+
 
 target_include_directories(encoders PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -62,6 +71,9 @@ target_include_directories(robot_controller PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 
+  target_include_directories(position_publisher PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 
 target_compile_features(encoders PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
@@ -75,6 +87,7 @@ install(TARGETS
   encoders
   listener
   robot_controller
+  position_publisher
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
@@ -102,7 +115,8 @@ target_link_libraries(encoders
 ament_package()
 ament_target_dependencies(encoders
                           rclcpp
-                          std_msgs)
+                          std_msgs
+                          geometry_msgs)
 
 ament_target_dependencies(listener
                           rclcpp
@@ -110,4 +124,11 @@ ament_target_dependencies(listener
 
 ament_target_dependencies(robot_controller
                           rclcpp
-                          std_msgs)
+                          std_msgs
+                          geometry_msgs)
+
+ament_target_dependencies(position_publisher
+                          rclcpp
+                          std_msgs
+                          geometry_msgs)
+                    

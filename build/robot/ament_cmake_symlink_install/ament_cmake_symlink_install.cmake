@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "encoders" "listener" "robot_controller" "DESTINATION" "lib/robot")
+# install("TARGETS" "encoders" "listener" "robot_controller" "position_publisher" "DESTINATION" "lib/robot")
 include("/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
