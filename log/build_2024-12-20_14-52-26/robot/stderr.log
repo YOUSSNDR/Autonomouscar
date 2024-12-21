@@ -1,0 +1,11 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K signalHandler[m[K(int)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:67:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpi[m[K’ was not declared in this scope
+   67 |     set_PWM_dutycycle([01;31m[Kpi[m[K, M1A_GPIO, 0);
+      |                       [01;31m[K^~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_PWM_dutycycle[m[K’ was not declared in this scope; did you mean ‘[01m[KgpioGetPWMdutycycle[m[K’?
+   67 |     [01;31m[Kset_PWM_dutycycle[m[K(pi, M1A_GPIO, 0);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KgpioGetPWMdutycycle[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

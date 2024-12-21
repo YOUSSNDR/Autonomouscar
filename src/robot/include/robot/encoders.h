@@ -1,32 +1,66 @@
-#include <functional> //std::function
-#include <string.h>
-#include <thread>
-
 #ifndef ENCODERS_H
 #define ENCODERS_H
+
+
+#include <string.h>
+/*
+    For std::function
+*/
+#include <functional> //std::function
+/*
+    For threads
+*/
+#include <thread>
+#include <chrono>
+
+#include <iostream>
+#include <signal.h>
+#include <csignal>
+#include <functional>
+#include <unistd.h>
+#include <errno.h>
+#include <stdio.h>
+#include <string.h>
+
+/*
+    Needed for the M_PI constant to convert revolutions per second to radians per second
+*/
+#include <math.h>
+
+
+/*
+    Library for gpio control
+    pigpio must be installed
+*/
+#include <pigpio.h>
+
+#define WHEEL_RADIUS 0.034 //meter
 
 struct Encoders
 {
     public:
         Encoders();
-        Encoders(const unsigned int &MxA_gpio,
-                const unsigned int &MxB_gpio,
-                const unsigned int &channel_A_gpio,
+        Encoders(const unsigned int &channel_A_gpio,
                 const unsigned int &channel_B_gpio,
-                const unsigned int &duty_cycle
-        );
+                const std::string &encoder_name
+                );
 
-        unsigned int get_rps() const;
+        unsigned int get_rps_A() const;
+        unsigned int get_rps_B() const;
+        /*
+            Set either _rps_A or _rps_B
+        */
         void set_rps(const unsigned int &rps);
+        void set_rps_A(const unsigned int &rps);
+        void set_rps_B(const unsigned int &rps);
         void start_encoder(const unsigned int &interval);
 
     private:
+        std::string _encoder_name = "";
         /*
             Gpios are initialized to default values.
             Can be changed.
         */
-        const unsigned int _MxA_gpio = 0;
-        const unsigned int _MxB_gpio = 0;
         const unsigned int _channel_A_gpio = 0;
         const unsigned int _channel_B_gpio = 0;
         /*
@@ -37,15 +71,32 @@ struct Encoders
                 - the angular velocity of the robot around the z-axis
         */
 
-        unsigned int _channel_value = 0;
-        unsigned int _old_channel_value = 0;
+        /*
+        unsigned int _channel_value_A = 0U;
+        unsigned int _old_channel_value_A = 0U;
 
-        bool _change_in_channel = false;
+        unsigned int _channel_value_B = 0U;
+        unsigned int _old_channel_value_B = 0U;
 
-        unsigned int _number_of_changes_on_channel = 0;
-        unsigned int _rps = 0;
+        bool _change_in_channel_A = false;
+        bool _change_in_channel_B = false;
 
 
+        */
+
+        /**
+         * @param _rps_A is the number of encoder revolutions per second measured in channel A
+         * @param _rps_B is the number of encoder revolutions per second measured in channel B
+        */
+        volatile unsigned int _rps_A = 0U;
+        volatile unsigned int _rps_B = 0U;
+
+        /*
+            Initalized at the top of the encoders.cpp file
+        */
+
+        static volatile unsigned int _number_of_changes_on_channel_A; 
+        static volatile unsigned int _number_of_changes_on_channel_B;
         /*
             PPR, (pulses per round) gear_ratio are found on the documentation of the motors :
             https://wiki.dfrobot.com/Micro_DC_Motor_with_Encoder-SJ01_SKU__FIT0450
@@ -56,7 +107,6 @@ struct Encoders
         */
         const unsigned int _PPR = 8;
         const double _gear_ratio = 900/8;
-        unsigned int _duty_cycle = 200; //max : 255
 
         /*
             static Encoders *instance is needed for callbacks and handlers
@@ -69,22 +119,24 @@ struct Encoders
         bool _is_running =  false;
 
         bool configure_gpio_as_input(const unsigned int &gpio);
-        bool configure_gpio_as_output(const unsigned int &gpio);
 
         void signal_handler_callback(int signal);
         static void signal_handler(int signal);
 
-
-        void count_number_of_changes(const unsigned int &channel_gpio);
-        void compute_rps();
-        static void compute_rps_handler(Encoders &encoder);
+        /*
+            Count the number of changes on a channel and compute the number of revolutions of the encoder using the PPR
+        */
+        void compute_encoder_rps();
+        static void compute_encoder_rps_handler(Encoders &encoder);
 
         void timer_start(std::function<void(Encoders&)> func, 
                         const unsigned int &interval);
 
-        
-        bool init_pwm(const unsigned int &gpio, 
-                    const unsigned int &duty_cycle);
+        /*
+            The function declaration must be static and must have int gpio, int level and uint32_t tick declaration to work with the pigpio lib
+        */
+        static void count_number_of_changes_on_channel_A(int gpio, int level, uint32_t tick);
+        static void count_number_of_changes_on_channel_B(int gpio, int level, uint32_t tick);
 
 
 };

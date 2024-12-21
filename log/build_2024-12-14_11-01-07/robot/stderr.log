@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:94 (target_compile_features):
+  Cannot specify compile features for target "encoders" which is not built by
+  this project.
+
+[0m
+gmake: *** [Makefile:515: cmake_check_build_system] Error 1

@@ -1,0 +1,17 @@
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:1[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:28:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   28 |                         const unsigned int &motor_gpio) [01;31m[Kconst[m[K
+      |                                                         [01;31m[K^~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In constructor ‘[01m[KMotor_subscriber::[01;32m[KMotor_subscriber[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:22:86:[m[K [01;31m[Kerror: [m[K‘[01m[K_M1A_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[K_M1A_GPIO[m[K’?
+   22 |         std::bind(&Motor_subscriber::set_left_motor_and_right_motor_duty_cycle, this,[01;31m[K_M1A_gpio[m[K, _M1B_gpio, std::placeholders::_1));
+      |                                                                                      [01;31m[K^~~~~~~~~[m[K
+      |                                                                                      [32m[K_M1A_GPIO[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:22:97:[m[K [01;31m[Kerror: [m[K‘[01m[K_M1B_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[K_M1B_GPIO[m[K’?
+   22 |         std::bind(&Motor_subscriber::set_left_motor_and_right_motor_duty_cycle, this,_M1A_gpio, [01;31m[K_M1B_gpio[m[K, std::placeholders::_1));
+      |                                                                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                                                                 [32m[K_M1B_GPIO[m[K
+gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,66 @@
+[0.049s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.174s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.138s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.173s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.324s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.363s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.411s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.467s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.698s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.704s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.972s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.191s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.241s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.295s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.737s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.738s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.739s] -- Configured cppcheck exclude dirs and/or files: 
+[2.741s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.742s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.746s] -- Added test 'lint_cmake' to check CMake code style
+[2.749s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.762s] -- Added test 'uncrustify' to check C / C++ code style
+[2.763s] -- Configured uncrustify additional arguments: 
+[2.765s] -- Added test 'xmllint' to check XML markup files
+[2.788s] -- Configuring done (2.6s)
+[2.912s] -- Generating done (0.1s)
+[2.928s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.165s] [ 18%] Built target listener
+[3.166s] [ 36%] Built target robot_controller
+[3.169s] [ 63%] Built target encoders
+[3.171s] [ 81%] Built target position_publisher
+[3.271s] [ 90%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[14.380s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In constructor ‘[01m[KMotor_subscriber::[01;32m[KMotor_subscriber[m[K()[m[K’:
+[14.381s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:9:1:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+[14.381s]     9 | [01;31m[K{[m[K
+[14.382s]       | [01;31m[K^[m[K
+[14.416s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K At global scope:
+[14.416s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:16:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Motor_subscriber::[01;32m[Kconvert_to_duty_cycle[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr) const[m[K’
+[14.417s]    16 | void [01;31m[KMotor_subscriber[m[K::convert_to_duty_cycle(geometry_msgs::msg::Twist::UniquePtr msg) const
+[14.417s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[14.418s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:1[m[K:
+[14.418s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:19:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Motor_subscriber::[01;32m[Kconvert_to_duty_cycle[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr)[m[K’
+[14.419s]    19 |         void [01;36m[Kconvert_to_duty_cycle[m[K(geometry_msgs::msg::Twist::UniquePtr msg);
+[14.419s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[14.419s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:13:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Motor_subscriber[m[K’ defined here
+[14.420s]    13 | struct [01;36m[KMotor_subscriber[m[K : public rclcpp::Node
+[14.420s]       |        [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[14.421s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(Motor&, Motor&) const[m[K’:
+[14.421s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:21:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.421s]    21 | void Motor_subscriber::set_motors_duty_cycle([01;35m[KMotor &left_motor[m[K, Motor &right_motor) const
+[14.422s]       |                                              [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[14.422s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:21:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.423s]    21 | subscriber::set_motors_duty_cycle(Motor &left_motor, [01;35m[KMotor &right_motor[m[K) const
+[14.423s]       |                                                      [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[14.423s] 
+[14.424s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[14.424s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:26:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.425s]    26 | int main([01;35m[Kint argc[m[K, char *argv[])
+[14.425s]       |          [01;35m[K~~~~^~~~[m[K
+[14.425s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:26:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.426s]    26 | int main(int argc, [01;35m[Kchar *argv[][m[K)
+[14.426s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[23.386s] gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1
+[23.387s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/motor_subscriber.dir/all] Error 2
+[23.387s] gmake: *** [Makefile:146: all] Error 2
+[23.395s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

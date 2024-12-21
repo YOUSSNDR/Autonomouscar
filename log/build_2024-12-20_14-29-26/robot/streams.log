@@ -1,0 +1,16 @@
+[0.053s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.352s] [ 11%] Built target encoders_subscriber
+[0.354s] [ 27%] Built target encoders_publisher
+[0.381s] [ 38%] Built target robot_controller
+[0.385s] [ 44%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.513s] [ 55%] Built target motor_subscriber
+[0.519s] [ 66%] Built target position_publisher
+[0.540s] [ 77%] Built target position_reader
+[11.551s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[11.552s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:158:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_pin[m[K’ was not declared in this scope
+[11.552s]   158 |     set_mode(pi, [01;31m[Kgpio_pin[m[K, PI_OUTPUT);
+[11.553s]       |                  [01;31m[K^~~~~~~~[m[K
+[14.378s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+[14.379s] gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/main.dir/all] Error 2
+[14.380s] gmake: *** [Makefile:146: all] Error 2
+[14.387s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

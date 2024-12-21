@@ -1,0 +1,66 @@
+[0.053s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.357s] [  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.359s] [ 20%] Built target listener
+[0.364s] [ 33%] Built target robot_controller
+[0.373s] [ 46%] Built target position_publisher
+[0.425s] [ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[0.509s] [ 66%] Built target motor_subscriber
+[0.518s] [ 80%] Built target position_reader
+[3.442s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Kcount_number_of_changes_on_channel_A[m[K(int, int, uint32_t)[m[K’:
+[3.442s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:234:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.443s]   234 | void Encoders::count_number_of_changes_on_channel_A([01;35m[Kint gpio[m[K, int level, uint32_t tick)
+[3.446s]       |                                                     [01;35m[K~~~~^~~~[m[K
+[3.447s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:234:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.451s]   234 | void Encoders::count_number_of_changes_on_channel_A(int gpio, [01;35m[Kint level[m[K, uint32_t tick)
+[3.452s]       |                                                               [01;35m[K~~~~^~~~~[m[K
+[3.455s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:234:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktick[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.455s]   234 | void Encoders::count_number_of_changes_on_channel_A(int gpio, int level, [01;35m[Kuint32_t tick[m[K)
+[3.456s]       |                                                                          [01;35m[K~~~~~~~~~^~~~[m[K
+[3.457s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Kcount_number_of_changes_on_channel_B[m[K(int, int, uint32_t)[m[K’:
+[3.457s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:253:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.458s]   253 | void Encoders::count_number_of_changes_on_channel_B([01;35m[Kint gpio[m[K, int level, uint32_t tick)
+[3.459s]       |                                                     [01;35m[K~~~~^~~~[m[K
+[3.459s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:253:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.460s]   253 | void Encoders::count_number_of_changes_on_channel_B(int gpio, [01;35m[Kint level[m[K, uint32_t tick)
+[3.461s]       |                                                               [01;35m[K~~~~^~~~~[m[K
+[3.461s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:253:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktick[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.462s]   253 | void Encoders::count_number_of_changes_on_channel_B(int gpio, int level, [01;35m[Kuint32_t tick[m[K)
+[3.463s]       |                                                                          [01;35m[K~~~~~~~~~^~~~[m[K
+[3.464s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Kcount_number_of_changes[m[K(int, int, uint32_t)[m[K’:
+[3.468s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:272:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.469s]   272 | void Encoders::count_number_of_changes([01;35m[Kint gpio[m[K, int level, uint32_t tick)
+[3.472s]       |                                        [01;35m[K~~~~^~~~[m[K
+[3.473s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:272:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.473s]   272 | void Encoders::count_number_of_changes(int gpio, [01;35m[Kint level[m[K, uint32_t tick)
+[3.474s]       |                                                  [01;35m[K~~~~^~~~~[m[K
+[3.474s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:272:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktick[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.475s]   272 | void Encoders::count_number_of_changes(int gpio, int level, [01;35m[Kuint32_t tick[m[K)
+[3.476s]       |                                                             [01;35m[K~~~~~~~~~^~~~[m[K
+[4.256s] [ 86%] [32m[1mLinking CXX executable main[0m
+[4.760s] [100%] Built target main
+[4.819s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[5.172s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[5.212s] -- Install configuration: ""
+[5.214s] -- Execute custom install script
+[5.216s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/main
+[5.217s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/listener
+[5.220s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/robot_controller
+[5.220s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/position_publisher
+[5.221s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/position_reader
+[5.222s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/motor_subscriber
+[5.224s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[5.225s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[5.226s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.sh
+[5.227s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.dsv
+[5.229s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.sh
+[5.230s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.dsv
+[5.231s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.bash
+[5.232s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.sh
+[5.233s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.zsh
+[5.235s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.dsv
+[5.237s] -- Symlinking: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv
+[5.286s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/packages/robot
+[5.287s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig.cmake
+[5.288s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig-version.cmake
+[5.289s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.xml
+[5.297s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot

@@ -1,0 +1,307 @@
+[0.000000] (-) TimerEvent: {}
+[0.001464] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001623] (robot) JobStarted: {'identifier': 'robot'}
+[0.038125] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.042629] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.045429] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', '--', '-j4', '-l4'], 'cwd': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youss', 'SSH_CLIENT': '10.42.0.1 45826 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youss', 'OLDPWD': '/home/youss', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youss', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/youss/Documents/Projet/Autonomouscar/ros_ws/scripts', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '9', 'AMENT_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 45826 10.42.0.59 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099330] (-) TimerEvent: {}
+[0.200096] (-) TimerEvent: {}
+[0.303673] (-) TimerEvent: {}
+[0.351844] (robot) StdoutLine: {'line': b'[ 12%] Built target encoders_subscriber\n'}
+[0.353164] (robot) StdoutLine: {'line': b'[ 43%] Built target main\n'}
+[0.354418] (robot) StdoutLine: {'line': b'[ 56%] Built target robot_controller\n'}
+[0.360848] (robot) StdoutLine: {'line': b'[ 68%] Built target position_publisher\n'}
+[0.403905] (-) TimerEvent: {}
+[0.484610] (robot) StdoutLine: {'line': b'[ 81%] Built target position_reader\n'}
+[0.504122] (-) TimerEvent: {}
+[0.510504] (robot) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o\x1b[0m\n'}
+[0.604324] (-) TimerEvent: {}
+[0.704935] (-) TimerEvent: {}
+[0.805498] (-) TimerEvent: {}
+[0.906100] (-) TimerEvent: {}
+[1.006696] (-) TimerEvent: {}
+[1.107281] (-) TimerEvent: {}
+[1.207885] (-) TimerEvent: {}
+[1.308446] (-) TimerEvent: {}
+[1.409034] (-) TimerEvent: {}
+[1.509633] (-) TimerEvent: {}
+[1.610201] (-) TimerEvent: {}
+[1.710818] (-) TimerEvent: {}
+[1.811383] (-) TimerEvent: {}
+[1.911979] (-) TimerEvent: {}
+[2.012589] (-) TimerEvent: {}
+[2.113186] (-) TimerEvent: {}
+[2.213880] (-) TimerEvent: {}
+[2.314498] (-) TimerEvent: {}
+[2.415169] (-) TimerEvent: {}
+[2.515803] (-) TimerEvent: {}
+[2.616397] (-) TimerEvent: {}
+[2.717076] (-) TimerEvent: {}
+[2.817675] (-) TimerEvent: {}
+[2.918283] (-) TimerEvent: {}
+[3.018986] (-) TimerEvent: {}
+[3.119665] (-) TimerEvent: {}
+[3.220322] (-) TimerEvent: {}
+[3.320966] (-) TimerEvent: {}
+[3.421635] (-) TimerEvent: {}
+[3.522410] (-) TimerEvent: {}
+[3.623158] (-) TimerEvent: {}
+[3.723782] (-) TimerEvent: {}
+[3.824439] (-) TimerEvent: {}
+[3.925100] (-) TimerEvent: {}
+[4.025695] (-) TimerEvent: {}
+[4.126305] (-) TimerEvent: {}
+[4.226977] (-) TimerEvent: {}
+[4.327620] (-) TimerEvent: {}
+[4.428214] (-) TimerEvent: {}
+[4.528890] (-) TimerEvent: {}
+[4.629491] (-) TimerEvent: {}
+[4.730157] (-) TimerEvent: {}
+[4.830832] (-) TimerEvent: {}
+[4.931497] (-) TimerEvent: {}
+[5.032194] (-) TimerEvent: {}
+[5.132854] (-) TimerEvent: {}
+[5.233515] (-) TimerEvent: {}
+[5.334240] (-) TimerEvent: {}
+[5.434939] (-) TimerEvent: {}
+[5.535603] (-) TimerEvent: {}
+[5.636212] (-) TimerEvent: {}
+[5.736881] (-) TimerEvent: {}
+[5.837562] (-) TimerEvent: {}
+[5.938648] (-) TimerEvent: {}
+[6.039261] (-) TimerEvent: {}
+[6.139931] (-) TimerEvent: {}
+[6.240598] (-) TimerEvent: {}
+[6.341199] (-) TimerEvent: {}
+[6.441844] (-) TimerEvent: {}
+[6.542451] (-) TimerEvent: {}
+[6.643122] (-) TimerEvent: {}
+[6.743735] (-) TimerEvent: {}
+[6.844358] (-) TimerEvent: {}
+[6.945023] (-) TimerEvent: {}
+[7.045642] (-) TimerEvent: {}
+[7.146233] (-) TimerEvent: {}
+[7.246890] (-) TimerEvent: {}
+[7.347470] (-) TimerEvent: {}
+[7.448092] (-) TimerEvent: {}
+[7.548668] (-) TimerEvent: {}
+[7.649249] (-) TimerEvent: {}
+[7.749889] (-) TimerEvent: {}
+[7.850469] (-) TimerEvent: {}
+[7.951110] (-) TimerEvent: {}
+[8.051797] (-) TimerEvent: {}
+[8.152404] (-) TimerEvent: {}
+[8.253078] (-) TimerEvent: {}
+[8.353670] (-) TimerEvent: {}
+[8.454283] (-) TimerEvent: {}
+[8.554926] (-) TimerEvent: {}
+[8.655621] (-) TimerEvent: {}
+[8.756256] (-) TimerEvent: {}
+[8.856904] (-) TimerEvent: {}
+[8.957497] (-) TimerEvent: {}
+[9.058133] (-) TimerEvent: {}
+[9.158782] (-) TimerEvent: {}
+[9.259381] (-) TimerEvent: {}
+[9.360075] (-) TimerEvent: {}
+[9.460676] (-) TimerEvent: {}
+[9.561314] (-) TimerEvent: {}
+[9.661960] (-) TimerEvent: {}
+[9.762594] (-) TimerEvent: {}
+[9.863183] (-) TimerEvent: {}
+[9.963848] (-) TimerEvent: {}
+[10.064437] (-) TimerEvent: {}
+[10.165101] (-) TimerEvent: {}
+[10.265749] (-) TimerEvent: {}
+[10.366340] (-) TimerEvent: {}
+[10.467016] (-) TimerEvent: {}
+[10.567659] (-) TimerEvent: {}
+[10.668310] (-) TimerEvent: {}
+[10.768966] (-) TimerEvent: {}
+[10.869635] (-) TimerEvent: {}
+[10.970232] (-) TimerEvent: {}
+[11.070883] (-) TimerEvent: {}
+[11.171475] (-) TimerEvent: {}
+[11.272132] (-) TimerEvent: {}
+[11.329484] (robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19\x1b[m\x1b[K,\n'}
+[11.330982] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25\x1b[m\x1b[K,\n'}
+[11.331410] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[11.331872] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[11.332245] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:1\x1b[m\x1b[K,\n'}
+[11.332688] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:1\x1b[m\x1b[K:\n'}
+[11.333086] (robot) StderrLine: {'line': b'/usr/include/c++/13/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (Motor_subscriber::*)(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const, Motor_subscriber*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.333452] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/functional:859:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (Motor_subscriber::*)(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const, Motor_subscriber*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.333956] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/functional:881:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::\x1b[01;32m\x1b[Kbind\x1b[m\x1b[K(_Func&&, _BoundArgs&& ...) \x1b[35m\x1b[K[with _Func = void (Motor_subscriber::*)(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const; _BoundArgs = {Motor_subscriber*, const std::_Placeholder<1>&}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.334353] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:22:18:\x1b[m\x1b[K   required from here\n'}
+[11.334757] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/functional:847:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for pointer-to-member\n'}
+[11.335125] (robot) StderrLine: {'line': b'  846 |       static_assert(_Varargs::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K\n'}
+[11.335471] (robot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[11.335887] (robot) StderrLine: {'line': b'  847 | \x1b[01;31m\x1b[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1\x1b[m\x1b[K\n'}
+[11.336244] (robot) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.336607] (robot) StderrLine: {'line': b'  848 | \x1b[01;31m\x1b[K                    : sizeof...(_BoundArgs) == _Arity::value + 1\x1b[m\x1b[K,\n'}
+[11.336967] (robot) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.337365] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/functional:847:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(false ? (2 >= (((long unsigned int)std::integral_constant<long unsigned int, 3>::value) + 1)) : (2 == (((long unsigned int)std::integral_constant<long unsigned int, 3>::value) + 1)))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[11.372313] (-) TimerEvent: {}
+[11.472958] (-) TimerEvent: {}
+[11.573627] (-) TimerEvent: {}
+[11.674229] (-) TimerEvent: {}
+[11.774897] (-) TimerEvent: {}
+[11.875507] (-) TimerEvent: {}
+[11.976172] (-) TimerEvent: {}
+[12.076841] (-) TimerEvent: {}
+[12.177442] (-) TimerEvent: {}
+[12.278097] (-) TimerEvent: {}
+[12.378684] (-) TimerEvent: {}
+[12.479275] (-) TimerEvent: {}
+[12.579956] (-) TimerEvent: {}
+[12.680632] (-) TimerEvent: {}
+[12.781230] (-) TimerEvent: {}
+[12.881891] (-) TimerEvent: {}
+[12.982500] (-) TimerEvent: {}
+[13.083152] (-) TimerEvent: {}
+[13.183808] (-) TimerEvent: {}
+[13.284401] (-) TimerEvent: {}
+[13.385084] (-) TimerEvent: {}
+[13.485681] (-) TimerEvent: {}
+[13.586266] (-) TimerEvent: {}
+[13.686922] (-) TimerEvent: {}
+[13.771741] (robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:32\x1b[m\x1b[K,\n'}
+[13.772491] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:29\x1b[m\x1b[K,\n'}
+[13.773033] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.774514] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.775105] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.775491] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[13.775938] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[13.776318] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.776827] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.777244] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K:\n'}
+[13.777696] (robot) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kset\x1b[m\x1b[K(CallbackT) \x1b[35m\x1b[K[with CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.778163] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:93:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::\x1b[01;32m\x1b[Kcreate_subscription_factory\x1b[m\x1b[K(CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<topic_statistics::SubscriptionTopicStatistics>) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.778716] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:121:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeParametersT&, NodeTopicsT&, const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.779148] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:190:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeT&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeT = Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.779736] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.780222] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:19:80:\x1b[m\x1b[K   required from here\n'}
+[13.780597] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:396:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&)>::function(std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.781005] (robot) StderrLine: {'line': b'  396 |     callback_variant_ = \x1b[01;31m\x1b[Kstatic_cast<typename scbth::callback_type>(callback)\x1b[m\x1b[K;\n'}
+[13.781336] (robot) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.781730] (robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/functional:59\x1b[m\x1b[K:\n'}
+[13.782087] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:435:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor, class _Constraints> std::function<_Res(_ArgTypes ...)>::\x1b[01;32m\x1b[Kfunction\x1b[m\x1b[K(_Functor&&) \x1b[35m\x1b[K[with _Constraints = _Functor; _Res = void; _ArgTypes = {const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.782419] (robot) StderrLine: {'line': b'  435 |         \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(_Functor&& __f)\n'}
+[13.782884] (robot) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.783244] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:435:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.783637] (robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:37\x1b[m\x1b[K,\n'}
+[13.784007] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/new_allocator.h:36\x1b[m\x1b[K,\n'}
+[13.784331] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[13.784725] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[13.785079] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:65\x1b[m\x1b[K,\n'}
+[13.785409] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K:\n'}
+[13.785826] (robot) StderrLine: {'line': b'/usr/include/c++/13/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using std::__enable_if_t = typename std::enable_if::type \x1b[35m\x1b[K[with bool _Cond = false; _Tp = void]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.786271] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:353:8:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _ArgTypes> template<class _Cond, class _Tp> using std::function<_Res(_ArgTypes ...)>::_Requires = std::__enable_if_t<_Cond::value, _Tp> \x1b[35m\x1b[K[with _Cond = std::function<void(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&)>::_Callable<std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>&, std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>, std::__invoke_result<std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>&, const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&> >; _Tp = void; _Res = void; _ArgTypes = {const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.786786] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:434:9:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kset\x1b[m\x1b[K(CallbackT) \x1b[35m\x1b[K[with CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.787155] (-) TimerEvent: {}
+[13.787460] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:93:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::\x1b[01;32m\x1b[Kcreate_subscription_factory\x1b[m\x1b[K(CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<topic_statistics::SubscriptionTopicStatistics>) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.788137] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:121:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeParametersT&, NodeTopicsT&, const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.788717] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:190:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeT&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeT = Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.789172] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.789704] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:19:80:\x1b[m\x1b[K   required from here\n'}
+[13.790108] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:116:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.790448] (robot) StderrLine: {'line': b'  116 |     using \x1b[01;31m\x1b[K__enable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[13.790882] (robot) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.791259] (robot) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kset\x1b[m\x1b[K(CallbackT) \x1b[35m\x1b[K[with CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.791795] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:93:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::\x1b[01;32m\x1b[Kcreate_subscription_factory\x1b[m\x1b[K(CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<topic_statistics::SubscriptionTopicStatistics>) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.792193] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:121:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeParametersT&, NodeTopicsT&, const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.792689] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:190:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeT&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeT = Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.793162] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = std::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.793596] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:19:80:\x1b[m\x1b[K   required from here\n'}
+[13.793985] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:404:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::\x1b[01;32m\x1b[Kfunction\x1b[m\x1b[K(std::function<_Res(_ArgTypes ...)>&&) \x1b[35m\x1b[K[with _Res = void; _ArgTypes = {const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.794339] (robot) StderrLine: {'line': b'  404 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(function&& __x) noexcept\n'}
+[13.794782] (robot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.795130] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:404:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&)>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.795554] (robot) StderrLine: {'line': b'  404 |       function(\x1b[01;36m\x1b[Kfunction&& __x\x1b[m\x1b[K) noexcept\n'}
+[13.795944] (robot) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.796264] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:386:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::\x1b[01;32m\x1b[Kfunction\x1b[m\x1b[K(const std::function<_Res(_ArgTypes ...)>&) \x1b[35m\x1b[K[with _Res = void; _ArgTypes = {const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.796683] (robot) StderrLine: {'line': b'  386 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(const function& __x)\n'}
+[13.797044] (robot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.797359] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:386:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<void(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&)>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.797881] (robot) StderrLine: {'line': b'  386 |       function(\x1b[01;36m\x1b[Kconst function& __x\x1b[m\x1b[K)\n'}
+[13.798230] (robot) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.798568] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:375:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::\x1b[01;32m\x1b[Kfunction\x1b[m\x1b[K(std::nullptr_t) \x1b[35m\x1b[K[with _Res = void; _ArgTypes = {const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&}; std::nullptr_t = std::nullptr_t]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.798996] (robot) StderrLine: {'line': b'  375 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(nullptr_t) noexcept\n'}
+[13.799323] (robot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.799702] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:375:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (Motor_subscriber::*(Motor_subscriber*, std::_Placeholder<1>))(const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.800117] (robot) StderrLine: {'line': b'  375 |       function(\x1b[01;36m\x1b[Knullptr_t\x1b[m\x1b[K) noexcept\n'}
+[13.800431] (robot) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.800818] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:368:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::\x1b[01;32m\x1b[Kfunction\x1b[m\x1b[K() \x1b[35m\x1b[K[with _Res = void; _ArgTypes = {const std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > >&, const unsigned int&, const unsigned int&}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.801163] (robot) StderrLine: {'line': b'  368 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K() noexcept\n'}
+[13.801475] (robot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.801877] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:368:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[13.887371] (-) TimerEvent: {}
+[13.988022] (-) TimerEvent: {}
+[14.088648] (-) TimerEvent: {}
+[14.189232] (-) TimerEvent: {}
+[14.289869] (-) TimerEvent: {}
+[14.390579] (-) TimerEvent: {}
+[14.491188] (-) TimerEvent: {}
+[14.591836] (-) TimerEvent: {}
+[14.692440] (-) TimerEvent: {}
+[14.793100] (-) TimerEvent: {}
+[14.893684] (-) TimerEvent: {}
+[14.994268] (-) TimerEvent: {}
+[15.094955] (-) TimerEvent: {}
+[15.195593] (-) TimerEvent: {}
+[15.296196] (-) TimerEvent: {}
+[15.396839] (-) TimerEvent: {}
+[15.497456] (-) TimerEvent: {}
+[15.598108] (-) TimerEvent: {}
+[15.698692] (-) TimerEvent: {}
+[15.799280] (-) TimerEvent: {}
+[15.899927] (-) TimerEvent: {}
+[16.000571] (-) TimerEvent: {}
+[16.101170] (-) TimerEvent: {}
+[16.201801] (-) TimerEvent: {}
+[16.302406] (-) TimerEvent: {}
+[16.403098] (-) TimerEvent: {}
+[16.503777] (-) TimerEvent: {}
+[16.604590] (-) TimerEvent: {}
+[16.705198] (-) TimerEvent: {}
+[16.805870] (-) TimerEvent: {}
+[16.906473] (-) TimerEvent: {}
+[17.007137] (-) TimerEvent: {}
+[17.107767] (-) TimerEvent: {}
+[17.208382] (-) TimerEvent: {}
+[17.309088] (-) TimerEvent: {}
+[17.409771] (-) TimerEvent: {}
+[17.510403] (-) TimerEvent: {}
+[17.611076] (-) TimerEvent: {}
+[17.711684] (-) TimerEvent: {}
+[17.812269] (-) TimerEvent: {}
+[17.912905] (-) TimerEvent: {}
+[18.013513] (-) TimerEvent: {}
+[18.114154] (-) TimerEvent: {}
+[18.214817] (-) TimerEvent: {}
+[18.315411] (-) TimerEvent: {}
+[18.416061] (-) TimerEvent: {}
+[18.516651] (-) TimerEvent: {}
+[18.617284] (-) TimerEvent: {}
+[18.718007] (-) TimerEvent: {}
+[18.818874] (-) TimerEvent: {}
+[18.919460] (-) TimerEvent: {}
+[19.020076] (-) TimerEvent: {}
+[19.120731] (-) TimerEvent: {}
+[19.221640] (-) TimerEvent: {}
+[19.322320] (-) TimerEvent: {}
+[19.423013] (-) TimerEvent: {}
+[19.523656] (-) TimerEvent: {}
+[19.624272] (-) TimerEvent: {}
+[19.724933] (-) TimerEvent: {}
+[19.825613] (-) TimerEvent: {}
+[19.926287] (-) TimerEvent: {}
+[20.000467] (robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1\n'}
+[20.001375] (robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2\n'}
+[20.002275] (robot) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.009871] (robot) CommandEnded: {'returncode': 2}
+[20.026582] (-) TimerEvent: {}
+[20.127317] (-) TimerEvent: {}
+[20.228292] (-) TimerEvent: {}
+[20.331182] (-) TimerEvent: {}
+[20.344392] (robot) JobEnded: {'identifier': 'robot', 'rc': 2}
+[20.356306] (-) EventReactorShutdown: {}

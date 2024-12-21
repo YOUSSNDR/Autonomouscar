@@ -1,0 +1,58 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.174s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.143s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.295s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.335s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.382s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.437s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.668s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.673s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.947s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.166s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.215s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.268s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.837s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.838s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.838s] -- Configured cppcheck exclude dirs and/or files: 
+[2.841s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.842s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.847s] -- Added test 'lint_cmake' to check CMake code style
+[2.850s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.866s] -- Added test 'uncrustify' to check C / C++ code style
+[2.866s] -- Configured uncrustify additional arguments: 
+[2.869s] -- Added test 'xmllint' to check XML markup files
+[2.898s] -- Configuring done (2.7s)
+[3.070s] -- Generating done (0.1s)
+[3.088s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.323s] [ 11%] Built target encoders_subscriber
+[3.331s] [ 27%] Built target encoders_publisher
+[3.342s] [ 55%] Built target main
+[3.352s] [ 66%] Built target robot_controller
+[3.473s] [ 77%] Built target position_publisher
+[3.485s] [ 83%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[3.499s] [ 94%] Built target position_reader
+[14.433s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In constructor ‘[01m[KMotor_subscriber::[01;32m[KMotor_subscriber[m[K()[m[K’:
+[14.434s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:49:16:[m[K [01;31m[Kerror: [m[Kreturning a value from a constructor
+[14.434s]    49 |         return [01;31m[K-1[m[K;
+[14.435s]       |                [01;31m[K^~[m[K
+[14.522s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kbool Motor_subscriber::[01;32m[Kset_motor_duty_cycle[m[K(const unsigned int&, const unsigned int&) const[m[K’:
+[14.523s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:199:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[14.524s]   199 | [01;35m[K}[m[K
+[14.524s]       | [01;35m[K^[m[K
+[14.544s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_left_motor_and_right_motor_duty_cycle[m[K(const geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr&)[m[K’:
+[14.545s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:207:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpi[m[K’ was not declared in this scope; did you mean ‘[01m[K_pi[m[K’?
+[14.545s]   207 |     set_PWM_dutycycle([01;31m[Kpi[m[K, M1A_GPIO, left_motor_duty_cycle);
+[14.546s]       |                       [01;31m[K^~[m[K
+[14.546s]       |                       [32m[K_pi[m[K
+[14.566s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:207:27:[m[K [01;31m[Kerror: [m[K‘[01m[KM1A_GPIO[m[K’ was not declared in this scope; did you mean ‘[01m[K_M1A_GPIO[m[K’?
+[14.567s]   207 |     set_PWM_dutycycle(pi, [01;31m[KM1A_GPIO[m[K, left_motor_duty_cycle);
+[14.567s]       |                           [01;31m[K^~~~~~~~[m[K
+[14.568s]       |                           [32m[K_M1A_GPIO[m[K
+[14.588s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:208:27:[m[K [01;31m[Kerror: [m[K‘[01m[KM1B_GPIO[m[K’ was not declared in this scope; did you mean ‘[01m[K_M1B_GPIO[m[K’?
+[14.589s]   208 |     set_PWM_dutycycle(pi, [01;31m[KM1B_GPIO[m[K, right_motor_duty_cycle);
+[14.589s]       |                           [01;31m[K^~~~~~~~[m[K
+[14.590s]       |                           [32m[K_M1B_GPIO[m[K
+[23.411s] gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1
+[23.412s] gmake[1]: *** [CMakeFiles/Makefile2:279: CMakeFiles/motor_subscriber.dir/all] Error 2
+[23.413s] gmake: *** [Makefile:146: all] Error 2
+[23.421s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

@@ -1,0 +1,10 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:62:52:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst unsigned int[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’ to binary ‘[01m[Koperator<<[m[K’
+   62 |     cout << "Channel A GPIO : %d", [01;31m[K_channel_A_gpio << endl[m[K;
+      |                                    [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:63:52:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst unsigned int[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’ to binary ‘[01m[Koperator<<[m[K’
+   63 |     cout << "Channel B GPIO : %d", [01;31m[K_channel_B_gpio << endl[m[K;
+      |                                    [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

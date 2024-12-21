@@ -1,0 +1,14 @@
+[ 13%] Built target encoders_subscriber
+[ 46%] Built target main
+[ 60%] Built target robot_controller
+[ 73%] Built target position_publisher
+[ 86%] Built target position_reader
+[ 93%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[100%] [32m[1mLinking CXX executable motor_subscriber[0m
+/usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o: in function `Motor_subscriber::set_motors_duty_cycle(std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > > const&, Motor&, Motor&) const':
+motor_subscriber.cpp:(.text+0x11ac): undefined reference to `Motor::set_duty_cycle(unsigned int const&)'
+/usr/bin/ld: motor_subscriber.cpp:(.text+0x11bc): undefined reference to `Motor::set_duty_cycle(unsigned int const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:179: motor_subscriber] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

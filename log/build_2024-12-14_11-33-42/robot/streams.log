@@ -1,0 +1,20 @@
+[0.080s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.380s] [  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[0.384s] [ 20%] Built target listener
+[0.388s] [ 33%] Built target robot_controller
+[0.389s] [ 46%] Built target position_publisher
+[0.522s] [ 60%] Built target motor_subscriber
+[0.524s] [ 73%] Built target position_reader
+[2.884s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’:
+[2.885s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:192:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoders::count_number_of_changes()[m[K’
+[2.885s]   192 |     [01;31m[Kcount_number_of_changes()[m[K;
+[2.885s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.886s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:22[m[K:
+[2.886s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:70:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K(const unsigned int&)[m[K’
+[2.887s]    70 |         void [01;36m[Kcount_number_of_changes[m[K(const unsigned int &channel_gpio);
+[2.887s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.887s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:70:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[3.175s] gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+[3.176s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+[3.177s] gmake: *** [Makefile:146: all] Error 2
+[3.184s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

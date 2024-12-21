@@ -1,0 +1,76 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In function ‘[01m[Kbool[01;32m[K init_pwm[m[K(const unsigned int&, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:46:20:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+   46 |     if (duty_cycle < MIN_DUTY_CYCLE)
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:48:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcerr[m[K’ was not declared in this scope
+   48 |         [01;31m[Kcerr[m[K << "Error : duty_cycle has been set lower than 0 - encoders.cpp, init_pwm function" << endl;
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:10:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cerr[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+    9 | #include <pigpio.h>
+  +++ |+[32m[K#include <iostream>[m[K
+   10 | 
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:48:101:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   48 |         cerr << "Error : duty_cycle has been set lower than 0 - encoders.cpp, init_pwm function" << [01;31m[Kendl[m[K;
+      |                                                                                                     [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:10:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+    9 | #include <pigpio.h>
+  +++ |+[32m[K#include <ostream>[m[K
+   10 | 
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:52:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcerr[m[K’ was not declared in this scope
+   52 |         [01;31m[Kcerr[m[K << "Error : duty_cycle has been set higher than 255 - encoders.cpp, init_pwm function" << endl;
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:52:9:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cerr[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:52:104:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   52 |         cerr << "Error : duty_cycle has been set higher than 255 - encoders.cpp, init_pwm function" << [01;31m[Kendl[m[K;
+      |                                                                                                        [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:52:104:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcerr[m[K’ was not declared in this scope
+   58 |         [01;31m[Kcerr[m[K << "PWM Error on gpio " << gpio << " - motor.cpp, init_pwm function" << endl;
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:58:9:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cerr[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:58:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   58 |         cerr << "PWM Error on gpio " << gpio << " - motor.cpp, init_pwm function" << [01;31m[Kendl[m[K;
+      |                                                                                      [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:58:86:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+   61 |     [01;31m[Kcout[m[K << "PWM Success on gpio " << gpio << endl;
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:61:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:61:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   61 |     cout << "PWM Success on gpio " << gpio << [01;31m[Kendl[m[K;
+      |                                               [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:61:47:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In function ‘[01m[Kbool[01;32m[K configure_gpio_as_output[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:80:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcerr[m[K’ was not declared in this scope
+   80 |                 [01;31m[Kcerr[m[K << gpio << "is a bad gpio pin - encoders.cpp, configure_gpio_as_output function" << endl;
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:80:17:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cerr[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:80:106:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   80 |                 cerr << gpio << "is a bad gpio pin - encoders.cpp, configure_gpio_as_output function" << [01;31m[Kendl[m[K;
+      |                                                                                                          [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:80:106:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:87:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+   87 |                 [01;31m[Kcout[m[K << "Result = " << gpio_result << endl;
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:87:17:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Motor::[01;32m[Kset_duty_cycle[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:104:25:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+  104 |     else if (duty_cycle < MIN_DUTY_CYCLE)
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K At global scope:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:69:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool[01;32m[K configure_gpio_as_output[m[K(const unsigned int&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   69 | static bool [01;35m[Kconfigure_gpio_as_output[m[K(const unsigned int &gpio)
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:39:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool[01;32m[K init_pwm[m[K(const unsigned int&, const unsigned int&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   39 | static bool [01;35m[Kinit_pwm[m[K(const unsigned int &gpio,
+      |             [01;35m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/motor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/encoders.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(Motor&, Motor&) const[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:25:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 | void Motor_subscriber::set_motors_duty_cycle([01;35m[KMotor &left_motor[m[K, Motor &right_motor) const
+      |                                              [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:25:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 | void Motor_subscriber::set_motors_duty_cycle(Motor &left_motor, [01;35m[KMotor &right_motor[m[K) const
+      |                                                                 [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+gmake: *** [Makefile:146: all] Error 2

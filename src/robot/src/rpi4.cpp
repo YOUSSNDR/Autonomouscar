@@ -1,12 +1,3 @@
-#include <iostream>
-
-/*
-    Library for gpio control,
-    pigpio must be installed
-*/
-#include <pigpio.h>
-
-
 /*
     The following headers are found in robot/include/robot/
 */
@@ -28,14 +19,14 @@ bool RPI4::init()
     where total_path is the path to the compiled file.
     That solution has been found here : https://forums.raspberrypi.com/viewtopic.php?t=180784
     
-    We created a small script called make_encoders_work.sh (make_rpi_work.sh could be a better name) to do that.
+    We created a small script called "make_rpi4_work.sh" to do that.
     It is found in the ros_ws/scripts directory.
     We must run that script after using <colcon build>, otherwise the rpi will fail to initialize and the programm will output an error.
     */
 
 
     using namespace std;
-
+    
     cout << "Using pigpio version : " << gpioVersion() << endl;
 
     //Disable builtin pigpio signal handling
@@ -45,7 +36,8 @@ bool RPI4::init()
 
     //Initialize pigpio library
     cout << "Initializing pigpio library" << endl;
-
+    
+    
     int gpio_result = 0;
     gpio_result = gpioInitialise();
     if(gpio_result == PI_INIT_FAILED)
@@ -55,6 +47,7 @@ bool RPI4::init()
     }
 
     cout << "PI INIT SUCCESS" << endl;
+    
     return true;
 
 }

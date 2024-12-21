@@ -1,0 +1,27 @@
+[0.053s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.358s] [ 27%] Built target encoders
+[0.363s] [ 45%] Built target robot_controller
+[0.364s] [ 63%] Built target position_publisher
+[0.384s] [ 72%] [32mBuilding CXX object CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o[0m
+[0.512s] [ 81%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[13.377s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:[m[K In constructor ‘[01m[KEncoders_subscriber::[01;32m[KEncoders_subscriber[m[K()[m[K’:
+[13.378s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:11:34:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_name[m[K’ was not declared in this scope; did you mean ‘[01m[Knode_base_[m[K’?
+[13.379s]    11 |                             Node([01;31m[Knode_name[m[K)
+[13.379s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[13.380s]       |                                  [32m[Knode_base_[m[K
+[13.551s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(Motor&, Motor&) const[m[K’:
+[13.551s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:24:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.552s]    24 | duty_cycle([01;35m[KMotor &left_motor[m[K, Motor &right_motor) const
+[13.552s]       |            [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[13.553s] 
+[13.554s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:24:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.554s]    24 | eft_motor, [01;35m[KMotor &right_motor[m[K) const
+[13.555s]       |            [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[13.555s] 
+[23.735s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o] Error 1
+[23.736s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/listener.dir/all] Error 2
+[23.736s] gmake[1]: *** Waiting for unfinished jobs....
+[38.030s] [ 90%] [32m[1mLinking CXX executable motor_subscriber[0m
+[39.589s] [ 90%] Built target motor_subscriber
+[39.596s] gmake: *** [Makefile:146: all] Error 2
+[39.606s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

@@ -198,30 +198,43 @@ robot_uninstall/fast:
 .PHONY : robot_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named encoders
+# Target rules for targets named main
 
 # Build rule for target.
-encoders: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 encoders
-.PHONY : encoders
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-encoders/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/build
-.PHONY : encoders/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
-# Target rules for targets named listener
+# Target rules for targets named encoders_subscriber
 
 # Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
+encoders_subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 encoders_subscriber
+.PHONY : encoders_subscriber
 
 # fast build rule for target.
-listener/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-.PHONY : listener/fast
+encoders_subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_subscriber.dir/build.make CMakeFiles/encoders_subscriber.dir/build
+.PHONY : encoders_subscriber/fast
+
+#=============================================================================
+# Target rules for targets named encoders_publisher
+
+# Build rule for target.
+encoders_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 encoders_publisher
+.PHONY : encoders_publisher
+
+# fast build rule for target.
+encoders_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_publisher.dir/build.make CMakeFiles/encoders_publisher.dir/build
+.PHONY : encoders_publisher/fast
 
 #=============================================================================
 # Target rules for targets named robot_controller
@@ -249,12 +262,39 @@ position_publisher/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/build
 .PHONY : position_publisher/fast
 
+#=============================================================================
+# Target rules for targets named motor_subscriber
+
+# Build rule for target.
+motor_subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motor_subscriber
+.PHONY : motor_subscriber
+
+# fast build rule for target.
+motor_subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_subscriber.dir/build.make CMakeFiles/motor_subscriber.dir/build
+.PHONY : motor_subscriber/fast
+
+#=============================================================================
+# Target rules for targets named position_reader
+
+# Build rule for target.
+position_reader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 position_reader
+.PHONY : position_reader
+
+# fast build rule for target.
+position_reader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_reader.dir/build.make CMakeFiles/position_reader.dir/build
+.PHONY : position_reader/fast
+
 src/DWM1001_reader.o: src/DWM1001_reader.cpp.o
 .PHONY : src/DWM1001_reader.o
 
 # target to build an object file
 src/DWM1001_reader.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/src/DWM1001_reader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_reader.dir/build.make CMakeFiles/position_reader.dir/src/DWM1001_reader.cpp.o
 .PHONY : src/DWM1001_reader.cpp.o
 
 src/DWM1001_reader.i: src/DWM1001_reader.cpp.i
@@ -263,6 +303,7 @@ src/DWM1001_reader.i: src/DWM1001_reader.cpp.i
 # target to preprocess a source file
 src/DWM1001_reader.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/src/DWM1001_reader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_reader.dir/build.make CMakeFiles/position_reader.dir/src/DWM1001_reader.cpp.i
 .PHONY : src/DWM1001_reader.cpp.i
 
 src/DWM1001_reader.s: src/DWM1001_reader.cpp.s
@@ -271,6 +312,7 @@ src/DWM1001_reader.s: src/DWM1001_reader.cpp.s
 # target to generate assembly for a file
 src/DWM1001_reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_publisher.dir/build.make CMakeFiles/position_publisher.dir/src/DWM1001_reader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_reader.dir/build.make CMakeFiles/position_reader.dir/src/DWM1001_reader.cpp.s
 .PHONY : src/DWM1001_reader.cpp.s
 
 src/encoders.o: src/encoders.cpp.o
@@ -278,7 +320,8 @@ src/encoders.o: src/encoders.cpp.o
 
 # target to build an object file
 src/encoders.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/encoders.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_publisher.dir/build.make CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o
 .PHONY : src/encoders.cpp.o
 
 src/encoders.i: src/encoders.cpp.i
@@ -286,7 +329,8 @@ src/encoders.i: src/encoders.cpp.i
 
 # target to preprocess a source file
 src/encoders.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/encoders.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_publisher.dir/build.make CMakeFiles/encoders_publisher.dir/src/encoders.cpp.i
 .PHONY : src/encoders.cpp.i
 
 src/encoders.s: src/encoders.cpp.s
@@ -294,7 +338,8 @@ src/encoders.s: src/encoders.cpp.s
 
 # target to generate assembly for a file
 src/encoders.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/encoders.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_publisher.dir/build.make CMakeFiles/encoders_publisher.dir/src/encoders.cpp.s
 .PHONY : src/encoders.cpp.s
 
 src/encoders_publisher.o: src/encoders_publisher.cpp.o
@@ -302,7 +347,7 @@ src/encoders_publisher.o: src/encoders_publisher.cpp.o
 
 # target to build an object file
 src/encoders_publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_publisher.dir/build.make CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o
 .PHONY : src/encoders_publisher.cpp.o
 
 src/encoders_publisher.i: src/encoders_publisher.cpp.i
@@ -310,7 +355,7 @@ src/encoders_publisher.i: src/encoders_publisher.cpp.i
 
 # target to preprocess a source file
 src/encoders_publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders_publisher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_publisher.dir/build.make CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.i
 .PHONY : src/encoders_publisher.cpp.i
 
 src/encoders_publisher.s: src/encoders_publisher.cpp.s
@@ -318,7 +363,7 @@ src/encoders_publisher.s: src/encoders_publisher.cpp.s
 
 # target to generate assembly for a file
 src/encoders_publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders_publisher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_publisher.dir/build.make CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.s
 .PHONY : src/encoders_publisher.cpp.s
 
 src/encoders_subscriber.o: src/encoders_subscriber.cpp.o
@@ -326,7 +371,7 @@ src/encoders_subscriber.o: src/encoders_subscriber.cpp.o
 
 # target to build an object file
 src/encoders_subscriber.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_subscriber.dir/build.make CMakeFiles/encoders_subscriber.dir/src/encoders_subscriber.cpp.o
 .PHONY : src/encoders_subscriber.cpp.o
 
 src/encoders_subscriber.i: src/encoders_subscriber.cpp.i
@@ -334,7 +379,7 @@ src/encoders_subscriber.i: src/encoders_subscriber.cpp.i
 
 # target to preprocess a source file
 src/encoders_subscriber.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/encoders_subscriber.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_subscriber.dir/build.make CMakeFiles/encoders_subscriber.dir/src/encoders_subscriber.cpp.i
 .PHONY : src/encoders_subscriber.cpp.i
 
 src/encoders_subscriber.s: src/encoders_subscriber.cpp.s
@@ -342,8 +387,80 @@ src/encoders_subscriber.s: src/encoders_subscriber.cpp.s
 
 # target to generate assembly for a file
 src/encoders_subscriber.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/encoders_subscriber.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoders_subscriber.dir/build.make CMakeFiles/encoders_subscriber.dir/src/encoders_subscriber.cpp.s
 .PHONY : src/encoders_subscriber.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/motor.o: src/motor.cpp.o
+.PHONY : src/motor.o
+
+# target to build an object file
+src/motor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/motor.cpp.o
+.PHONY : src/motor.cpp.o
+
+src/motor.i: src/motor.cpp.i
+.PHONY : src/motor.i
+
+# target to preprocess a source file
+src/motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/motor.cpp.i
+.PHONY : src/motor.cpp.i
+
+src/motor.s: src/motor.cpp.s
+.PHONY : src/motor.s
+
+# target to generate assembly for a file
+src/motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/motor.cpp.s
+.PHONY : src/motor.cpp.s
+
+src/motor_subscriber.o: src/motor_subscriber.cpp.o
+.PHONY : src/motor_subscriber.o
+
+# target to build an object file
+src/motor_subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_subscriber.dir/build.make CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o
+.PHONY : src/motor_subscriber.cpp.o
+
+src/motor_subscriber.i: src/motor_subscriber.cpp.i
+.PHONY : src/motor_subscriber.i
+
+# target to preprocess a source file
+src/motor_subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_subscriber.dir/build.make CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.i
+.PHONY : src/motor_subscriber.cpp.i
+
+src/motor_subscriber.s: src/motor_subscriber.cpp.s
+.PHONY : src/motor_subscriber.s
+
+# target to generate assembly for a file
+src/motor_subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_subscriber.dir/build.make CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.s
+.PHONY : src/motor_subscriber.cpp.s
 
 src/robot_controller.o: src/robot_controller.cpp.o
 .PHONY : src/robot_controller.o
@@ -369,6 +486,30 @@ src/robot_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/robot_controller.cpp.s
 .PHONY : src/robot_controller.cpp.s
 
+src/rpi4.o: src/rpi4.cpp.o
+.PHONY : src/rpi4.o
+
+# target to build an object file
+src/rpi4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rpi4.cpp.o
+.PHONY : src/rpi4.cpp.o
+
+src/rpi4.i: src/rpi4.cpp.i
+.PHONY : src/rpi4.i
+
+# target to preprocess a source file
+src/rpi4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rpi4.cpp.i
+.PHONY : src/rpi4.cpp.i
+
+src/rpi4.s: src/rpi4.cpp.s
+.PHONY : src/rpi4.s
+
+# target to generate assembly for a file
+src/rpi4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rpi4.cpp.s
+.PHONY : src/rpi4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -384,9 +525,12 @@ help:
 	@echo "... test"
 	@echo "... robot_uninstall"
 	@echo "... uninstall"
-	@echo "... encoders"
-	@echo "... listener"
+	@echo "... encoders_publisher"
+	@echo "... encoders_subscriber"
+	@echo "... main"
+	@echo "... motor_subscriber"
 	@echo "... position_publisher"
+	@echo "... position_reader"
 	@echo "... robot_controller"
 	@echo "... src/DWM1001_reader.o"
 	@echo "... src/DWM1001_reader.i"
@@ -400,9 +544,21 @@ help:
 	@echo "... src/encoders_subscriber.o"
 	@echo "... src/encoders_subscriber.i"
 	@echo "... src/encoders_subscriber.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/motor.o"
+	@echo "... src/motor.i"
+	@echo "... src/motor.s"
+	@echo "... src/motor_subscriber.o"
+	@echo "... src/motor_subscriber.i"
+	@echo "... src/motor_subscriber.s"
 	@echo "... src/robot_controller.o"
 	@echo "... src/robot_controller.i"
 	@echo "... src/robot_controller.s"
+	@echo "... src/rpi4.o"
+	@echo "... src/rpi4.i"
+	@echo "... src/rpi4.s"
 .PHONY : help
 
 

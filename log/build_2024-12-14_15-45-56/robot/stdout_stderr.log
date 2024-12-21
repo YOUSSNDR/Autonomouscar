@@ -1,0 +1,39 @@
+[  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[ 20%] Built target listener
+[ 33%] Built target position_publisher
+[ 46%] Built target robot_controller
+[ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[ 66%] Built target motor_subscriber
+[ 80%] Built target position_reader
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:92:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void Encoders::[01;32m[Kcompute_encoder_rps_handler[m[K(Encoders&)[m[K’ is private within this context
+   92 |     std::thread encoder_A_thread(Encoders::[01;31m[Kcompute_encoder_rps_handler[m[K, std::ref(encoder_A));
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:19[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:74:21:[m[K [01;36m[Knote: [m[Kdeclared private here
+   74 |         static void [01;36m[Kcompute_encoder_rps_handler[m[K(Encoders &encoder);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:93:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void Encoders::[01;32m[Kcompute_encoder_rps_handler[m[K(Encoders&)[m[K’ is private within this context
+   93 |     std::thread encoder_B_thread(Encoders::[01;31m[Kcompute_encoder_rps_handler[m[K, std::ref(encoder_B));
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:74:21:[m[K [01;36m[Knote: [m[Kdeclared private here
+   74 |         static void [01;36m[Kcompute_encoder_rps_handler[m[K(Encoders &encoder);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:99:57:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const Encoders&)[m[K’
+   99 |     auto count_A = std::async(std::launch::async, [01;31m[Kmy_fct(M1A_CHANNEL, encoder_A)[m[K);
+      |                                                   [01;31m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;36m[Knote: [m[K‘[01m[KEncoders::[01;32m[KEncoders[m[K(const Encoders&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+    8 | struct [01;36m[KEncoders[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:8:8:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::thread::[01;32m[Kthread[m[K(const std::thread&)[m[K’
+In file included from [01m[K/usr/include/c++/13/thread:45[m[K,
+                 from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:8[m[K:
+[01m[K/usr/include/c++/13/bits/std_thread.h:176:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  176 |     [01;36m[Kthread[m[K(const thread&) = delete;
+      |     [01;36m[K^~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:95:19:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kmain()::<lambda(unsigned int, Encoders)>[m[K’
+   95 |     auto my_fct = [01;36m[K[[m[K](unsigned int channel_gpio, Encoders encoder)
+      |                   [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

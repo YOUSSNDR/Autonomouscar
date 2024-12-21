@@ -1,0 +1,51 @@
+[  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[ 20%] Built target listener
+[ 33%] Built target robot_controller
+[ 46%] Built target position_publisher
+[ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[ 66%] Built target motor_subscriber
+[ 80%] Built target position_reader
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:19[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksyd[m[K’ does not name a type
+   25 |         [01;31m[Ksyd[m[K::string _encoder_name = "";
+      |         [01;31m[K^~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:23[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksyd[m[K’ does not name a type
+   25 |         [01;31m[Ksyd[m[K::string _encoder_name = "";
+      |         [01;31m[K^~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const std::string&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:52:18:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KEncoders[m[K’ does not have any field named ‘[01m[K_encoder_name[m[K’
+   52 |                 :[01;31m[K_encoder_name[m[K(encoder_name)
+      |                  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:53:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K_channel_A_gpio[m[K’
+   53 |                 [01;31m[K_channel_A_gpio[m[K(channel_A_gpio),
+      |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:49:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kchannel_A_gpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | Encoders::Encoders([01;35m[Kconst unsigned int &channel_A_gpio[m[K,
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:50:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kchannel_B_gpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   50 |                 [01;35m[Kconst unsigned int &channel_B_gpio[m[K,
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K At global scope:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:53:32:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+   53 |                 _channel_A_gpio[01;31m[K([m[Kchannel_A_gpio),
+      |                                [01;31m[K^[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_encoder_rps[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:212:13:[m[K [01;31m[Kerror: [m[K‘[01m[K_encoder_name[m[K’ was not declared in this scope
+  212 |     cout << [01;31m[K_encoder_name[m[K << " on channel A rps (revolutions per second): " << encoder_number_of_revolutions_per_second_A << endl;
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Kcount_number_of_changes[m[K(int, int, uint32_t)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:270:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  270 | void Encoders::count_number_of_changes([01;35m[Kint gpio[m[K, int level, uint32_t tick)
+      |                                        [01;35m[K~~~~^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:270:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  270 | void Encoders::count_number_of_changes(int gpio, [01;35m[Kint level[m[K, uint32_t tick)
+      |                                                  [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:270:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktick[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  270 | void Encoders::count_number_of_changes(int gpio, int level, [01;35m[Kuint32_t tick[m[K)
+      |                                                             [01;35m[K~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

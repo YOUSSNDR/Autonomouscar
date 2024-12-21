@@ -1,0 +1,20 @@
+shared_parameters:
+  ros_parameters:
+    WHEEL_RADIUS: 0.034 #in meters
+    MIN_LINEAR_X: 0 #in m/s
+    MAX_LINEAR_X: 0.7 #in m/s
+    MAX_DUTY_CYCLE: 255 #8-bit 
+    REAR_AXIS_LENGTH: 0.3 #m
+    
+    #rpi4 pinout
+    #left motor
+    M1A_GPIO: 17
+    M1B_GPIO: 18
+
+    #right motor
+    M2A_GPIO: 23
+    M2B_GPIO: 24
+
+motor_subscriber:
+  ros_parameters:
+  <<: *shared_parameters

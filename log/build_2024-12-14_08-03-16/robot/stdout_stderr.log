@@ -1,0 +1,22 @@
+[ 30%] Built target position_publisher
+[ 30%] Built target robot_controller
+[ 46%] Built target listener
+[ 53%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/motor.cpp.o[0m
+[ 69%] Built target motor_subscriber
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In member function ‘[01m[Kbool Motor::[01;32m[Kinit_pwm[m[K(const unsigned int&, const unsigned int&) const[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:47:20:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+   47 |     if (duty_cycle < MIN_DUTY_CYCLE)
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Motor::[01;32m[Kset_duty_cycle[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:105:25:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+  105 |     else if (duty_cycle < MIN_DUTY_CYCLE)
+[ 76%] [32m[1mLinking CXX executable encoders[0m
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o: in function `main':
+encoders_publisher.cpp:(.text+0x698): multiple definition of `main'; CMakeFiles/encoders.dir/src/main.cpp.o:main.cpp:(.text+0x60): first defined here
+/usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `main':
+main.cpp:(.text+0x9c): undefined reference to `RPI4::init()'
+/usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `__static_initialization_and_destruction_0()':
+main.cpp:(.text+0x298): undefined reference to `RPI4::RPI4()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:229: encoders] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

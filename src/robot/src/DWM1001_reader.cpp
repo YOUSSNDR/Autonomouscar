@@ -18,9 +18,9 @@
 */
 #include "robot/DWM1001_reader.h"
 
-/*
-    The purpose of this code is to read the transmitted data from the Raspberry Pico W using Wifi.
-    Transmitted data should be (x,y) coordinates relative to the robot.
+/**
+ * @brief The purpose of this code is to read the transmitted data from the Raspberry Pico W using Wifi.
+ * Transmitted data should be (x,y) coordinates relative to the robot.
 */
 
 DWM1001_reader::DWM1001_reader(): Node(NODE_NAME)
@@ -59,6 +59,10 @@ DWM1001_reader::DWM1001_reader(): Node(NODE_NAME)
 
 }
 
+/**
+ * @brief Dummy constructor for quick testing
+*/
+
 DWM1001_reader::DWM1001_reader(const bool &dummy) : Node(NODE_NAME)
 {    
     using namespace std::chrono_literals;
@@ -89,6 +93,9 @@ DWM1001_reader::DWM1001_reader(const bool &dummy) : Node(NODE_NAME)
     }
 }
 
+/**
+ * @brief Read the data coming from the raspberry pico w and store it in _readings
+*/
 void DWM1001_reader::read_data()
 {
     while (fgets(_buffer, sizeof(_buffer), _pipe) != nullptr) 
@@ -99,9 +106,12 @@ void DWM1001_reader::read_data()
     fclose(_pipe);   
 }
 
+
+/**
+ * @brief Extract the x-component from the DWM1001 readings
+*/
 void DWM1001_reader::compute_x_from_readings()
 {
-    //Extract the x-component from the DWM1001 readings
     
     size_t pos = _readings.find(":");
     std::string sub_string = _readings.substr(pos+1);
@@ -110,9 +120,11 @@ void DWM1001_reader::compute_x_from_readings()
     std::cout << "x = " << _x << std::endl;
 }
 
+/**
+ * @brief Extract the y-component from the DWM1001 readings
+*/
 void DWM1001_reader::compute_y_from_readings()
 {
-    //Extract the y-component from the DWM1001 readings
 
     size_t pos = _readings.find(":");
     std::string sub_string = _readings.substr(pos + 1);
@@ -121,30 +133,41 @@ void DWM1001_reader::compute_y_from_readings()
     std::cout << "y = " << _y << std::endl;
 }
 
-
+/**
+ * @brief Set _x to the value x
+ * Mainly used for testing
+*/
 void DWM1001_reader::set_x(const double &x)
 {
     _x = x;
 }
+
+/**
+ * @brief Set _y to the value y
+ * Mainly used for testing
+*/
 
 void DWM1001_reader::set_y(const double &y)
 {
     _y = y;
 }
 
+/**
+ * @brief Update the coordinates
+ * Supposing we are in 2D, z = 0
+*/
+
 void DWM1001_reader::update_point()
 {
-    /*
-        Supposing we are in 2D.
-        Thus z = 0
-    */
     _point.x = _x;
     _point.y = _y;
     _point.z = 0;
 
     
 }
-//Custom exceptions for the DWM1001 module
+/**
+ * @brief Custom exceptions for the DWM1001 module
+*/
 
 DWM1001_Initialization_Exception::DWM1001_Initialization_Exception(const std::string &error_message)
 {
@@ -165,4 +188,5 @@ int main(int argc, char *argv[])
     rclcpp::shutdown();
     return 0;
 }
+
 

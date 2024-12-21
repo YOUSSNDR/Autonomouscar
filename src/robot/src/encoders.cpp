@@ -1,54 +1,43 @@
-#include <iostream>
-#include <signal.h>
-#include <csignal>
-#include <thread>
-#include <chrono>
-#include <functional>
-#include <unistd.h>
-#include <errno.h>
-#include <stdio.h>
-#include <string.h>
-
-
 /*
-    Library for gpio control
-    pigpio must be installed
-*/
-#include <pigpio.h>
-
-/*
-    The following headers are found in robot/include/robot/
+    The following header is found in robot/include/robot/
 */
 #include "robot/encoders.h"
+
 
 
 //This line is used/needed because of the callbacks and handlers.
 Encoders* Encoders::instance = nullptr;
 
-
-Encoders::Encoders()
 /*
-    Dummy constructor for quick testing
+    Must be initialized here for the ISR compute_number_of_changes_A and compute_number_of_changes_B
 */
+volatile unsigned int Encoders::_number_of_changes_on_channel_A = 0U; 
+volatile unsigned int Encoders::_number_of_changes_on_channel_B = 0U;
+
+/**
+ * @brief Dummy constructor for quick testing
+*/
+Encoders::Encoders()
 {
 
 }
 
-Encoders::Encoders(const unsigned int &MxA_gpio,
-                    const unsigned int &MxB_gpio,
-                    const unsigned int &channel_A_gpio,
-                    const unsigned int &channel_B_gpio,
-                    const unsigned int &duty_cycle
-                    )
-                    : 
-                    _MxA_gpio(MxA_gpio),
-                    _MxB_gpio(MxB_gpio),
-                    _channel_A_gpio(channel_A_gpio),
-                    _channel_B_gpio(channel_B_gpio),
-                    _duty_cycle(duty_cycle)
+/**
+ * @brief Initialize encoders with default pins/gpios.
+ * However, we must initialize the rpi beforehand, otherwise it will return en error.
+ * @param MxA_gpio
+ * @param MxB_gpio
+ * @param channel_A_gpio
+ * @param channel_B_gpio
+ * @param duty_cycle between 0 and 255
+*/
+Encoders::Encoders(const unsigned int &channel_A_gpio,
+                const unsigned int &channel_B_gpio,
+                const std::string &encoder_name)
+                :_encoder_name(encoder_name), 
+                _channel_A_gpio(channel_A_gpio),
+                 _channel_B_gpio(channel_B_gpio)
 {
-    // Initialize encoders with default pins/gpios.
-    // However, we must initialize the rpi beforehand, otherwise it will return en error.
 
     // DO NOT COMMENT OUT INSTANCE = THIS;
     // Otherwise it will not work : you will see nothing but it won't crash
@@ -57,78 +46,91 @@ Encoders::Encoders(const unsigned int &MxA_gpio,
     using namespace std;
     
 
-    const int min_duty_cycle = 0;
-    const int max_duty_cycle = 255;
-
-    if (duty_cycle < min_duty_cycle)
-    {
-        cerr << "Error : duty_cycle has been set lower than 0 - encoders.cpp, init_pwm function" << endl;
-        cerr << "Setting duty_cycle to 0" << endl;
-
-        _duty_cycle = min_duty_cycle;
-    }
-    else if (duty_cycle > max_duty_cycle)
-    {
-        cerr << "Error : duty_cycle has been set higher than 255 - encoders.cpp, init_pwm function" << endl;
-        cerr << "Setting duty_cycle to 255" << endl;
-        _duty_cycle = max_duty_cycle;
-    }
-    else
-    {
-        _duty_cycle = duty_cycle;
-    }
-
-    init_pwm(_MxA_gpio, _duty_cycle);
-    init_pwm(_MxB_gpio, 0);
-    configure_gpio_as_output(_MxA_gpio);
-    configure_gpio_as_output(_MxB_gpio);
-
     configure_gpio_as_input(_channel_A_gpio);
     configure_gpio_as_input(_channel_B_gpio);
 
-    //const unsigned int interval = 1000; 
-    //timer_start(compute_rps_handler, interval);
+    cout << "Channel A GPIO : " << _channel_A_gpio << endl;
+    cout << "Channel B GPIO : " << _channel_B_gpio << endl;
+
+    gpioSetAlertFunc(channel_A_gpio, count_number_of_changes_on_channel_A);
+    gpioSetAlertFunc(channel_B_gpio, count_number_of_changes_on_channel_B);
+
+    const unsigned int interval = 1000; 
+    timer_start(compute_encoder_rps_handler, interval);
+
 }
 
-unsigned int Encoders::get_rps() const
+unsigned int Encoders::get_rps_A() const
 {
-    return _rps;
+    return _rps_A;
 }
 
+unsigned int Encoders::get_rps_B() const
+{
+    return _rps_B;
+}
+
+/**
+ * @brief Set both _rps_A and _rps_B to an rps value 
+ * Mainly used for quick testing
+ * @param rps the value to set _rps_A and _rps_B to
+*/
 void Encoders::set_rps(const unsigned int &rps)
 {
-    /*
-        For testing
-    */
-    _rps = rps;
+    set_rps_A(rps);
+    set_rps_B(rps);
+}
+/**
+ * @brief Set _rps_A to an rps value 
+ * Mainly used for quick testing
+ * @param rps the value to set _rps_A to
+*/
+void Encoders::set_rps_A(const unsigned int &rps)
+{
+    _rps_A = rps;
 }
 
+/**
+ * @brief Set _rps_B to an rps value 
+ * Mainly used for quick testing
+ * @param rps the value to set _rps_B to
+*/
+void Encoders::set_rps_B(const unsigned int &rps)
+{
+    _rps_B = rps;
+}
+
+/**
+ * @brief Start the encoder
+ * @param interval in milliseconds
+*/
 void Encoders::start_encoder(const unsigned int &interval) 
 {   
-    //Start the encoder
-
-    timer_start(compute_rps_handler, interval);
+    timer_start(compute_encoder_rps_handler, interval);
 }
+
+
+/**
+ * @brief Allows for CTRL-C in the terminal
+ * EDIT 11 Nov 2024 
+ *    Not needed, see explanation in the signal_handler function
+*/
 
 void Encoders::signal_handler_callback(int signal)
 {
-    // Allows for CTRL-C in the terminal
-    // EDIT 11 Nov 2024 
-    //     Not needed, see explanation in the next function
-    
-
-
     using namespace std;
     cout << "Received signal : " << signal << ". Shutting down - encoders.cpp, signal_handler_callback function" << endl;
-
-    //Stop the motor
-    gpioPWM(_MxA_gpio, 0);
 }
 
+
+/**
+ * @brief Set a gpio to input
+ * Used to record changes on channels
+ * Return true if successful, false otherwise
+ * @param gpio the gpio number on the rpi4
+*/
 bool Encoders::configure_gpio_as_input(const unsigned int &gpio)
 {
-    // Set a gpio to input.
-    // Used to record changes on channels.
 
     using namespace std;
 
@@ -144,33 +146,7 @@ bool Encoders::configure_gpio_as_input(const unsigned int &gpio)
     return true;   
 }
 
-bool Encoders::configure_gpio_as_output(const unsigned int &gpio)
-{
-    // Configure a gpio as output.
-    // Returns true if successful, false otherwise.
 
-
-    using namespace std;
-    int gpio_result = gpioSetMode(gpio, PI_OUTPUT);
-
-    if(gpio_result!=0)
-    {
-        switch(gpio_result)
-        {
-            case PI_BAD_GPIO:
-                cerr << gpio << "is a bad gpio pin - encoders.cpp, configure_gpio_as_output function" << endl;
-                return false;
-            case PI_BAD_MODE:
-                cerr << "Bad mode for gpio - encoders.cpp, configure_gpio_as_output function" << gpio << endl;
-                return false;
-            default:
-                cerr << "Unexpected error when configuring gpio - encoders.cpp, configure_gpio_as_output function" << gpio << endl;
-                cout << "Result = " << gpio_result << endl;
-                return false;
-        }
-    }
-    return true;
-}
 
 void Encoders::signal_handler(int signal)
 {
@@ -197,13 +173,14 @@ void Encoders::signal_handler(int signal)
     }
 }
 
-
+/**
+ * @brief Initialize a timer to call a function every <interval> seconds.
+ * @param interval is set to 1000 milliseconds in the code.
+*/
 
 void Encoders::timer_start(std::function<void(Encoders&)> func, 
                             const unsigned int &interval)
 {
-    // Initialize a timer to call a function every <interval> seconds.
-    // <interval> is 1000 milliseconds in the code.
 
     using namespace std::chrono;
     
@@ -224,83 +201,75 @@ void Encoders::timer_start(std::function<void(Encoders&)> func,
 
 }
 
-void Encoders::compute_rps()
+/**
+ * @brief Converts the number of changes recorded by the <count_number_of_changes> function to the encoder revolutions per second
+ * Resets the number of changes on both channels by setting them both to 0.
+*/
+void Encoders::compute_encoder_rps()
 {
-    //
-    //   Converts the number of changes recorded by the <count_number_of_changes> function to revolutions per second.
-    //   Resets the number of changes on both channels by setting them both to 0.
-    //
-
 
     using namespace std;
+    
+    //count_number_of_changes(_channel_A_gpio);
 
-    //count_number_of_changes();
+    unsigned int encoder_number_of_revolutions_per_second_A = _number_of_changes_on_channel_A/_PPR; //revolutions
 
-    unsigned int rps = 0;
-    rps = (_number_of_changes_on_channel/_PPR)/_gear_ratio;
-    _rps = rps;
+    unsigned int encoder_number_of_revolutions_per_second_B = _number_of_changes_on_channel_B/_PPR;
+    float best_rps_estimation = (encoder_number_of_revolutions_per_second_A + encoder_number_of_revolutions_per_second_B) / 2;
+    /*
+        Convert encoder revolutions per second into motor revolutions per second
+    */
+    float motor_rps_estimation = best_rps_estimation/_gear_ratio;
+    /*
+        Convert revolutions per second to radians per second
+    */
+    float motor_angular_velocity_estimation = motor_rps_estimation * 2*M_PI;
+    float motor_linear_velocity_estimation = motor_angular_velocity_estimation*WHEEL_RADIUS;
     /*
         Debugging comments
     */
+    cout << _encoder_name << " on channel A rps (revolutions per second): " << encoder_number_of_revolutions_per_second_A << endl;
+    cout << _encoder_name << " on channel B rps (revolutions per second): " << encoder_number_of_revolutions_per_second_B << endl;
+    cout << _encoder_name << " best rps estimation: " << best_rps_estimation << endl;
+    cout << "estimated motor revolutions per second: " << motor_rps_estimation << endl;
+    cout << "estimated linear velocity: " << motor_linear_velocity_estimation << " m/s"<<endl;
+    cout << "compute_encodder_rps function in the encoder.cpp file" << endl;
+    cout << "####" << endl;
 
-    // cout << "number of changes on " << _channel_name << " : " <<_number_of_changes_on_channel << endl;
-    // cout << "rps on " << _channel_name  << " (gpio " << _channel_gpio << ") : " << " : " << rps << " rps" << endl;
-    // cout << _channel_name << " "; 
-    // cout << "rps : " << _rps << endl;
+    /*
+        Resetting the values
+    */
+    _number_of_changes_on_channel_A = 0;
+    _number_of_changes_on_channel_B = 0;
+}
 
-    _number_of_changes_on_channel = 0;
+/**
+ * @brief Needed for the timer_start function
+*/
+void Encoders::compute_encoder_rps_handler(Encoders &encoder)
+{   
+    encoder.compute_encoder_rps();
 }
 
 
-void Encoders::compute_rps_handler(Encoders &encoder)
+/**
+ * @brief Counts the number of changes on value on channel A and B.
+ * Used to determine linear velocity and angular velocity.*/
+
+void Encoders::count_number_of_changes_on_channel_A(int gpio, int level, uint32_t tick)
 {
-    //
-    //    Needed for the timer_start function
-    //
-   
-    encoder.compute_rps();
 
+   if (gpio || level || tick){} //This line is here to remove the warning after colcon build    
+    _number_of_changes_on_channel_A += 1;
 }
 
-bool Encoders::init_pwm(const unsigned int &gpio,
-                        const unsigned int &duty_cycle
-)
+
+void Encoders::count_number_of_changes_on_channel_B(int gpio, int level, uint32_t tick)
 {
-    // Initialize a PWM on a gpio.
-    // Returns true if successful, false otherwise.
-    
-
-    using namespace std;
-
-    int gpio_result = 0;
-    gpio_result = gpioPWM(gpio, duty_cycle);
-    if(gpio_result != 0)
-    {
-        cerr << "PWM Error on gpio " << gpio << " - encoders.cpp, init_pwm function" << endl;
-        return false; 
-    }
-    cout << "PWM Success on gpio " << gpio << endl;
-    return true;   
+   if (gpio || level || tick){} //This line is here to remove the warning after colcon build  
+    _number_of_changes_on_channel_B += 1;
 }
 
-
-void Encoders::count_number_of_changes(const unsigned int &channel_gpio)
-{
-        
-        // Counts the number of changes on value on channel A and B.
-        // Used to determine linear velocity and angular velocity.
-        
-    _old_channel_value = _channel_value;
-
-    _channel_value = gpioRead(channel_gpio);
-    _change_in_channel = _channel_value != _old_channel_value;
-
-    if (_change_in_channel && _channel_value == 1) 
-    {
-        _number_of_changes_on_channel+=1;
-    }
-
-}
 
 /*
 int main()

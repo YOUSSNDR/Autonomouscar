@@ -1,0 +1,7 @@
+/usr/bin/ld: CMakeFiles/main.dir/src/main.cpp.o: in function `void std::_Construct<Robot_controller>(Robot_controller*)':
+main.cpp:(.text._ZSt10_ConstructI16Robot_controllerJEEvPT_DpOT0_[_ZSt10_ConstructI16Robot_controllerJEEvPT_DpOT0_]+0x30): undefined reference to `Robot_controller::Robot_controller()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main.dir/build.make:229: main] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.000890] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001631] (robot) JobStarted: {'identifier': 'robot'}
+[0.037971] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.040971] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.044031] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', '--', '-j4', '-l4'], 'cwd': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youss', 'SSH_CLIENT': '10.42.0.1 55888 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youss', 'OLDPWD': '/home/youss', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youss', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/youss/Documents/Projet/Autonomouscar/ros_ws/scripts', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '9', 'AMENT_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 55888 10.42.0.59 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099282] (-) TimerEvent: {}
+[0.199928] (-) TimerEvent: {}
+[0.302548] (-) TimerEvent: {}
+[0.348620] (robot) StdoutLine: {'line': b'[ 11%] Built target encoders_subscriber\n'}
+[0.361974] (robot) StdoutLine: {'line': b'[ 38%] Built target main\n'}
+[0.364099] (robot) StdoutLine: {'line': b'[ 55%] Built target encoders_publisher\n'}
+[0.371227] (robot) StdoutLine: {'line': b'[ 66%] Built target robot_controller\n'}
+[0.402773] (-) TimerEvent: {}
+[0.493556] (robot) StdoutLine: {'line': b'[ 77%] Built target position_publisher\n'}
+[0.502672] (robot) StdoutLine: {'line': b'[ 88%] Built target position_reader\n'}
+[0.503463] (-) TimerEvent: {}
+[0.520723] (robot) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o\x1b[0m\n'}
+[0.603651] (-) TimerEvent: {}
+[0.704257] (-) TimerEvent: {}
+[0.804871] (-) TimerEvent: {}
+[0.905508] (-) TimerEvent: {}
+[1.006104] (-) TimerEvent: {}
+[1.106742] (-) TimerEvent: {}
+[1.207332] (-) TimerEvent: {}
+[1.307945] (-) TimerEvent: {}
+[1.408658] (-) TimerEvent: {}
+[1.509301] (-) TimerEvent: {}
+[1.609930] (-) TimerEvent: {}
+[1.710563] (-) TimerEvent: {}
+[1.811270] (-) TimerEvent: {}
+[1.911902] (-) TimerEvent: {}
+[2.012509] (-) TimerEvent: {}
+[2.113139] (-) TimerEvent: {}
+[2.213815] (-) TimerEvent: {}
+[2.314496] (-) TimerEvent: {}
+[2.415131] (-) TimerEvent: {}
+[2.515811] (-) TimerEvent: {}
+[2.616487] (-) TimerEvent: {}
+[2.717144] (-) TimerEvent: {}
+[2.817801] (-) TimerEvent: {}
+[2.918463] (-) TimerEvent: {}
+[3.019087] (-) TimerEvent: {}
+[3.119708] (-) TimerEvent: {}
+[3.220320] (-) TimerEvent: {}
+[3.320960] (-) TimerEvent: {}
+[3.421526] (-) TimerEvent: {}
+[3.522108] (-) TimerEvent: {}
+[3.622814] (-) TimerEvent: {}
+[3.723480] (-) TimerEvent: {}
+[3.824137] (-) TimerEvent: {}
+[3.924758] (-) TimerEvent: {}
+[4.025326] (-) TimerEvent: {}
+[4.125946] (-) TimerEvent: {}
+[4.226545] (-) TimerEvent: {}
+[4.327127] (-) TimerEvent: {}
+[4.427755] (-) TimerEvent: {}
+[4.528328] (-) TimerEvent: {}
+[4.628977] (-) TimerEvent: {}
+[4.729651] (-) TimerEvent: {}
+[4.830235] (-) TimerEvent: {}
+[4.930878] (-) TimerEvent: {}
+[5.031539] (-) TimerEvent: {}
+[5.132147] (-) TimerEvent: {}
+[5.232841] (-) TimerEvent: {}
+[5.333425] (-) TimerEvent: {}
+[5.434117] (-) TimerEvent: {}
+[5.534778] (-) TimerEvent: {}
+[5.635356] (-) TimerEvent: {}
+[5.735999] (-) TimerEvent: {}
+[5.836634] (-) TimerEvent: {}
+[5.937219] (-) TimerEvent: {}
+[6.037855] (-) TimerEvent: {}
+[6.138468] (-) TimerEvent: {}
+[6.239059] (-) TimerEvent: {}
+[6.339704] (-) TimerEvent: {}
+[6.440319] (-) TimerEvent: {}
+[6.541017] (-) TimerEvent: {}
+[6.641647] (-) TimerEvent: {}
+[6.742244] (-) TimerEvent: {}
+[6.842896] (-) TimerEvent: {}
+[6.943542] (-) TimerEvent: {}
+[7.044170] (-) TimerEvent: {}
+[7.144781] (-) TimerEvent: {}
+[7.245375] (-) TimerEvent: {}
+[7.346098] (-) TimerEvent: {}
+[7.446786] (-) TimerEvent: {}
+[7.547390] (-) TimerEvent: {}
+[7.648049] (-) TimerEvent: {}
+[7.748699] (-) TimerEvent: {}
+[7.849342] (-) TimerEvent: {}
+[7.949967] (-) TimerEvent: {}
+[8.050608] (-) TimerEvent: {}
+[8.151201] (-) TimerEvent: {}
+[8.251876] (-) TimerEvent: {}
+[8.352523] (-) TimerEvent: {}
+[8.453118] (-) TimerEvent: {}
+[8.553791] (-) TimerEvent: {}
+[8.654476] (-) TimerEvent: {}
+[8.755066] (-) TimerEvent: {}
+[8.855749] (-) TimerEvent: {}
+[8.956331] (-) TimerEvent: {}
+[9.056982] (-) TimerEvent: {}
+[9.157641] (-) TimerEvent: {}
+[9.258260] (-) TimerEvent: {}
+[9.358920] (-) TimerEvent: {}
+[9.459535] (-) TimerEvent: {}
+[9.560147] (-) TimerEvent: {}
+[9.660815] (-) TimerEvent: {}
+[9.761462] (-) TimerEvent: {}
+[9.862062] (-) TimerEvent: {}
+[9.962733] (-) TimerEvent: {}
+[10.063346] (-) TimerEvent: {}
+[10.163987] (-) TimerEvent: {}
+[10.264622] (-) TimerEvent: {}
+[10.365287] (-) TimerEvent: {}
+[10.465936] (-) TimerEvent: {}
+[10.566521] (-) TimerEvent: {}
+[10.667144] (-) TimerEvent: {}
+[10.767801] (-) TimerEvent: {}
+[10.868448] (-) TimerEvent: {}
+[10.969064] (-) TimerEvent: {}
+[11.069715] (-) TimerEvent: {}
+[11.170292] (-) TimerEvent: {}
+[11.271027] (-) TimerEvent: {}
+[11.371835] (-) TimerEvent: {}
+[11.382924] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMotor_subscriber::\x1b[01;32m\x1b[KMotor_subscriber\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.383695] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:49:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kreturning a value from a constructor\n'}
+[11.384162] (robot) StderrLine: {'line': b'   49 |         return \x1b[01;31m\x1b[K-1\x1b[m\x1b[K;\n'}
+[11.384622] (robot) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[11.429578] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:\x1b[m\x1b[K At global scope:\n'}
+[11.430294] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:138:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned int> Motor_subscriber::\x1b[01;32m\x1b[Kconvert_msg_to_duty_cycles\x1b[m\x1b[K(const geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.430779] (robot) StderrLine: {'line': b'  138 | std::vector <unsigned int> \x1b[01;31m\x1b[KMotor_subscriber\x1b[m\x1b[K::convert_msg_to_duty_cycles(const geometry_msgs::msg::Twist::UniquePtr &msg) const\n'}
+[11.431176] (robot) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.431606] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:138:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned int> Motor_subscriber::\x1b[01;32m\x1b[Kconvert_msg_to_duty_cycles\x1b[m\x1b[K(const geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.432015] (robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:1\x1b[m\x1b[K:\n'}
+[11.432381] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:27:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Motor_subscriber\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[11.432825] (robot) StderrLine: {'line': b'   27 | struct \x1b[01;36m\x1b[KMotor_subscriber\x1b[m\x1b[K : public rclcpp::Node\n'}
+[11.433193] (robot) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.471974] (-) TimerEvent: {}
+[11.519333] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Motor_subscriber::\x1b[01;32m\x1b[Kset_left_motor_and_right_motor_duty_cycle\x1b[m\x1b[K(const geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.519968] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:203:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconvert_msg_to_duty_cycles\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.520376] (robot) StderrLine: {'line': b'  203 |     std::vector<unsigned int> duty_cycles = \x1b[01;31m\x1b[Kconvert_msg_to_duty_cycles\x1b[m\x1b[K(msg);\n'}
+[11.520920] (robot) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.572135] (-) TimerEvent: {}
+[11.672772] (-) TimerEvent: {}
+[11.773358] (-) TimerEvent: {}
+[11.873996] (-) TimerEvent: {}
+[11.974648] (-) TimerEvent: {}
+[12.075275] (-) TimerEvent: {}
+[12.175913] (-) TimerEvent: {}
+[12.276532] (-) TimerEvent: {}
+[12.377116] (-) TimerEvent: {}
+[12.477738] (-) TimerEvent: {}
+[12.578327] (-) TimerEvent: {}
+[12.678985] (-) TimerEvent: {}
+[12.779647] (-) TimerEvent: {}
+[12.880185] (-) TimerEvent: {}
+[12.980828] (-) TimerEvent: {}
+[13.081449] (-) TimerEvent: {}
+[13.181992] (-) TimerEvent: {}
+[13.282648] (-) TimerEvent: {}
+[13.383239] (-) TimerEvent: {}
+[13.483881] (-) TimerEvent: {}
+[13.584496] (-) TimerEvent: {}
+[13.685110] (-) TimerEvent: {}
+[13.785747] (-) TimerEvent: {}
+[13.886333] (-) TimerEvent: {}
+[13.986924] (-) TimerEvent: {}
+[14.087541] (-) TimerEvent: {}
+[14.188130] (-) TimerEvent: {}
+[14.288791] (-) TimerEvent: {}
+[14.389467] (-) TimerEvent: {}
+[14.490075] (-) TimerEvent: {}
+[14.590746] (-) TimerEvent: {}
+[14.691392] (-) TimerEvent: {}
+[14.792061] (-) TimerEvent: {}
+[14.892710] (-) TimerEvent: {}
+[14.993309] (-) TimerEvent: {}
+[15.093979] (-) TimerEvent: {}
+[15.194622] (-) TimerEvent: {}
+[15.295228] (-) TimerEvent: {}
+[15.395891] (-) TimerEvent: {}
+[15.496539] (-) TimerEvent: {}
+[15.597134] (-) TimerEvent: {}
+[15.697838] (-) TimerEvent: {}
+[15.798494] (-) TimerEvent: {}
+[15.899091] (-) TimerEvent: {}
+[15.999751] (-) TimerEvent: {}
+[16.100345] (-) TimerEvent: {}
+[16.201005] (-) TimerEvent: {}
+[16.301649] (-) TimerEvent: {}
+[16.402285] (-) TimerEvent: {}
+[16.502952] (-) TimerEvent: {}
+[16.603591] (-) TimerEvent: {}
+[16.704252] (-) TimerEvent: {}
+[16.804909] (-) TimerEvent: {}
+[16.905542] (-) TimerEvent: {}
+[17.006153] (-) TimerEvent: {}
+[17.106829] (-) TimerEvent: {}
+[17.207504] (-) TimerEvent: {}
+[17.308097] (-) TimerEvent: {}
+[17.408795] (-) TimerEvent: {}
+[17.509488] (-) TimerEvent: {}
+[17.610133] (-) TimerEvent: {}
+[17.710806] (-) TimerEvent: {}
+[17.811454] (-) TimerEvent: {}
+[17.912039] (-) TimerEvent: {}
+[18.012648] (-) TimerEvent: {}
+[18.113236] (-) TimerEvent: {}
+[18.213893] (-) TimerEvent: {}
+[18.314518] (-) TimerEvent: {}
+[18.415065] (-) TimerEvent: {}
+[18.515699] (-) TimerEvent: {}
+[18.616267] (-) TimerEvent: {}
+[18.716879] (-) TimerEvent: {}
+[18.817505] (-) TimerEvent: {}
+[18.918110] (-) TimerEvent: {}
+[19.018778] (-) TimerEvent: {}
+[19.119642] (-) TimerEvent: {}
+[19.220199] (-) TimerEvent: {}
+[19.320801] (-) TimerEvent: {}
+[19.421350] (-) TimerEvent: {}
+[19.521959] (-) TimerEvent: {}
+[19.622536] (-) TimerEvent: {}
+[19.723128] (-) TimerEvent: {}
+[19.823774] (-) TimerEvent: {}
+[19.924382] (-) TimerEvent: {}
+[20.025024] (-) TimerEvent: {}
+[20.125660] (-) TimerEvent: {}
+[20.226304] (-) TimerEvent: {}
+[20.273650] (robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1\n'}
+[20.274578] (robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:279: CMakeFiles/motor_subscriber.dir/all] Error 2\n'}
+[20.275517] (robot) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.282768] (robot) CommandEnded: {'returncode': 2}
+[20.326477] (-) TimerEvent: {}
+[20.427114] (-) TimerEvent: {}
+[20.527920] (-) TimerEvent: {}
+[20.628941] (-) TimerEvent: {}
+[20.631149] (robot) JobEnded: {'identifier': 'robot', 'rc': 2}
+[20.642727] (-) EventReactorShutdown: {}

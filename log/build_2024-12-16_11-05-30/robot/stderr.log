@@ -1,0 +1,18 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:73:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   73 | int main([01;35m[Kint argc[m[K, char* argv[]){
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:73:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   73 | int main(int argc, [01;35m[Kchar* argv[][m[K){
+      |                    [01;35m[K~~~~~~^~~~~~[m[K
+/usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::init_pwm(unsigned int const&, unsigned int const&) const':
+motor.cpp:(.text+0x14c): undefined reference to `gpioPWM'
+/usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::configure_gpio_as_output(unsigned int const&) const':
+motor.cpp:(.text+0x214): undefined reference to `gpioSetMode'
+/usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::stop()':
+motor.cpp:(.text+0x3d4): undefined reference to `gpioPWM'
+/usr/bin/ld: motor.cpp:(.text+0x3f4): undefined reference to `gpioPWM'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:195: motor_subscriber] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

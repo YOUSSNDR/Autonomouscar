@@ -1,0 +1,14 @@
+/usr/bin/ld: CMakeFiles/main.dir/src/encoders_publisher.cpp.o: in function `main':
+encoders_publisher.cpp:(.text+0x698): multiple definition of `main'; CMakeFiles/main.dir/src/main.cpp.o:main.cpp:(.text+0x60): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main.dir/build.make:244: main] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/main.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+/usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o: in function `main':
+motor_subscriber.cpp:(.text+0x2304): undefined reference to `RPI4::init()'
+/usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o: in function `__static_initialization_and_destruction_0()':
+motor_subscriber.cpp:(.text+0x2504): undefined reference to `RPI4::RPI4()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:180: motor_subscriber] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:279: CMakeFiles/motor_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

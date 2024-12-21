@@ -1,0 +1,8 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Ksignal_handler[m[K(int)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:158:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Encoders[m[K’ has no member named ‘[01m[Ksignal_handler_callback[m[K’
+  158 |         instance->[01;31m[Ksignal_handler_callback[m[K(signal);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,16 @@
+[0.051s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.348s] [ 13%] Built target encoders_subscriber
+[0.351s] [ 46%] Built target main
+[0.352s] [ 66%] Built target position_publisher
+[0.354s] [ 73%] Built target robot_controller
+[0.479s] [ 93%] Built target position_reader
+[0.480s] [ 93%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[34.500s] [100%] [32m[1mLinking CXX executable motor_subscriber[0m
+[35.753s] /usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o: in function `Motor_subscriber::set_motors_duty_cycle(std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > > const&, Motor&, Motor&) const':
+[35.753s] motor_subscriber.cpp:(.text+0x11ac): undefined reference to `Motor::set_duty_cycle(unsigned int const&)'
+[35.754s] /usr/bin/ld: motor_subscriber.cpp:(.text+0x11bc): undefined reference to `Motor::set_duty_cycle(unsigned int const&)'
+[35.922s] collect2: error: ld returned 1 exit status
+[35.929s] gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:179: motor_subscriber] Error 1
+[35.929s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+[35.930s] gmake: *** [Makefile:146: all] Error 2
+[35.938s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

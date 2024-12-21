@@ -1,0 +1,14 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const std::string&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[KgpioSetAlertFunc[m[K’ was not declared in this scope
+   55 |     [01;31m[KgpioSetAlertFunc[m[K(channel_A_gpio, count_number_of_changes_on_channel_A);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_gpio_as_input[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:138:37:[m[K [01;31m[Kerror: [m[K‘[01m[KPI_INPUT[m[K’ was not declared in this scope
+  138 |     gpio_result = gpioSetMode(gpio, [01;31m[KPI_INPUT[m[K);
+      |                                     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:138:19:[m[K [01;31m[Kerror: [m[K‘[01m[KgpioSetMode[m[K’ was not declared in this scope
+  138 |     gpio_result = [01;31m[KgpioSetMode[m[K(gpio, PI_INPUT);
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

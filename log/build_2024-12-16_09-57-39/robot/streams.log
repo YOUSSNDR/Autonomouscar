@@ -1,0 +1,23 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.344s] [ 13%] Built target encoders_subscriber
+[0.345s] [ 60%] Built target robot_controller
+[0.347s] [ 60%] Built target main
+[0.350s] [ 73%] Built target position_publisher
+[0.475s] [ 86%] Built target position_reader
+[0.494s] [ 93%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[11.552s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kinit_params[m[K()[m[K’:
+[11.552s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_MAX_DUTY_CYCLE[m[K’ was not declared in this scope; did you mean ‘[01m[KMAX_DUTY_CYCLE[m[K’?
+[11.553s]    39 |     [01;31m[Kthis->declare_p[m[Karameter<int>("MIN_LINEAR_X", 255);
+[11.553s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.554s]       |     [32m[KMAX_DUTY_CYCLE[m[K
+[11.579s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(Motor&, Motor&) const[m[K’:
+[11.580s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:71:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.580s]    71 | void Motor_subscriber::set_motors_duty_cycle[01;35m[K([m[K
+[11.581s]       |                                             [01;35m[K~[m[K      [01;35m[K^[m[K         
+[11.581s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:72:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.581s]    72 |                                             [01;35m[KMotor &left_motor,[m[K
+[11.582s]       |                                             [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[20.320s] gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1
+[20.321s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+[20.322s] gmake: *** [Makefile:146: all] Error 2
+[20.329s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
