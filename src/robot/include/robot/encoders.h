@@ -3,14 +3,13 @@
 
 
 #include <string.h>
-/*
-    For std::function
-*/
+
+// For std::function
 #include <functional> //std::function
-/*
-    For threads
-*/
+
+// For threads
 #include <thread>
+//For the ms literal
 #include <chrono>
 
 #include <iostream>
@@ -22,17 +21,18 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
-    Needed for the M_PI constant to convert revolutions per second to radians per second
-*/
+
+//Needed for the M_PI constant to convert revolutions per second to radians per second
+
 #include <math.h>
 
 
-/*
-    Library for gpio control
-    pigpio must be installed
-*/
-#include <pigpio.h>
+
+// Library for gpio control
+// pigpio must be installed
+// sudo pigpiod must be run
+
+#include <pigpiod_if2.h>
 
 #define WHEEL_RADIUS 0.034 //meter
 
@@ -57,10 +57,11 @@ struct Encoders
 
     private:
         std::string _encoder_name = "";
-        /*
-            Gpios are initialized to default values.
-            Can be changed.
-        */
+
+        int _pi = -1;
+        // Gpios are initialized to default values.
+        // Can be changed.
+        
         const unsigned int _channel_A_gpio = 0;
         const unsigned int _channel_B_gpio = 0;
         /*
@@ -91,20 +92,19 @@ struct Encoders
         volatile unsigned int _rps_A = 0U;
         volatile unsigned int _rps_B = 0U;
 
-        /*
-            Initalized at the top of the encoders.cpp file
-        */
+        
+        // Initalized at the top of the encoders.cpp file
+        
 
-        static volatile unsigned int _number_of_changes_on_channel_A; 
-        static volatile unsigned int _number_of_changes_on_channel_B;
-        /*
-            PPR, (pulses per round) gear_ratio are found on the documentation of the motors :
-            https://wiki.dfrobot.com/Micro_DC_Motor_with_Encoder-SJ01_SKU__FIT0450
+        volatile unsigned int _number_of_changes_on_channel_A = 0U; 
+        volatile unsigned int _number_of_changes_on_channel_B = 0U;
+        
+        //    PPR, (pulses per round) gear_ratio are found on the documentation of the motors :
+        //    https://wiki.dfrobot.com/Micro_DC_Motor_with_Encoder-SJ01_SKU__FIT0450
 
-            gear_ratio is said to be 120:1. 
-            With not so precise experiments I found that 900:8 could be better.
+        //    gear_ratio is said to be 120:1. 
+        //    With not so precise experiments I found that 900:8 could be better.
 
-        */
         const unsigned int _PPR = 8;
         const double _gear_ratio = 900/8;
 
@@ -132,11 +132,11 @@ struct Encoders
         void timer_start(std::function<void(Encoders&)> func, 
                         const unsigned int &interval);
 
-        /*
-            The function declaration must be static and must have int gpio, int level and uint32_t tick declaration to work with the pigpio lib
-        */
-        static void count_number_of_changes_on_channel_A(int gpio, int level, uint32_t tick);
-        static void count_number_of_changes_on_channel_B(int gpio, int level, uint32_t tick);
+        
+        // The function declaration must be static and must have int pi, unsigned int gpio, unsigned int level, and uint32_t tick declaration to work with the pigpio lib
+        // void* instance to expect an Encoder struct to be passed
+        static void count_number_of_changes_on_channel_A(int pi, unsigned int gpio, unsigned int level, uint32_t tick, void *instance_ptr);
+        static void count_number_of_changes_on_channel_B(int pi, unsigned int gpio, unsigned int level, uint32_t tick, void* instance_ptr);
 
 
 };

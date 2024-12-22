@@ -109,6 +109,7 @@ encoders_publisher: CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp
 encoders_publisher: CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o
 encoders_publisher: CMakeFiles/encoders_publisher.dir/build.make
 encoders_publisher: /usr/local/lib/libpigpio.so
+encoders_publisher: /usr/local/lib/libpigpiod_if2.so
 encoders_publisher: /opt/ros/jazzy/lib/librclcpp.so
 encoders_publisher: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 encoders_publisher: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so

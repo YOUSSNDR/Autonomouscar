@@ -168,6 +168,8 @@ target_link_libraries(motor_subscriber
 target_link_libraries(encoders_publisher
   ${catkin_LIBRARIES}
   ${PIGPIO_LIB}
+  ${PIGPIO_IF2_LIB}
+
 )
 
 #ament_target_dependencies(node_name

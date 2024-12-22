@@ -304,6 +304,7 @@ CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h
  /usr/local/include/pigpio.h
+ /usr/local/include/pigpiod_if2.h
 
 CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o
  /home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp
@@ -1089,4 +1090,5 @@ CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h
  /usr/local/include/pigpio.h
+ /usr/local/include/pigpiod_if2.h
 

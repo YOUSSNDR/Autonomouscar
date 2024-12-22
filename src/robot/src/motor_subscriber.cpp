@@ -46,15 +46,18 @@ Motor_subscriber::Motor_subscriber()
 
     if (_pi < 0) 
     {
-        std::cerr << "Unable to connect to pigpiod!" << std::endl;
+        RCLCPP_ERROR(this->get_logger(), "Unable to connect to pigpiod! Please run sudo pigpiod first and retry ");
     }
     else
     {
-        std::cout << "Connected to pigpiod in motor_subscriber node" << "\n"; 
+        RCLCPP_INFO(this->get_logger(), "Connected to pigpiod in motor_subscriber node");
     }
 
-    set_mode(_pi, _M1A_GPIO, PI_OUTPUT);
+    //set_mode(_pi, _M1A_GPIO, PI_OUTPUT);
     set_mode(_pi, _M1B_GPIO, PI_OUTPUT);
+    
+    set_mode(_pi, _M2A_GPIO, PI_OUTPUT);
+    //set_mode(_pi, _M2B_GPIO, PI_OUTPUT);
 
     _cmdvel_subscription = this->create_subscription<geometry_msgs::msg::Twist>(
         TOPIC_NAME, 
@@ -75,9 +78,9 @@ Motor_subscriber::Motor_subscriber()
 */
 void Motor_subscriber::init_params()
 {
-    /*
-        There is no "as_float" function, use as_double for the floats
-    */
+    
+    //  There is no "as_float" function, use as_double for the floats
+
 
     this->declare_parameter<float>("WHEEL_RADIUS", 0.034f);
     _WHEEL_RADIUS = this->get_parameter("WHEEL_RADIUS").as_double();
@@ -94,9 +97,8 @@ void Motor_subscriber::init_params()
     this->declare_parameter<float>("REAR_AXIS_LENGTH", 0.5);
     _REAR_AXIS_LENGTH = this->get_parameter("REAR_AXIS_LENGTH").as_double();
 
-    /*
-        Motors gpio
-    */
+    
+    //    Motors gpio
 
     this->declare_parameter<int>("M1A_GPIO", 17);
     _M1A_GPIO = this->get_parameter("M1A_GPIO").as_int();
@@ -110,7 +112,7 @@ void Motor_subscriber::init_params()
     this->declare_parameter<int>("M2B_GPIO", 24);
     _M2B_GPIO = this->get_parameter("M2B_GPIO").as_int();
 
-    std::cout << "ROS PARAMS INIT SUCCESS IN MOTOR_SUBSCRIBER NODE \n";
+    RCLCPP_INFO(this->get_logger(), "ROS PARAMS INIT SUCCESS IN MOTOR_SUBSCRIBER NODE");
 
 }
 
@@ -155,7 +157,7 @@ std::vector <unsigned int> Motor_subscriber::convert_msg_to_duty_cycles(const ge
     float linear_x = msg->linear.x; //in m/s
     float angular_z = msg->angular.z; //the angular velocity of the robot about the z-axis, i.e the turn rate, in rad/s
 
-
+    //Saturate the value of linear velocity
     if (linear_x > _MAX_LINEAR_X)
     {
         linear_x = _MAX_LINEAR_X;
@@ -164,23 +166,27 @@ std::vector <unsigned int> Motor_subscriber::convert_msg_to_duty_cycles(const ge
     {
         linear_x = _MIN_LINEAR_X;
     }
-    unsigned int left_duty_cycle = 0; // a number between 0 and 255 for the left motor
-    unsigned int right_duty_cycle = 0; // a number between 0 and 255 for the right motor
+
+
+    unsigned int left_duty_cycle = 0U; // a number between 0 and 255 for the left motor
+    unsigned int right_duty_cycle = 0U; // a number between 0 and 255 for the right motor
     double alpha_left = 0.0f;
     double alpha_right = 0.0f;
+
+
+    alpha_left = (linear_x - _REAR_AXIS_LENGTH*angular_z/2)/_MAX_LINEAR_X;
+    alpha_right = (linear_x + _REAR_AXIS_LENGTH*angular_z/2)/_MAX_LINEAR_X; 
+
     /**
      * Using V = V_max*(duty_cycle/_MAX_DUTY_CYCLE) 
      * where :
      * 0 <= duty_cycle <= _MAX_DUTY_CYCLE
      * MAX_DUTY_CYCLE = 255 on a 8-bit PWM
     */
-
-    alpha_left = (linear_x - _REAR_AXIS_LENGTH*angular_z/2)/_MAX_LINEAR_X;
-    alpha_right = (linear_x + _REAR_AXIS_LENGTH*angular_z/2)/_MAX_LINEAR_X; 
-
     left_duty_cycle = _MAX_DUTY_CYCLE*alpha_left;
     right_duty_cycle = _MAX_DUTY_CYCLE*alpha_right;
 
+    //Debugging
     RCLCPP_INFO(this->get_logger(), "I heard : %f linear.x and %f angular.z", linear_x, angular_z);
     RCLCPP_INFO(this->get_logger(), "Converted left_duty_cycle : %d", left_duty_cycle);
     RCLCPP_INFO(this->get_logger(), "Converted right_duty_cycle : %d", right_duty_cycle);
@@ -188,6 +194,7 @@ std::vector <unsigned int> Motor_subscriber::convert_msg_to_duty_cycles(const ge
     RCLCPP_INFO(this->get_logger(), "Converted right_duty_cycle : %d", right_duty_cycle);
 
 
+    //Store the values in a vector of unsigned ints and return it
     std::vector<unsigned int> duty_cycles = {left_duty_cycle, right_duty_cycle};
     
     return duty_cycles;
@@ -195,13 +202,14 @@ std::vector <unsigned int> Motor_subscriber::convert_msg_to_duty_cycles(const ge
 
 
 /**
- * @brief
+ * @brief set a motor to a PWM value
+ * @param motor_gpio the motor gpio of the rpi4
+ * @param duty_cycle a number between 0 and 255 for an 8-bit PWM
 */
 void Motor_subscriber::set_motor_duty_cycle(const unsigned int &motor_gpio, 
                                             const unsigned int &duty_cycle) const                    
 {
     set_PWM_dutycycle(_pi, motor_gpio, duty_cycle);
-
 }
 
 void Motor_subscriber::set_left_motor_and_right_motor_duty_cycle(const geometry_msgs::msg::Twist::UniquePtr &msg) const
@@ -210,8 +218,11 @@ void Motor_subscriber::set_left_motor_and_right_motor_duty_cycle(const geometry_
     unsigned int left_motor_duty_cycle = duty_cycles[0];
     unsigned int right_motor_duty_cycle = duty_cycles[1];
 
-    set_motor_duty_cycle(_M1A_GPIO, 50);
-    set_motor_duty_cycle(_M1B_GPIO, right_motor_duty_cycle);
+    //Use _M1B_GPIO to control the left_motor
+    set_motor_duty_cycle(_M1B_GPIO, left_motor_duty_cycle);
+
+    //Use _M2A_GPIO to control the right motor
+    set_motor_duty_cycle(_M2A_GPIO, right_motor_duty_cycle);
 }
 
 int main(int argc, char *argv[])

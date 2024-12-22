@@ -5,17 +5,17 @@
 */
 Robot_controller::Robot_controller():Node(NODE_NAME)
 {
-    /*
-        Subscribe to the encoders topic
-    */
+    
+    // Subscribe to the encoders topic
+    
     _encoders_subscription = this->create_subscription<std_msgs::msg::Float32>(
         ENCODERS_TOPIC, 
         ENCODERS_QUEUE_DEPTH,
         std::bind(&Robot_controller::encoders_callback, this, std::placeholders::_1));
 
-    /*
-        Subscribe to the position topic
-    */
+    
+    // Subscribe to the position topic
+    
     _position_subscription = this->create_subscription<geometry_msgs::msg::Point>(
         POSITION_TOPIC,
         POSITION_QUEUE_DEPTH,
@@ -39,13 +39,16 @@ void Robot_controller::encoders_callback(const std_msgs::msg::Float32::UniquePtr
 */
 void Robot_controller::position_callback(const geometry_msgs::msg::Point::UniquePtr &point_msg)
 {
-    /*
-        Get the coordinates stored in point_msg and store them
-    */
+    
+    //Get the coordinates stored in point_msg
+    
     double x = point_msg->x;
     double y = point_msg->y;
     double z = point_msg->z;
+
     RCLCPP_INFO(this->get_logger(), "robot_controller position_callback function - I heard x = %f, y = %f, z = %f", x, y, z);
+
+    //Store the coordinates 
     _x = x;
     _y = y;
     _z = z;
@@ -57,9 +60,13 @@ void Robot_controller::position_callback(const geometry_msgs::msg::Point::Unique
 */
 void Robot_controller::init_cmd_vel_publisher()
 {
+    //For the ms literal
     using namespace std::chrono_literals;
 
+    //Initalize the publisher to send message of type geometry_msg::msg::Twist to control the motor angular velocity
     _cmd_vel_publisher = this->create_publisher<geometry_msgs::msg::Twist>(CMD_VEL_TOPIC, CMD_VEL_QUEUE_DEPTH);
+
+    //Callback function
     auto timer_callback = [this]() -> void
     {
         // Create a message of type Twist
@@ -72,6 +79,8 @@ void Robot_controller::init_cmd_vel_publisher()
         // Publish the message in the _topic_name topic
         this->_cmd_vel_publisher->publish(message);
     };
+
+    //Publish the message every 500ms
     _timer = this->create_wall_timer(500ms, timer_callback);
 
 }

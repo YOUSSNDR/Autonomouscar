@@ -247,4 +247,5 @@ CMakeFiles/main.dir/src/encoders.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/local/include/pigpio.h
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /usr/local/include/pigpiod_if2.h /usr/local/include/pigpio.h

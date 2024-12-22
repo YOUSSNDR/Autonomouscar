@@ -1,6 +1,5 @@
-/*
-    The following header is found in robot/include/robot/
-*/
+// The following header is found in robot/include/robot/
+
 #include "robot/encoders.h"
 
 
@@ -8,11 +7,11 @@
 //This line is used/needed because of the callbacks and handlers.
 Encoders* Encoders::instance = nullptr;
 
-/*
-    Must be initialized here for the ISR compute_number_of_changes_A and compute_number_of_changes_B
-*/
-volatile unsigned int Encoders::_number_of_changes_on_channel_A = 0U; 
-volatile unsigned int Encoders::_number_of_changes_on_channel_B = 0U;
+
+//Must be initialized here for the ISR compute_number_of_changes_A and compute_number_of_changes_B
+
+//volatile unsigned int Encoders::_number_of_changes_on_channel_A = 0U; 
+//volatile unsigned int Encoders::_number_of_changes_on_channel_B = 0U;
 
 /**
  * @brief Dummy constructor for quick testing
@@ -45,16 +44,62 @@ Encoders::Encoders(const unsigned int &channel_A_gpio,
     
     using namespace std;
     
+    _pi = pigpio_start(NULL, NULL);  // Connect to localhost with default port
 
-    configure_gpio_as_input(_channel_A_gpio);
-    configure_gpio_as_input(_channel_B_gpio);
+    if (_pi < 0) 
+    {
+        cerr << "Unable to connect to pigpiod. Please run sudo pigpiod and try again." << '\n';
+    }
+    else
+    {
+        cout << "Successfully connected to pigpiod" << '\n';
+    }
+
+    //Used with pigpiod library, not pigpiod_if2
+    //configure_gpio_as_input(_channel_A_gpio);
+    //configure_gpio_as_input(_channel_B_gpio);
+
+    set_mode(_pi, _channel_A_gpio, PI_INPUT);
+    set_mode(_pi, _channel_B_gpio, PI_INPUT);
 
     cout << "Channel A GPIO : " << _channel_A_gpio << endl;
     cout << "Channel B GPIO : " << _channel_B_gpio << endl;
 
-    gpioSetAlertFunc(channel_A_gpio, count_number_of_changes_on_channel_A);
-    gpioSetAlertFunc(channel_B_gpio, count_number_of_changes_on_channel_B);
+    //Used with pigpiod library, not pigpiod_if2
+    //gpioSetAlertFunc(channel_A_gpio, count_number_of_changes_on_channel_A);
+    //gpioSetAlertFunc(channel_B_gpio, count_number_of_changes_on_channel_B);
+ 
 
+    //callback_ex means callback_extended
+    int callback_id_A = callback_ex(_pi, 
+                                _channel_A_gpio, 
+                                RISING_EDGE, 
+                                count_number_of_changes_on_channel_A, 
+                                this);
+    if (callback_id_A < 0)
+    {
+        cerr << "Failed to set callback for ISR channel A" << "\n";
+    }
+    else
+    {
+        cout << "Successfully set callback for ISR channel A" << "\n";
+    }
+
+    int callback_id_B = callback_ex(_pi, 
+                                _channel_B_gpio, 
+                                RISING_EDGE, 
+                                count_number_of_changes_on_channel_B, 
+                                this);
+    
+    if (callback_id_B < 0)
+    {
+        cerr << "Failed to set callback for ISR channel B" << "\n";
+    }
+    else
+    {
+        cout << "Successfully set callback ISR for channel B" << "\n";
+    }
+    
     const unsigned int interval = 1000; 
     timer_start(compute_encoder_rps_handler, interval);
 
@@ -128,6 +173,7 @@ void Encoders::signal_handler_callback(int signal)
  * Used to record changes on channels
  * Return true if successful, false otherwise
  * @param gpio the gpio number on the rpi4
+ * DEPRECATED
 */
 bool Encoders::configure_gpio_as_input(const unsigned int &gpio)
 {
@@ -254,20 +300,47 @@ void Encoders::compute_encoder_rps_handler(Encoders &encoder)
 
 /**
  * @brief Counts the number of changes on value on channel A and B.
- * Used to determine linear velocity and angular velocity.*/
+ * Used to determine linear velocity and angular velocity.
+*/
 
-void Encoders::count_number_of_changes_on_channel_A(int gpio, int level, uint32_t tick)
+
+/**
+ * @brief ISR to count the number of high levels on channel A
+ * @param gpio signature parameter for the ISR, not used
+ * @param level signature parameter for the ISR, not used
+ * @param tick signature parameter for the ISR, not used
+*/
+void Encoders::count_number_of_changes_on_channel_A(int pi, 
+                                                    unsigned int gpio, 
+                                                    unsigned int level, 
+                                                    uint32_t tick, 
+                                                    void* instance_ptr)
 {
-
-   if (gpio || level || tick){} //This line is here to remove the warning after colcon build    
-    _number_of_changes_on_channel_A += 1;
+    //Cast instance_ptr to a pointer to an Encoders object
+    if (pi || gpio || level || tick){} //This line is here to remove the warning after colcon build, it does nothing    
+    
+    Encoders *self = static_cast<Encoders*>(instance_ptr);
+    self->_number_of_changes_on_channel_A += 1;
 }
 
 
-void Encoders::count_number_of_changes_on_channel_B(int gpio, int level, uint32_t tick)
+/**
+ * @brief ISR to count the number of high levels on channel B
+ * @param gpio signature parameter for the ISR, not used
+ * @param level signature parameter for the ISR, not used
+ * @param tick signature parameter for the ISR, not used
+*/
+void Encoders::count_number_of_changes_on_channel_B(int pi, 
+                                                    unsigned int gpio, 
+                                                    unsigned int level, 
+                                                    uint32_t tick, 
+                                                    void* instance_ptr)
 {
-   if (gpio || level || tick){} //This line is here to remove the warning after colcon build  
-    _number_of_changes_on_channel_B += 1;
+    //Cast instance_ptr to a pointer to an Encoders object
+    if (pi || gpio || level || tick){} //This line is here to remove the warning after colcon build, it does nothing  
+    
+    Encoders* self = static_cast<Encoders*>(instance_ptr);
+    self->_number_of_changes_on_channel_B += 1;
 }
 
 

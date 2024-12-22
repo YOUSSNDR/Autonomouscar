@@ -15,6 +15,17 @@ shared_parameters:
     M2A_GPIO: 23
     M2B_GPIO: 24
 
+    #encoders
+    A_CHANNEL_GPIO_M1: 5
+    B_CHANNEL_GPIO_M1: 6
+
+    A_CHANNEL_GPIO_M2: 20
+    B_CHANNEL_GPIO_M2: 21
+
 motor_subscriber:
+  ros_parameters:
+  <<: *shared_parameters
+
+encoders_publisher:
   ros_parameters:
   <<: *shared_parameters

@@ -302,7 +302,8 @@ CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o: /home/youss/Documents/Proj
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h \
-  /usr/local/include/pigpio.h
+  /usr/local/include/pigpio.h \
+  /usr/local/include/pigpiod_if2.h
 
 CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: /home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp \
   /home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h \
@@ -1086,7 +1087,8 @@ CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: /home/youss/Docu
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h \
-  /usr/local/include/pigpio.h
+  /usr/local/include/pigpio.h \
+  /usr/local/include/pigpiod_if2.h
 
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h:
@@ -1402,6 +1404,8 @@ CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: /home/youss/Docu
 /opt/ros/jazzy/include/rclcpp/rclcpp/serialization.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_options.hpp:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h:
 
@@ -2037,6 +2041,8 @@ CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: /home/youss/Docu
 
 /usr/include/stdio.h:
 
+/usr/local/include/pigpiod_if2.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
@@ -2654,5 +2660,3 @@ CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: /home/youss/Docu
 /usr/include/signal.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_options.hpp:

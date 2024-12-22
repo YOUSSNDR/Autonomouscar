@@ -45,18 +45,12 @@ bool is_running = false;
 
 // Raspberry PI4 pinout
 
-#define M1A_GPIO 17
-#define M1B_GPIO 18
 #define M1A_CHANNEL 5
 #define M1B_CHANNEL 6
-#define M1_DUTY_CYCLE 255
 #define LEFT_ENCODER_NAME "left_encoder"
 
-#define M2A_GPIO 23
-#define M2B_GPIO 24
 #define M2A_CHANNEL 20
 #define M2B_CHANNEL 21
-#define M2_DUTY_CYCLE 0
 #define RIGHT_ENCODER_NAME "right_encoder"
 
 #define INTERVAL 1000 //milliseconds
@@ -69,7 +63,7 @@ void signalHandler(int signal)
 }
 
 
-/*
+
 
 int main(){
 
@@ -84,25 +78,17 @@ int main(){
     //    However, it will be very annoying for other nodes like the motor_subscriber node
 
 
-    if(!rpi.init())
-    {
-        std::cout << "Failed to init rpi4 - main.cpp" << std::endl;
-        return -1;
-    }
+    //if(!rpi.init())
+    //{
+    //    std::cout << "Failed to init rpi4 - main.cpp" << std::endl;
+    //   return -1;
+    //}
     
 
     //  Must create Motor objects AFTER calling rpi.init()
     //   Otherwise the gpioInitialise function of the pigpio library won't be called by rpi.init() and the code won't work
     
    
-    Motor left_motor(M1A_GPIO, 
-                    M1B_GPIO, 
-                    M1_DUTY_CYCLE);
-
-    Motor right_motor(M2A_GPIO, 
-                    M2B_GPIO, 
-                    M2_DUTY_CYCLE);
-
     
     
     //    Encoders have an ISR to detect rising edge
@@ -133,13 +119,12 @@ int main(){
         //    Encoders revolutions per second will be printed out thanks to their ISR, even though there is no code
         
     }
-    left_motor.stop();
-    right_motor.stop();
+
     return 0;
 }
-*/
 
 
+/*
 
 #include <iostream>
 #include <pigpiod_if2.h>  // Include the header for pigpio API over sockets
@@ -157,7 +142,7 @@ int main() {
 
     //    Encoders have an ISR to detect rising edge
 
-    /*
+    
     Encoders encoder_A(M1A_CHANNEL,
                         M1B_CHANNEL,
                         LEFT_ENCODER_NAME);
@@ -165,7 +150,7 @@ int main() {
     Encoders encoder_B(M2A_CHANNEL,
                         M2B_CHANNEL,
                         RIGHT_ENCODER_NAME);
-    */
+    
     set_mode(pi, M1A_GPIO, PI_OUTPUT);
     set_PWM_dutycycle(pi, M1A_GPIO, 50);
     is_running = true;
@@ -179,3 +164,4 @@ int main() {
 
     return 0;
 }
+*/
