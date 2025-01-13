@@ -262,29 +262,32 @@ void Encoders::compute_encoder_rps()
 
     unsigned int encoder_number_of_revolutions_per_second_B = _number_of_changes_on_channel_B/_PPR;
     float best_rps_estimation = (encoder_number_of_revolutions_per_second_A + encoder_number_of_revolutions_per_second_B) / 2;
-    /*
-        Convert encoder revolutions per second into motor revolutions per second
-    */
+    
+    // Convert encoder revolutions per second into motor revolutions per second
+    
     float motor_rps_estimation = best_rps_estimation/_gear_ratio;
-    /*
-        Convert revolutions per second to radians per second
-    */
+    
+    // Convert revolutions per second to radians per second
+    
     float motor_angular_velocity_estimation = motor_rps_estimation * 2*M_PI;
     float motor_linear_velocity_estimation = motor_angular_velocity_estimation*WHEEL_RADIUS;
-    /*
-        Debugging comments
-    */
-    cout << _encoder_name << " on channel A rps (revolutions per second): " << encoder_number_of_revolutions_per_second_A << endl;
-    cout << _encoder_name << " on channel B rps (revolutions per second): " << encoder_number_of_revolutions_per_second_B << endl;
-    cout << _encoder_name << " best rps estimation: " << best_rps_estimation << endl;
-    cout << "estimated motor revolutions per second: " << motor_rps_estimation << endl;
-    cout << "estimated linear velocity: " << motor_linear_velocity_estimation << " m/s"<<endl;
-    cout << "compute_encodder_rps function in the encoder.cpp file" << endl;
-    cout << "####" << endl;
+    
+    //Debugging comments
 
-    /*
-        Resetting the values
-    */
+    //cout << _encoder_name << " on channel A rps (revolutions per second): " << encoder_number_of_revolutions_per_second_A << endl;
+    //cout << _encoder_name << " on channel B rps (revolutions per second): " << encoder_number_of_revolutions_per_second_B << endl;
+    _rps_A = encoder_number_of_revolutions_per_second_A;
+    _rps_B = encoder_number_of_revolutions_per_second_B;
+
+    //cout << _encoder_name << " best rps estimation: " << best_rps_estimation << endl;
+    
+    //cout << "estimated motor revolutions per second: " << motor_rps_estimation << endl;
+    cout << "estimated linear velocity: " << motor_linear_velocity_estimation << " m/s"<<endl;
+    //cout << "compute_encodder_rps function in the encoder.cpp file" << endl;
+    //cout << "####" << endl;
+
+    
+    // Resetting the values
     _number_of_changes_on_channel_A = 0;
     _number_of_changes_on_channel_B = 0;
 }

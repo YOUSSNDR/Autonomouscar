@@ -1,6 +1,23 @@
 #include "robot/motor_subscriber.h"
 
 
+Motor_subscriber* Motor_subscriber::_instance = nullptr;
+
+void Motor_subscriber::signalHandler(int signal)
+{
+    if (signal){} //Line is just here to delete the warning after colcon build
+    if(_instance)
+    {
+        RCLCPP_WARN(_instance->get_logger(), "Motors have been stopped");
+        _instance->set_motor_duty_cycle(_instance->_M1A_GPIO, 0);
+        _instance->set_motor_duty_cycle(_instance->_M2B_GPIO, 0);
+
+        _instance->set_motor_duty_cycle(_instance->_M1B_GPIO, 0);
+        _instance->set_motor_duty_cycle(_instance->_M2A_GPIO, 0);
+    }
+    rclcpp::shutdown();
+}
+
 Motor_subscriber::Motor_subscriber() 
 : Node(NODE_NAME)
 {
@@ -67,6 +84,7 @@ Motor_subscriber::Motor_subscriber()
     RCLCPP_INFO(this->get_logger(), "WHEEL RADIUS = %f", _WHEEL_RADIUS);
 
 }
+
 
 /**
  * @brief Initialize the ros parameters found in the config.yaml file
@@ -183,16 +201,18 @@ std::vector <unsigned int> Motor_subscriber::convert_msg_to_duty_cycles(const ge
      * 0 <= duty_cycle <= _MAX_DUTY_CYCLE
      * MAX_DUTY_CYCLE = 255 on a 8-bit PWM
     */
-    left_duty_cycle = _MAX_DUTY_CYCLE*alpha_left;
-    right_duty_cycle = _MAX_DUTY_CYCLE*alpha_right;
+    left_duty_cycle = _MAX_DUTY_CYCLE*alpha_left + _LEFT_PWM_OFFSET;
+    right_duty_cycle = _MAX_DUTY_CYCLE*alpha_right + _PWM_OFFSET;
 
     //Debugging
+    /*
+    
     RCLCPP_INFO(this->get_logger(), "I heard : %f linear.x and %f angular.z", linear_x, angular_z);
     RCLCPP_INFO(this->get_logger(), "Converted left_duty_cycle : %d", left_duty_cycle);
     RCLCPP_INFO(this->get_logger(), "Converted right_duty_cycle : %d", right_duty_cycle);
     RCLCPP_INFO(this->get_logger(), "Converted left_duty_cycle : %d", left_duty_cycle);
     RCLCPP_INFO(this->get_logger(), "Converted right_duty_cycle : %d", right_duty_cycle);
-
+    */
 
     //Store the values in a vector of unsigned ints and return it
     std::vector<unsigned int> duty_cycles = {left_duty_cycle, right_duty_cycle};
@@ -218,17 +238,32 @@ void Motor_subscriber::set_left_motor_and_right_motor_duty_cycle(const geometry_
     unsigned int left_motor_duty_cycle = duty_cycles[0];
     unsigned int right_motor_duty_cycle = duty_cycles[1];
 
-    //Use _M1B_GPIO to control the left_motor
-    set_motor_duty_cycle(_M1B_GPIO, left_motor_duty_cycle);
+    //Use _M1B_GPIO to control the right_motor
+    set_motor_duty_cycle(_M1A_GPIO, right_motor_duty_cycle);
 
-    //Use _M2A_GPIO to control the right motor
-    set_motor_duty_cycle(_M2A_GPIO, right_motor_duty_cycle);
+    //Use _M2A_GPIO to control the left motor
+    set_motor_duty_cycle(_M2B_GPIO, left_motor_duty_cycle);
 }
 
-int main(int argc, char *argv[])
+/**
+ * @brief Static method
+ * Set  _instance to motor_sub_pointer
+ * Used to link the signalHandler to the node
+ * @param motor_sub_pointer
+ */
+void Motor_subscriber::set_static_instance_pointer(Motor_subscriber* motor_sub_pointer)
 {
+    _instance = motor_sub_pointer;
+}
+
+
+int main(int argc, char *argv[])
+{    
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<Motor_subscriber>());
+    auto my_node = std::make_shared<Motor_subscriber>();
+    Motor_subscriber::set_static_instance_pointer(my_node.get());
+    signal(SIGINT, Motor_subscriber::signalHandler);
+    rclcpp::spin(my_node);
     rclcpp::shutdown();
     return 0;
 }
