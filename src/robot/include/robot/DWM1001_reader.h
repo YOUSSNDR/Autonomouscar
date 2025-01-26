@@ -9,15 +9,21 @@
 //Needed to use ros functions
 #include "rclcpp/rclcpp.hpp"
 
-// Message to create a 3D point
+//Message to create a 3D point
 #include <geometry_msgs/msg/point.hpp>
 
-// For the "ms" literal
+//For the "ms" literal
 #include <chrono>
 
+//To display a point in Rviz2 
+#include <visualization_msgs/msg/marker.hpp>
+
 #define NODE_NAME "DWM1001_node"
-#define TOPIC_NAME "position_topic"
-#define QUEUE_DEPTH 10
+#define POINT_TOPIC_NAME "position_topic"
+#define POSITION_TOPIC_QUEUE_DEPTH 10
+
+#define MARKER_TOPIC_NAME "visualization_marker"
+#define MARKER_TOPIC_QUEUE_DEPTH 10
 
 /*
     Publisher node
@@ -35,12 +41,12 @@ struct DWM1001_reader : public rclcpp::Node
         void set_x(const double &x);
         void set_y(const double &y);
         DWM1001_reader(const bool &dummy);
+        
     
     private:
         
         //Creating a node to publish a point message
-        
-        rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr _publisher;
+        rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr _point_publisher;
         rclcpp::TimerBase::SharedPtr _timer;
         geometry_msgs::msg::Point _point;
 
@@ -53,7 +59,8 @@ struct DWM1001_reader : public rclcpp::Node
 
         double _x = 0;
         double _y = 0;
-    
+
+        const double _OUTLIER_VALUE = 60;
         
         //Main functions
         void read_data();
@@ -61,6 +68,11 @@ struct DWM1001_reader : public rclcpp::Node
         void compute_y_from_readings();
 
         void update_point();
+
+        //Create a publisher to publish a marker to rviz
+        rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr _marker_publisher;
+        void publish_point_to_rviz() const;
+        static void signalHandler(int signal);
 };
 
 #endif

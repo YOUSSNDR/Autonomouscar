@@ -12,13 +12,22 @@ find_package(rclcpp REQUIRED)
 #Message packages
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+
 find_library(PIGPIO_LIB pigpio)
+
+
+#include /usr/include to find the Linux kernel headers used for I2C
+include_directories(/usr/include)
+
+#to find the i2c_sm_bus_XXXXX functions
+find_library(I2c_SMBUS i2c)
 
 
 #testing with PIGPIO_IF2 lib instead of pigpio
@@ -65,16 +74,15 @@ add_executable(robot_controller
               src/robot_controller.cpp
 )
 
-add_executable(position_publisher
-              src/DWM1001_reader.cpp
-)
-
 add_executable(motor_subscriber
               src/motor_subscriber.cpp
 )
 
 add_executable(position_reader
               src/DWM1001_reader.cpp)
+
+add_executable(mpu_publisher
+              src/MPU6050.cpp)   
 
 target_include_directories(main PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -95,10 +103,6 @@ target_include_directories(robot_controller PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 
-target_include_directories(position_publisher PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
-
 target_include_directories(motor_subscriber PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
@@ -108,6 +112,10 @@ target_include_directories(position_reader PUBLIC
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 
 target_include_directories(encoders_publisher PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
+
+target_include_directories(mpu_publisher PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 
@@ -123,10 +131,10 @@ install(TARGETS
   main
   encoders_subscriber
   robot_controller
-  position_publisher
   position_reader
   motor_subscriber
   encoders_publisher
+  mpu_publisher
   DESTINATION lib/${PROJECT_NAME})
 
 
@@ -171,6 +179,10 @@ target_link_libraries(encoders_publisher
   ${PIGPIO_IF2_LIB}
 
 )
+target_link_libraries(mpu_publisher
+  ${catkin_LIBRARIES}
+  ${I2c_SMBUS}
+)
 
 #ament_target_dependencies(node_name
 #                         rosdep1
@@ -192,15 +204,11 @@ ament_target_dependencies(robot_controller
                           std_msgs
                           geometry_msgs)
 
-ament_target_dependencies(position_publisher
-                          rclcpp
-                          std_msgs
-                          geometry_msgs)
-
 ament_target_dependencies(position_reader
                           rclcpp
-                          std_msgs
-                          geometry_msgs)
+                          geometry_msgs
+                          visualization_msgs
+                          )
 
 ament_target_dependencies(motor_subscriber
                           rclcpp
@@ -210,4 +218,8 @@ ament_target_dependencies(motor_subscriber
 ament_target_dependencies(encoders_publisher
                           rclcpp
                           std_msgs
+                          geometry_msgs)
+
+ament_target_dependencies(mpu_publisher
+                          rclcpp
                           geometry_msgs)

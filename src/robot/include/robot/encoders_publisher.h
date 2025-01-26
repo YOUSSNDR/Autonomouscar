@@ -18,26 +18,32 @@
 #define TOPIC_NAME "encoders_topic"
 #define QUEUE_DEPTH 10
 
-#define M1A_CHANNEL 5
-#define M1B_CHANNEL 6
 #define LEFT_ENCODER_NAME "left_encoder"
+#define RIGHT_ENCODER_NAME "right_encoder"
 
 struct Encoders_publisher : public rclcpp::Node
 {
     public:
 
-        Encoders_publisher(const Encoders &encoder);
+        Encoders_publisher();
+        ~Encoders_publisher();
 
     private:
-        const Encoders &_encoder;
+        Encoders *_left_encoder;
+        Encoders *_right_encoder;
+
         rclcpp::TimerBase::SharedPtr _timer;
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr _publisher;
 
-        void init_ros_params();
         int _pi = -1;
+
+        // -------------- ROS PARAMETERS -----------------
+        void init_ros_params();
         unsigned int _A_CHANNEL_GPIO_M1 = 5;
         unsigned int _B_CHANNEL_GPIO_M1 = 6;
-
+        unsigned int _A_CHANNEL_GPIO_M2 = 20;
+        unsigned int _B_CHANNEL_GPIO_M2 = 21;
+        
 };
 
 #endif

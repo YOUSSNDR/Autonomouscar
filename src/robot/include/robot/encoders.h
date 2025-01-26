@@ -85,10 +85,10 @@ struct Encoders
 
         */
 
-        /**
-         * @param _rps_A is the number of encoder revolutions per second measured in channel A
-         * @param _rps_B is the number of encoder revolutions per second measured in channel B
-        */
+        
+         //_rps_A is the number of encoder revolutions per second measured in channel A
+         //_rps_B is the number of encoder revolutions per second measured in channel B
+    
         volatile unsigned int _rps_A = 0U;
         volatile unsigned int _rps_B = 0U;
 
@@ -108,11 +108,10 @@ struct Encoders
         const unsigned int _PPR = 8;
         const double _gear_ratio = 900/8;
 
-        /*
-            static Encoders *instance is needed for callbacks and handlers
-            *instance has to be initialized in the encoders.cpp file, e.g. Encoders* Encoders::instance = nullptr;
-        */
-
+        
+        // static Encoders *instance is needed for callbacks and handlers
+        // *instance has to be initialized in the encoders.cpp file, e.g. Encoders* Encoders::instance = nullptr;
+    
         static Encoders *instance;
         
         std::thread _timer_thread;
