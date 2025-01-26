@@ -1,0 +1,18 @@
+[0.049s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.158s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.126s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.160s] [31mCMake Error at CMakeLists.txt:21 (target_compile_features):
+[1.160s]   Cannot specify compile features for target "encoders" which is not built by
+[1.161s]   this project.
+[1.161s] 
+[1.162s] [0m
+[1.162s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:67 (message):
+[1.163s]   ament_cmake_symlink_install_targets() 'encoders' is not a target
+[1.163s] Call Stack (most recent call first):
+[1.164s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)
+[1.166s]   CMakeLists.txt:23 (install)
+[1.166s] 
+[1.167s] [0m
+[1.167s] -- Configuring incomplete, errors occurred!
+[1.172s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[1.180s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

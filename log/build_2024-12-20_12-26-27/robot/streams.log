@@ -1,0 +1,63 @@
+[0.051s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.177s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.129s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.164s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.317s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.356s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.458s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.688s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.693s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.963s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.186s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.235s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.290s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.862s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.863s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.864s] -- Configured cppcheck exclude dirs and/or files: 
+[2.867s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.867s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.872s] -- Added test 'lint_cmake' to check CMake code style
+[2.875s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.891s] -- Added test 'uncrustify' to check C / C++ code style
+[2.891s] -- Configured uncrustify additional arguments: 
+[2.894s] -- Added test 'xmllint' to check XML markup files
+[2.925s] -- Configuring done (2.8s)
+[3.095s] -- Generating done (0.1s)
+[3.110s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.346s] [ 10%] Built target encoders_subscriber
+[3.356s] [ 26%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[3.357s] [ 31%] [32mBuilding CXX object CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o[0m
+[3.358s] [ 26%] Built target robot_controller
+[3.502s] [ 42%] Built target position_publisher
+[3.525s] [ 57%] Built target motor_subscriber
+[3.653s] [ 68%] Built target position_reader
+[6.529s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const std::string&)[m[K’:
+[6.529s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[KgpioSetAlertFunc[m[K’ was not declared in this scope
+[6.529s]    55 |     [01;31m[KgpioSetAlertFunc[m[K(channel_A_gpio, count_number_of_changes_on_channel_A);
+[6.530s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.547s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const std::string&)[m[K’:
+[6.548s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[KgpioSetAlertFunc[m[K’ was not declared in this scope
+[6.549s]    55 |     [01;31m[KgpioSetAlertFunc[m[K(channel_A_gpio, count_number_of_changes_on_channel_A);
+[6.550s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.564s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_gpio_as_input[m[K(const unsigned int&)[m[K’:
+[6.564s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:138:37:[m[K [01;31m[Kerror: [m[K‘[01m[KPI_INPUT[m[K’ was not declared in this scope
+[6.565s]   138 |     gpio_result = gpioSetMode(gpio, [01;31m[KPI_INPUT[m[K);
+[6.566s]       |                                     [01;31m[K^~~~~~~~[m[K
+[6.586s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_gpio_as_input[m[K(const unsigned int&)[m[K’:
+[6.586s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:138:37:[m[K [01;31m[Kerror: [m[K‘[01m[KPI_INPUT[m[K’ was not declared in this scope
+[6.587s]   138 |     gpio_result = gpioSetMode(gpio, [01;31m[KPI_INPUT[m[K);
+[6.587s]       |                                     [01;31m[K^~~~~~~~[m[K
+[6.589s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:138:19:[m[K [01;31m[Kerror: [m[K‘[01m[KgpioSetMode[m[K’ was not declared in this scope
+[6.589s]   138 |     gpio_result = [01;31m[KgpioSetMode[m[K(gpio, PI_INPUT);
+[6.590s]       |                   [01;31m[K^~~~~~~~~~~[m[K
+[6.608s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:138:19:[m[K [01;31m[Kerror: [m[K‘[01m[KgpioSetMode[m[K’ was not declared in this scope
+[6.608s]   138 |     gpio_result = [01;31m[KgpioSetMode[m[K(gpio, PI_INPUT);
+[6.609s]       |                   [01;31m[K^~~~~~~~~~~[m[K
+[7.083s] gmake[2]: *** [CMakeFiles/encoders_publisher.dir/build.make:90: CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o] Error 1
+[7.084s] gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/encoders_publisher.dir/all] Error 2
+[7.084s] gmake[1]: *** Waiting for unfinished jobs....
+[7.105s] gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+[7.106s] gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/main.dir/all] Error 2
+[7.107s] gmake: *** [Makefile:146: all] Error 2
+[7.114s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

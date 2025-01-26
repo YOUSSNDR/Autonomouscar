@@ -1,0 +1,59 @@
+[0.061s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.392s] [ 57%] Built target listener
+[0.393s] [ 71%] Built target encoders
+[0.421s] [ 85%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o[0m
+[13.416s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:1[m[K:
+[13.416s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:15:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[13.417s]    15 |         rclcpp::Subscription<[01;31m[Kstd_msgs[m[K::msg::Float32>::SharedPtr _encoders_subscription;
+[13.417s]       |                              [01;31m[K^~~~~~~~[m[K
+[13.417s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:15:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.418s]    15 |         rclcpp::Subscription<std_msgs::msg::Float32[01;31m[K>[m[K::SharedPtr _encoders_subscription;
+[13.418s]       |                                                    [01;31m[K^[m[K
+[13.419s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:15:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[13.419s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:15:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[13.420s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:15:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[13.420s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:15:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.421s]    15 |         rclcpp::Subscription<std_msgs::msg::Float32>::[01;31m[KSharedPtr[m[K _encoders_subscription;
+[13.422s]       |                                                       [01;31m[K^~~~~~~~~[m[K
+[13.422s]       |                                                                [32m[K;[m[K
+[13.433s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:15:65:[m[K [01;31m[Kerror: [m[K‘[01m[K_encoders_subscription[m[K’ does not name a type
+[13.434s]    15 |         rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr [01;31m[K_encoders_subscription[m[K;
+[13.435s]       |                                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.435s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ has not been declared
+[13.436s]    17 |         void encoders_callback([01;31m[Kstd_msgs[m[K::msg::Float32::UniquePtr msg);
+[13.437s]       |                                [01;31m[K^~~~~~~~[m[K
+[13.438s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/robot_controller.h:17:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kmsg[m[K’
+[13.438s]    17 |         void encoders_callback(std_msgs::msg::Float32::UniquePtr [01;31m[Kmsg[m[K);
+[13.440s]       |                                                                  [01;31m[K^~~[m[K
+[13.533s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:[m[K In constructor ‘[01m[KRobot_controller::[01;32m[KRobot_controller[m[K(const std::string&)[m[K’:
+[13.533s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:6:2:[m[K [01;31m[Kerror: [m[K‘[01m[K_encoders_subscription[m[K’ was not declared in this scope; did you mean ‘[01m[Kcreate_subscription[m[K’?
+[13.534s]     6 |  [01;31m[K_encoders_subscription[m[K = this->create_subscription<std_msgs::msg::Float32>(
+[13.534s]       |  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.535s]       |  [32m[Kcreate_subscription[m[K
+[13.561s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:6:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[13.563s]     6 |  _encoders_subscription = this->create_subscription<[01;31m[Kstd_msgs[m[K::msg::Float32>(
+[13.563s]       |                                                     [01;31m[K^~~~~~~~[m[K
+[13.564s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:6:33:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[13.564s]     6 |  _encoders_subscription = this->[01;31m[Kcreate_subscription<std_msgs::msg::Float32>[m[K(
+[13.565s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.566s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:9:24:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiSubNode[m[K’ has not been declared
+[13.567s]     9 |             std::bind(&[01;31m[KMultiSubNode[m[K::number_callback, this, std::placeholders::_1));
+[13.568s]       |                        [01;31m[K^~~~~~~~~~~~[m[K
+[13.568s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:[m[K At global scope:
+[13.569s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:13:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kencoders_callback[m[K’ declared void
+[13.570s]    13 | void [01;31m[KRobot_controller[m[K::encoders_callback(std_msgs::msg::Float32::UniquePtr msg)
+[13.571s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.572s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:13:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ has not been declared
+[13.573s]    13 | void Robot_controller::encoders_callback([01;31m[Kstd_msgs[m[K::msg::Float32::UniquePtr msg)
+[13.574s]       |                                          [01;31m[K^~~~~~~~[m[K
+[13.580s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[13.580s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:25:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kargc[m[K’ was not declared in this scope
+[13.581s]    25 |     rclcpp::init([01;31m[Kargc[m[K, argv);
+[13.581s]       |                  [01;31m[K^~~~[m[K
+[13.595s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:25:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kargv[m[K’ was not declared in this scope
+[13.596s]    25 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+[13.596s]       |                        [01;31m[K^~~~[m[K
+[17.135s] gmake[2]: *** [CMakeFiles/robot_controller.dir/build.make:76: CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o] Error 1
+[17.137s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/robot_controller.dir/all] Error 2
+[17.137s] gmake: *** [Makefile:146: all] Error 2
+[17.146s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

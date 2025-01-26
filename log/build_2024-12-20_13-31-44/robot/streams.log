@@ -1,0 +1,62 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.174s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.119s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.152s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.304s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.344s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.391s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.446s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.676s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.682s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.953s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.186s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.234s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.290s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.857s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.858s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.858s] -- Configured cppcheck exclude dirs and/or files: 
+[2.861s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.862s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.866s] -- Added test 'lint_cmake' to check CMake code style
+[2.870s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.885s] -- Added test 'uncrustify' to check C / C++ code style
+[2.886s] -- Configured uncrustify additional arguments: 
+[2.889s] -- Added test 'xmllint' to check XML markup files
+[2.920s] -- Configuring done (2.8s)
+[3.081s] -- Generating done (0.1s)
+[3.098s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.336s] [ 11%] Built target encoders_subscriber
+[3.339s] [ 22%] Built target robot_controller
+[3.347s] [ 50%] Built target main
+[3.348s] [ 66%] Built target encoders_publisher
+[3.488s] [ 88%] Built target motor_subscriber
+[3.489s] [ 88%] Built target position_publisher
+[3.501s] [100%] Built target position_reader
+[3.554s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[3.907s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.945s] -- Install configuration: ""
+[3.947s] -- Execute custom install script
+[3.949s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/main
+[3.950s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/encoders_subscriber
+[3.951s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/robot_controller
+[3.952s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/position_publisher
+[3.953s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/position_reader
+[3.954s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/motor_subscriber
+[3.955s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/encoders_publisher
+[3.957s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/launch/launch.py
+[3.958s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[3.959s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[3.960s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.sh
+[3.961s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.dsv
+[3.962s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.sh
+[3.963s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.dsv
+[3.964s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.bash
+[3.965s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.sh
+[3.966s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.zsh
+[3.967s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.dsv
+[3.968s] -- Symlinking: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv
+[4.013s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/packages/robot
+[4.014s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig.cmake
+[4.015s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig-version.cmake
+[4.016s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.xml
+[4.024s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot

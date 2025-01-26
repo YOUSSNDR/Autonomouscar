@@ -1,0 +1,47 @@
+[0.059s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.394s] [  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.418s] [ 20%] Built target position_publisher
+[0.426s] [ 33%] Built target robot_controller
+[0.444s] [ 46%] Built target listener
+[0.495s] [ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[0.613s] [ 66%] Built target motor_subscriber
+[0.616s] [ 80%] Built target position_reader
+[3.835s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Kcount_number_of_changes[m[K(int, int, uint32_t)[m[K’:
+[3.838s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:276:4:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_on_channel_A[m[K’ in static member function
+[3.839s]   276 |    [01;31m[K_number_of_changes_on_channel_A[m[K += 1;
+[3.840s]       |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.840s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:22[m[K:
+[3.841s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:47:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.843s]    47 |         unsigned int [01;36m[K_number_of_changes_on_channel_A[m[K = 0U;
+[3.844s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.847s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:277:57:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_on_channel_A[m[K’ in static member function
+[3.848s]   277 |     std::cout << "number of changes on channel A : " << [01;31m[K_number_of_changes_on_channel_A[m[K << std::endl;
+[3.848s]       |                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.849s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:47:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.850s]    47 |         unsigned int [01;36m[K_number_of_changes_on_channel_A[m[K = 0U;
+[3.851s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.854s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:278:4:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_on_channel_B[m[K’ in static member function
+[3.855s]   278 |    [01;31m[K_number_of_changes_on_channel_B[m[K += 1;
+[3.857s]       |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.857s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:48:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.859s]    48 |         unsigned int [01;36m[K_number_of_changes_on_channel_B[m[K = 0U;
+[3.860s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.860s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:279:57:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_on_channel_B[m[K’ in static member function
+[3.861s]   279 |     std::cout << "number of changes on channel B : " << [01;31m[K_number_of_changes_on_channel_B[m[K << std::endl;
+[3.862s]       |                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.862s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:48:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.864s]    48 |         unsigned int [01;36m[K_number_of_changes_on_channel_B[m[K = 0U;
+[3.865s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.866s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:263:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.867s]   263 | void Encoders::count_number_of_changes([01;35m[Kint gpio[m[K, int level, uint32_t tick)
+[3.867s]       |                                        [01;35m[K~~~~^~~~[m[K
+[3.869s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:263:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.871s]   263 | void Encoders::count_number_of_changes(int gpio, [01;35m[Kint level[m[K, uint32_t tick)
+[3.872s]       |                                                  [01;35m[K~~~~^~~~~[m[K
+[3.872s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:263:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktick[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.873s]   263 | void Encoders::count_number_of_changes(int gpio, int level, [01;35m[Kuint32_t tick[m[K)
+[3.873s]       |                                                             [01;35m[K~~~~~~~~~^~~~[m[K
+[4.161s] gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+[4.162s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+[4.163s] gmake: *** [Makefile:146: all] Error 2
+[4.170s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

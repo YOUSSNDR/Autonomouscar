@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:17 (add_executable):
+  add_executable cannot create target "encoders" because another target with
+  the same name already exists.  The existing target is an executable created
+  in source directory
+  "/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot".  See
+  documentation for policy CMP0002 for more details.
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

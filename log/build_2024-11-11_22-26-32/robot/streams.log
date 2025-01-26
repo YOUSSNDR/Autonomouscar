@@ -1,0 +1,23 @@
+[0.086s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.426s] [ 16%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[11.566s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:3[m[K:
+[11.567s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:13:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kconst[m[K’
+[11.567s]    13 |                             [01;31m[Kconst[m[K Encoders &encoder);
+[11.568s]       |                             [01;31m[K^~~~~[m[K
+[11.607s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:6:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(const std::string&, const std::string&, const Encoders&)[m[K’
+[11.608s]     6 | [01;31m[KEncoders_publisher[m[K::Encoders_publisher(const std::string &node_name,
+[11.608s]       | [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.609s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:8:8:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(Encoders_publisher&&)[m[K’
+[11.609s]     8 | struct [01;36m[KEncoders_publisher[m[K : public rclcpp::Node
+[11.609s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.610s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:8:8:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(const Encoders_publisher&)[m[K’
+[11.610s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:11:9:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(const std::string&, const std::string&)[m[K’
+[11.611s]    11 |         [01;36m[KEncoders_publisher[m[K(const std::string &node_name,
+[11.611s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.612s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:8:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders_publisher[m[K’ defined here
+[11.612s]     8 | struct [01;36m[KEncoders_publisher[m[K : public rclcpp::Node
+[11.613s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[14.503s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
+[14.504s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[14.505s] gmake: *** [Makefile:146: all] Error 2
+[14.513s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

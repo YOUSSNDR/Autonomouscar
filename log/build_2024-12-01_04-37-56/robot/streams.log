@@ -1,0 +1,37 @@
+[0.054s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.185s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.190s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.226s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.386s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.426s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.475s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.532s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.770s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.776s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.065s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.289s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.341s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.796s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.797s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.797s] -- Configured cppcheck exclude dirs and/or files: 
+[2.800s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.800s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.804s] -- Added test 'lint_cmake' to check CMake code style
+[2.807s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.819s] -- Added test 'uncrustify' to check C / C++ code style
+[2.819s] -- Configured uncrustify additional arguments: 
+[2.821s] -- Added test 'xmllint' to check XML markup files
+[2.834s] -- Configuring done (2.7s)
+[2.929s] -- Generating done (0.1s)
+[2.943s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.143s] [ 14%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o[0m
+[3.188s] [ 42%] Built target listener
+[3.197s] [ 85%] Built target encoders
+[4.667s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/robot_controller.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[4.668s]     2 | #include [01;31m[K<ros/ros.h>[m[K
+[4.668s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[4.668s] compilation terminated.
+[4.680s] gmake[2]: *** [CMakeFiles/robot_controller.dir/build.make:76: CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o] Error 1
+[4.681s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/robot_controller.dir/all] Error 2
+[4.682s] gmake: *** [Makefile:146: all] Error 2
+[4.691s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

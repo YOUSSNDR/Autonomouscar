@@ -1,0 +1,31 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, std::string)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:75:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinterval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   75 |     const unsigned int [01;35m[Kinterval[m[K = 1000;
+      |                        [01;35m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:94:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K.[m[K’ token
+   94 |     std::thread encoder_A_thread(Encoders[01;31m[K.[m[Kcompute_rps_handler, encoder_A);
+      |                                          [01;31m[K^[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:95:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K.[m[K’ token
+   95 |     std::thread encoder_B_thread(Encoders[01;31m[K.[m[Kcompute_rps_handler, encoder_B);
+      |                                          [01;31m[K^[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:66:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinterval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   66 |     const unsigned int [01;35m[Kinterval[m[K = 1000;
+      |                        [01;35m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K At global scope:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:275:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kcompute_rps_handler[m[K’ declared void
+  275 | void [01;31m[KEncoders[m[K::compute_rps_handler(Encoder &encoder)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:275:36:[m[K [01;31m[Kerror: [m[K‘[01m[KEncoder[m[K’ was not declared in this scope; did you mean ‘[01m[KEncoders[m[K’?
+  275 | void Encoders::compute_rps_handler([01;31m[KEncoder[m[K &encoder)
+      |                                    [01;31m[K^~~~~~~[m[K
+      |                                    [32m[KEncoders[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:275:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kencoder[m[K’ was not declared in this scope; did you mean ‘[01m[KEncoders[m[K’?
+  275 | void Encoders::compute_rps_handler(Encoder &[01;31m[Kencoder[m[K)
+      |                                             [01;31m[K^~~~~~~[m[K
+      |                                             [32m[KEncoders[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

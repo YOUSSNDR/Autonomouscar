@@ -1,0 +1,41 @@
+[0.066s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.876s] [ 31%] Built target encoders_subscriber
+[0.877s] [ 43%] Built target main
+[0.881s] [ 56%] Built target robot_controller
+[0.882s] [ 68%] Built target position_publisher
+[1.035s] [ 81%] Built target position_reader
+[1.064s] [ 87%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[13.564s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_left_motor_and_right_motor_duty_cycle[m[K(const geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr&)[m[K’:
+[13.564s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:118:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.565s]   118 | right_motor_duty_cycle([01;35m[Kconst geometry_msgs::msg::Twist::UniquePtr &msg[m[K)
+[13.565s]       |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[13.566s] 
+[37.079s] [ 93%] [32m[1mLinking CXX executable motor_subscriber[0m
+[39.038s] [100%] Built target motor_subscriber
+[39.096s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[39.461s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[39.504s] -- Install configuration: ""
+[39.506s] -- Execute custom install script
+[39.511s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/main
+[39.512s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/encoders_subscriber
+[39.518s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/robot_controller
+[39.520s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/position_publisher
+[39.522s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/position_reader
+[39.524s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/motor_subscriber
+[39.532s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/launch/launch.py
+[39.534s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[39.537s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[39.539s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.sh
+[39.540s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.dsv
+[39.542s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.sh
+[39.544s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.dsv
+[39.545s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.bash
+[39.547s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.sh
+[39.549s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.zsh
+[39.550s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.dsv
+[39.550s] -- Symlinking: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv
+[39.601s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/packages/robot
+[39.603s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig.cmake
+[39.604s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig-version.cmake
+[39.606s] -- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.xml
+[39.615s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot

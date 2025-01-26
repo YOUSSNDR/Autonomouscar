@@ -1,0 +1,13 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+    2 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 80%] [32m[1mLinking CXX executable encoders[0m
+[ 80%] Built target encoders
+gmake: *** [Makefile:146: all] Error 2

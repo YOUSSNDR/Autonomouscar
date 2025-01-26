@@ -1,0 +1,16 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kstart_encoder[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:100:16:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kvoid(Encoders&, Channel&)[m[K’ to ‘[01m[Kstd::function<void(Encoders&)>[m[K’
+  100 |     [01;31m[Ktimer_start(compute_rps_handler, interval)[m[K;
+      |     [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:22[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:72:57:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid Encoders::[01;32m[Ktimer_start[m[K(std::function<void(Encoders&)>, const unsigned int&)[m[K’
+   72 |         void timer_start([01;36m[Kstd::function<void(Encoders&)> func[m[K,
+      |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K(Channel&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:209:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krps[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  209 |     unsigned int [01;35m[Krps[m[K = 0;
+      |                  [01;35m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:104: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

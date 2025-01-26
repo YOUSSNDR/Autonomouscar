@@ -1,0 +1,22 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In lambda function:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:28:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krps[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   28 |         unsigned int [01;35m[Krps[m[K = this->_encoder.get_rps();
+      |                      [01;35m[K^~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In constructor ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(const std::string&, const std::string&, const Encoders&, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:31:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoders_publisher::create_wall_timer(const unsigned int&, Encoders_publisher::Encoders_publisher(const std::string&, const std::string&, const Encoders&, const unsigned int&)::<lambda()>&)[m[K’
+   31 |     _timer = [01;31m[Kthis->create_wall_timer(period, timer_callback)[m[K;
+      |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:2[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_wall_timer[m[K(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr, bool)[m[K’
+  241 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:241:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:31:37:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kunsigned int[m[K’
+   31 |     _timer = [01;36m[Kthis->create_wall_timer(period, timer_callback)[m[K;
+      |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

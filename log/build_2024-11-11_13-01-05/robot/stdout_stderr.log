@@ -1,0 +1,26 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:46:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinterval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   46 |     const unsigned int [01;35m[Kinterval[m[K = 1000;
+      |                        [01;35m[K^~~~~~~~[m[K
+[ 75%] [32m[1mLinking CXX executable encoders[0m
+[100%] Built target encoders
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/lib/robot/encoders
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.sh
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/environment/path.dsv
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.bash
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.sh
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.zsh
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/local_setup.dsv
+-- Symlinking: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/ament_index/resource_index/packages/robot
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig.cmake
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/cmake/robotConfig-version.cmake
+-- Up-to-date symlink: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.xml

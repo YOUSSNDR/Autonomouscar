@@ -1,0 +1,46 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.177s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.125s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.160s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.311s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.349s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.396s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.451s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.682s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.687s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.953s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.171s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.219s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.274s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.831s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.833s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.833s] -- Configured cppcheck exclude dirs and/or files: 
+[2.836s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.836s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.841s] -- Added test 'lint_cmake' to check CMake code style
+[2.844s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.859s] -- Added test 'uncrustify' to check C / C++ code style
+[2.860s] -- Configured uncrustify additional arguments: 
+[2.863s] -- Added test 'xmllint' to check XML markup files
+[2.890s] -- Configuring done (2.7s)
+[3.034s] -- Generating done (0.1s)
+[3.050s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.279s] [ 12%] Built target encoders_subscriber
+[3.282s] [ 25%] Built target robot_controller
+[3.286s] [ 37%] Built target position_publisher
+[3.299s] [ 43%] [32m[1mLinking CXX executable main[0m
+[3.433s] [ 50%] [32m[1mLinking CXX executable motor_subscriber[0m
+[3.440s] [ 62%] Built target position_reader
+[3.827s] [ 87%] Built target main
+[4.794s] /usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::init_pwm(unsigned int const&, unsigned int const&) const':
+[4.795s] motor.cpp:(.text+0x14c): undefined reference to `gpioPWM'
+[4.795s] /usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::configure_gpio_as_output(unsigned int const&) const':
+[4.795s] motor.cpp:(.text+0x214): undefined reference to `gpioSetMode'
+[4.796s] /usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::stop()':
+[4.796s] motor.cpp:(.text+0x3d4): undefined reference to `gpioPWM'
+[4.796s] /usr/bin/ld: motor.cpp:(.text+0x3f4): undefined reference to `gpioPWM'
+[4.878s] collect2: error: ld returned 1 exit status
+[4.885s] gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:195: motor_subscriber] Error 1
+[4.886s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+[4.887s] gmake: *** [Makefile:146: all] Error 2
+[4.894s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

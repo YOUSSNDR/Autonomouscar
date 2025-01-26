@@ -1,0 +1,10 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In constructor ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(const std::string&, const std::string&, const Encoders&, const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klambda[m[K’ was not declared in this scope
+   30 |     [01;31m[Klambda[m[K timer_callback = [this]()
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:43:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_callback[m[K’ was not declared in this scope
+   43 |     _timer = this->create_wall_timer(500ms, [01;31m[Ktimer_callback[m[K);
+      |                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,13 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(Motor&, Motor&) const[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:85:20:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator||[m[K’ (operand types are ‘[01m[KMotor[m[K’ and ‘[01m[KMotor[m[K’)
+   85 |     if ([32m[Kleft_motor[m[K [01;31m[K||[m[K [34m[Kright_motor[m[K){}
+      |         [32m[K~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~[m[K
+      |         [32m[K|[m[K             [34m[K|[m[K
+      |         [32m[KMotor[m[K         [34m[KMotor[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:85:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator||(bool, bool)[m[K’ (built-in)
+   85 |     if ([01;36m[Kleft_motor || right_motor[m[K){}
+      |         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:85:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[KMotor[m[K’ to ‘[01m[Kbool[m[K’
+gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

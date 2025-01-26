@@ -1,0 +1,13 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_pin_as_output[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:65:56:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   65 |                 cout << gpio << "is a bad gpio pin" << [01;35m[Kendl[m[K;
+      |                                                        [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:66:13:[m[K [01;36m[Knote: [m[Khere
+   66 |             [01;36m[Kcase[m[K PI_BAD_MODE:
+      |             [01;36m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:67:57:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   67 |                 cout << "Bad mode for gpio " << gpio << [01;35m[Kendl[m[K;
+      |                                                         [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:68:13:[m[K [01;36m[Knote: [m[Khere
+   68 |             [01;36m[Kdefault[m[K:
+      |             [01;36m[K^~~~~~~[m[K

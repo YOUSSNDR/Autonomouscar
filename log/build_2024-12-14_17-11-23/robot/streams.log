@@ -1,0 +1,56 @@
+[0.054s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.354s] [ 20%] Built target listener
+[0.357s] [ 20%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.360s] [ 33%] Built target robot_controller
+[0.366s] [ 46%] Built target position_publisher
+[0.422s] [ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[0.518s] [ 66%] Built target position_reader
+[0.538s] [ 80%] Built target motor_subscriber
+[3.576s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:19[m[K:
+[3.577s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:47:38:[m[K [01;31m[Kerror: [m[KISO C++ forbids in-class initialization of non-const static member ‘[01m[KEncoders::_number_of_changes_on_channel_A[m[K’
+[3.577s]    47 |         static volatile unsigned int [01;31m[K_number_of_changes_on_channel_A[m[K = 0U;
+[3.578s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.580s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:48:38:[m[K [01;31m[Kerror: [m[KISO C++ forbids in-class initialization of non-const static member ‘[01m[KEncoders::_number_of_changes_on_channel_B[m[K’
+[3.580s]    48 |         static volatile unsigned int [01;31m[K_number_of_changes_on_channel_B[m[K = 0U;
+[3.581s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.756s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:23[m[K:
+[3.757s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:47:38:[m[K [01;31m[Kerror: [m[KISO C++ forbids in-class initialization of non-const static member ‘[01m[KEncoders::_number_of_changes_on_channel_A[m[K’
+[3.758s]    47 |         static volatile unsigned int [01;31m[K_number_of_changes_on_channel_A[m[K = 0U;
+[3.758s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.760s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:48:38:[m[K [01;31m[Kerror: [m[KISO C++ forbids in-class initialization of non-const static member ‘[01m[KEncoders::_number_of_changes_on_channel_B[m[K’
+[3.760s]    48 |         static volatile unsigned int [01;31m[K_number_of_changes_on_channel_B[m[K = 0U;
+[3.761s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.762s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:29:24:[m[K [01;31m[Kerror: [m[Kduplicate initialization of ‘[01m[KEncoders::_number_of_changes_on_channel_A[m[K’
+[3.762s]    29 | unsigned int Encoders::[01;31m[K_number_of_changes_on_channel_A[m[K = 0U;
+[3.763s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.763s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:29:14:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kunsigned int Encoders::_number_of_changes_on_channel_A[m[K’
+[3.764s]    29 | unsigned int [01;31m[KEncoders[m[K::_number_of_changes_on_channel_A = 0U;
+[3.764s]       |              [01;31m[K^~~~~~~~[m[K
+[3.765s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:47:38:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kvolatile unsigned int Encoders::_number_of_changes_on_channel_A[m[K’
+[3.766s]    47 |         static volatile unsigned int [01;36m[K_number_of_changes_on_channel_A[m[K = 0U;
+[3.766s]       |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.767s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:30:24:[m[K [01;31m[Kerror: [m[Kduplicate initialization of ‘[01m[KEncoders::_number_of_changes_on_channel_B[m[K’
+[3.768s]    30 | unsigned int Encoders::[01;31m[K_number_of_changes_on_channel_B[m[K = 0U;
+[3.769s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.770s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:30:14:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kunsigned int Encoders::_number_of_changes_on_channel_B[m[K’
+[3.771s]    30 | unsigned int [01;31m[KEncoders[m[K::_number_of_changes_on_channel_B = 0U;
+[3.773s]       |              [01;31m[K^~~~~~~~[m[K
+[3.774s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:48:38:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kvolatile unsigned int Encoders::_number_of_changes_on_channel_B[m[K’
+[3.775s]    48 |         static volatile unsigned int [01;36m[K_number_of_changes_on_channel_B[m[K = 0U;
+[3.776s]       |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.802s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic void Encoders::[01;32m[Kcount_number_of_changes[m[K(int, int, uint32_t)[m[K’:
+[3.803s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:268:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.804s]   268 | void Encoders::count_number_of_changes([01;35m[Kint gpio[m[K, int level, uint32_t tick)
+[3.805s]       |                                        [01;35m[K~~~~^~~~[m[K
+[3.806s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:268:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.809s]   268 | void Encoders::count_number_of_changes(int gpio, [01;35m[Kint level[m[K, uint32_t tick)
+[3.810s]       |                                                  [01;35m[K~~~~^~~~~[m[K
+[3.810s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:268:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktick[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.811s]   268 | void Encoders::count_number_of_changes(int gpio, int level, [01;35m[Kuint32_t tick[m[K)
+[3.811s]       |                                                             [01;35m[K~~~~~~~~~^~~~[m[K
+[3.828s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+[3.829s] gmake[2]: *** Waiting for unfinished jobs....
+[4.138s] gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+[4.139s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+[4.140s] gmake: *** [Makefile:146: all] Error 2
+[4.149s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

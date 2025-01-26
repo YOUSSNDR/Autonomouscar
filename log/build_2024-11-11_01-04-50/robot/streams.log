@@ -1,0 +1,60 @@
+[0.064s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.326s] [ 25%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[0.329s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[2.468s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:18[m[K:
+[2.469s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:11:9:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K)[m[K’ token
+[2.469s]    11 |         [01;31m[K)[m[K;
+[2.470s]       |         [01;31m[K^[m[K
+[2.475s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[2.476s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:49:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoders::Encoders(const unsigned int&, const unsigned int&, const unsigned int&)[m[K’
+[2.477s]    49 |                         duty_cycle_A[01;31m[K)[m[K,
+[2.478s]       |                                     [01;31m[K^[m[K
+[2.478s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:7:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, std::string&, int)[m[K’
+[2.479s]     7 |         [01;36m[KEncoders[m[K(const unsigned int &M1_GPIO,
+[2.479s]       |         [01;36m[K^~~~~~~~[m[K
+[2.480s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:7:9:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+[2.481s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const Encoders&)[m[K’
+[2.482s]     4 | struct [01;36m[KEncoders[m[K
+[2.482s]       |        [01;36m[K^~~~~~~~[m[K
+[2.483s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[2.484s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(Encoders&&)[m[K’
+[2.484s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[2.485s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:50:25:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before string constant
+[2.486s]    50 |                         [01;31m[K"Channel A"[m[K;
+[2.486s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.487s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:55:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoders::Encoders(const unsigned int&, const unsigned int&, const unsigned int&, const char [10])[m[K’
+[2.487s]    55 |                         "Channel B"[01;31m[K)[m[K;
+[2.488s]       |                                    [01;31m[K^[m[K
+[2.489s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:7:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, std::string&, int)[m[K’
+[2.490s]     7 |         [01;36m[KEncoders[m[K(const unsigned int &M1_GPIO,
+[2.490s]       |         [01;36m[K^~~~~~~~[m[K
+[2.491s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:7:9:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[2.492s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const Encoders&)[m[K’
+[2.493s]     4 | struct [01;36m[KEncoders[m[K
+[2.493s]       |        [01;36m[K^~~~~~~~[m[K
+[2.494s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.495s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(Encoders&&)[m[K’
+[2.495s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.665s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/main.cpp.o] Error 1
+[2.665s] gmake[2]: *** Waiting for unfinished jobs....
+[2.734s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:22[m[K:
+[2.735s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:11:9:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K)[m[K’ token
+[2.735s]    11 |         [01;31m[K)[m[K;
+[2.736s]       |         [01;31m[K^[m[K
+[2.737s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:32:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, std::string&)[m[K’
+[2.737s]    32 | [01;31m[KEncoders[m[K::Encoders(const unsigned int &M1_GPIO,
+[2.738s]       | [01;31m[K^~~~~~~~[m[K
+[2.738s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KEncoders::[01;32m[KEncoders[m[K(Encoders&&)[m[K’
+[2.739s]     4 | struct [01;36m[KEncoders[m[K
+[2.739s]       |        [01;36m[K^~~~~~~~[m[K
+[2.739s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const Encoders&)[m[K’
+[2.740s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:7:9:[m[K [01;36m[Knote: [m[K                ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, std::string&, int)[m[K’
+[2.740s]     7 |         [01;36m[KEncoders[m[K(const unsigned int &M1_GPIO,
+[2.741s]       |         [01;36m[K^~~~~~~~[m[K
+[2.741s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:4:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Encoders[m[K’ defined here
+[2.741s]     4 | struct [01;36m[KEncoders[m[K
+[2.742s]       |        [01;36m[K^~~~~~~~[m[K
+[3.028s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+[3.029s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[3.030s] gmake: *** [Makefile:146: all] Error 2
+[3.037s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

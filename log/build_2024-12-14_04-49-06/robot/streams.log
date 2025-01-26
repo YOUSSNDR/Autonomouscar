@@ -1,0 +1,31 @@
+[0.050s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.350s] [ 27%] Built target encoders
+[0.353s] [ 45%] Built target listener
+[0.353s] [ 63%] Built target robot_controller
+[0.355s] [ 81%] Built target position_publisher
+[0.492s] [ 90%] [32mBuilding CXX object CMakeFiles/motors.dir/src/motor.cpp.o[0m
+[11.554s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In constructor ‘[01m[KMotor::[01;32m[KMotor[m[K(const unsigned int&, const unsigned int&, const unsigned int&)[m[K’:
+[11.555s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:12:1:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kconst unsigned int[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[11.556s]    12 | [01;31m[KMotor[m[K::Motor(const unsigned int &MxA_gpio,
+[11.556s]       | [01;31m[K^~~~~[m[K
+[11.556s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:3[m[K:
+[11.557s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor.h:30:28:[m[K [01;36m[Knote: [m[K‘[01m[Kconst unsigned int Motor::_MxB_gpio[m[K’ should be initialized
+[11.557s]    30 |         const unsigned int [01;36m[K_MxB_gpio[m[K;
+[11.558s]       |                            [01;36m[K^~~~~~~~~[m[K
+[11.558s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:17:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K_MxB_gpio[m[K’
+[11.558s]    17 |     [01;31m[K_MxB_gpio[m[K(MxB_gpio)
+[11.559s]       |     [01;31m[K^~~~~~~~~[m[K
+[11.559s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:13:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KMxB_gpio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.560s]    13 |         [01;35m[Kconst unsigned int &MxB_gpio[m[K,
+[11.560s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[11.560s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:14:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kduty_cycle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.561s]    14 |         [01;35m[Kconst unsigned int &duty_cycle[m[K):
+[11.561s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[11.561s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K At global scope:
+[11.562s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:17:14:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[11.562s]    17 |     _MxB_gpio[01;31m[K([m[KMxB_gpio)
+[11.563s]       |              [01;31m[K^[m[K
+[14.448s] gmake[2]: *** [CMakeFiles/motors.dir/build.make:76: CMakeFiles/motors.dir/src/motor.cpp.o] Error 1
+[14.449s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/motors.dir/all] Error 2
+[14.450s] gmake: *** [Makefile:146: all] Error 2
+[14.459s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

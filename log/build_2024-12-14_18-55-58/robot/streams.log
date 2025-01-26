@@ -1,0 +1,15 @@
+[0.067s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.398s] [  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.416s] [ 20%] Built target listener
+[0.423s] [ 33%] Built target position_publisher
+[0.437s] [ 46%] Built target robot_controller
+[0.491s] [ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[0.669s] [ 66%] Built target position_reader
+[0.689s] [ 80%] Built target motor_subscriber
+[1.343s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:12:17:[m[K [01;31m[Kerror: [m[Kmissing terminating > character
+[1.344s]    12 | #include <math.h
+[1.344s]       |                 [01;31m[K^[m[K
+[4.329s] gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+[4.330s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+[4.331s] gmake: *** [Makefile:146: all] Error 2
+[4.339s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

@@ -1,0 +1,43 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:185:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpin[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  185 |     int [01;35m[Kpin[m[K = 7;
+      |         [01;35m[K^~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In function ‘[01m[Kbool[01;32m[K configurePinAsOutput[m[K(unsigned int)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:60:63:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   60 |                 std::cout<<gpio<< "is a bad gpio pin" << std::[01;35m[Kendl[m[K;
+      |                                                               [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:61:13:[m[K [01;36m[Knote: [m[Khere
+   61 |             [01;36m[Kcase[m[K PI_BAD_MODE:
+      |             [01;36m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:62:65:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   62 |                 std::cout<<"Bad mode for gpio " << gpio << std::[01;35m[Kendl[m[K;
+      |                                                                 [01;35m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:63:13:[m[K [01;36m[Knote: [m[Khere
+   63 |             [01;36m[Kdefault[m[K:
+      |             [01;36m[K^~~~~~~[m[K
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `configurePinAsOutput(unsigned int)':
+encoders.cpp:(.text+0x14): undefined reference to `gpioSetMode'
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `signalHandler(int)':
+encoders.cpp:(.text+0x1f8): undefined reference to `gpioPWM'
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `main':
+encoders.cpp:(.text+0x500): undefined reference to `gpioVersion'
+/usr/bin/ld: encoders.cpp:(.text+0x51c): undefined reference to `gpioCfgGetInternals'
+/usr/bin/ld: encoders.cpp:(.text+0x534): undefined reference to `gpioCfgSetInternals'
+/usr/bin/ld: encoders.cpp:(.text+0x568): undefined reference to `gpioInitialise'
+/usr/bin/ld: encoders.cpp:(.text+0x5ec): undefined reference to `gpioPWM'
+/usr/bin/ld: encoders.cpp:(.text+0x674): undefined reference to `gpioPWM'
+/usr/bin/ld: encoders.cpp:(.text+0x6fc): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0x798): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0x83c): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0x848): undefined reference to `gpioSetMode'
+/usr/bin/ld: encoders.cpp:(.text+0x860): undefined reference to `serialOpen'
+/usr/bin/ld: encoders.cpp:(.text+0x914): undefined reference to `serialPutchar'
+/usr/bin/ld: encoders.cpp:(.text+0x96c): undefined reference to `serialDataAvail'
+/usr/bin/ld: encoders.cpp:(.text+0x98c): undefined reference to `serialGetchar'
+/usr/bin/ld: encoders.cpp:(.text+0xa28): undefined reference to `gpioPWM'
+/usr/bin/ld: encoders.cpp:(.text+0xab4): undefined reference to `gpioRead'
+/usr/bin/ld: encoders.cpp:(.text+0xacc): undefined reference to `gpioRead'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:97: encoders] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

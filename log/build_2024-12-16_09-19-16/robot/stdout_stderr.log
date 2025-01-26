@@ -1,0 +1,20 @@
+[ 13%] Built target position_publisher
+[ 46%] Built target main
+[ 60%] Built target encoders_subscriber
+[ 73%] Built target robot_controller
+[ 86%] Built target position_reader
+[ 93%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In constructor ‘[01m[KMotor_subscriber::[01;32m[KMotor_subscriber[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:13:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kconvert_to_duty_cycle[m[K’ is not a member of ‘[01m[KMotor_subscriber[m[K’
+   13 |         std::bind(&Motor_subscriber::[01;31m[Kconvert_to_duty_cycle[m[K, this, std::placeholders::_1));
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(Motor&, Motor&) const[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:44:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 | void Motor_subscriber::set_motors_duty_cycle([01;35m[KMotor &left_motor[m[K, Motor &right_motor) const
+      |                                              [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:44:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 | void Motor_subscriber::set_motors_duty_cycle(Motor &left_motor, [01;35m[KMotor &right_motor[m[K) const
+      |                                                                 [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

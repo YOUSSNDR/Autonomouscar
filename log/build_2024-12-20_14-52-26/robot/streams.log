@@ -1,0 +1,20 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.356s] [ 11%] Built target encoders_subscriber
+[0.357s] [ 27%] Built target encoders_publisher
+[0.374s] [ 38%] Built target robot_controller
+[0.385s] [ 44%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.497s] [ 55%] Built target position_publisher
+[0.526s] [ 66%] Built target position_reader
+[0.542s] [ 77%] Built target motor_subscriber
+[11.498s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K signalHandler[m[K(int)[m[K’:
+[11.499s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:67:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpi[m[K’ was not declared in this scope
+[11.499s]    67 |     set_PWM_dutycycle([01;31m[Kpi[m[K, M1A_GPIO, 0);
+[11.500s]       |                       [01;31m[K^~[m[K
+[11.523s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_PWM_dutycycle[m[K’ was not declared in this scope; did you mean ‘[01m[KgpioGetPWMdutycycle[m[K’?
+[11.523s]    67 |     [01;31m[Kset_PWM_dutycycle[m[K(pi, M1A_GPIO, 0);
+[11.524s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[11.524s]       |     [32m[KgpioGetPWMdutycycle[m[K
+[14.365s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+[14.366s] gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/main.dir/all] Error 2
+[14.367s] gmake: *** [Makefile:146: all] Error 2
+[14.375s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

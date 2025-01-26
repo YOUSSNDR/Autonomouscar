@@ -1,0 +1,13 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/DWM1001_reader.cpp.o[0m
+[ 37%] Built target listener
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/DWM1001_reader.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/point.hpp: No such file or directory
+   11 | #include [01;31m[K"geometry_msgs/msg/point.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:104: CMakeFiles/encoders.dir/src/DWM1001_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/encoders.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 62%] [32m[1mLinking CXX executable robot_controller[0m
+[ 62%] Built target robot_controller
+gmake: *** [Makefile:146: all] Error 2

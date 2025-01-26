@@ -1,0 +1,14 @@
+[ 11%] Built target encoders_subscriber
+[ 27%] Built target encoders_publisher
+[ 38%] Built target robot_controller
+[ 44%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[ 55%] Built target motor_subscriber
+[ 66%] Built target position_publisher
+[ 77%] Built target position_reader
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:158:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_pin[m[K’ was not declared in this scope
+  158 |     set_mode(pi, [01;31m[Kgpio_pin[m[K, PI_OUTPUT);
+      |                  [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

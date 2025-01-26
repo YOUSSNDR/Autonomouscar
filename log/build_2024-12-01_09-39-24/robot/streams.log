@@ -1,0 +1,12 @@
+[0.056s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.398s] [ 12%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/DWM1001_reader.cpp.o[0m
+[0.402s] [ 37%] Built target listener
+[0.435s] [ 62%] Built target robot_controller
+[0.978s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/DWM1001_reader.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/point.hpp: No such file or directory
+[0.979s]    11 | #include [01;31m[K<geometry_msgs/msg/point.hpp>[m[K
+[0.979s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.980s] compilation terminated.
+[0.987s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:104: CMakeFiles/encoders.dir/src/DWM1001_reader.cpp.o] Error 1
+[0.988s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/encoders.dir/all] Error 2
+[0.989s] gmake: *** [Makefile:146: all] Error 2
+[0.998s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

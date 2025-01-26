@@ -1,0 +1,45 @@
+[0.057s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.184s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.135s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.171s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.325s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.364s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.412s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.467s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.703s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.709s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.979s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.198s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.247s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.302s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.872s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.873s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.874s] -- Configured cppcheck exclude dirs and/or files: 
+[2.877s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.877s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.882s] -- Added test 'lint_cmake' to check CMake code style
+[2.885s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.901s] -- Added test 'uncrustify' to check C / C++ code style
+[2.901s] -- Configured uncrustify additional arguments: 
+[2.904s] -- Added test 'xmllint' to check XML markup files
+[2.936s] -- Configuring done (2.8s)
+[3.105s] -- Generating done (0.1s)
+[3.121s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.357s] [ 10%] Built target encoders_subscriber
+[3.361s] [ 26%] [32mBuilding CXX object CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o[0m
+[3.365s] [ 26%] Built target robot_controller
+[3.374s] [ 52%] Built target main
+[3.511s] [ 63%] Built target position_publisher
+[3.530s] [ 78%] Built target motor_subscriber
+[3.537s] [ 89%] Built target position_reader
+[6.999s] [ 94%] [32m[1mLinking CXX executable encoders_publisher[0m
+[7.832s] /usr/bin/ld: CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o: in function `Encoders::Encoders(unsigned int const&, unsigned int const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[7.833s] encoders.cpp:(.text+0x280): undefined reference to `gpioSetAlertFunc'
+[7.833s] /usr/bin/ld: encoders.cpp:(.text+0x298): undefined reference to `gpioSetAlertFunc'
+[7.833s] /usr/bin/ld: CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o: in function `Encoders::configure_gpio_as_input(unsigned int const&)':
+[7.834s] encoders.cpp:(.text+0x55c): undefined reference to `gpioSetMode'
+[7.871s] collect2: error: ld returned 1 exit status
+[7.878s] gmake[2]: *** [CMakeFiles/encoders_publisher.dir/build.make:195: encoders_publisher] Error 1
+[7.879s] gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/encoders_publisher.dir/all] Error 2
+[7.880s] gmake: *** [Makefile:146: all] Error 2
+[7.888s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

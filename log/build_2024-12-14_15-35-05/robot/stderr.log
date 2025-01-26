@@ -1,0 +1,24 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:91:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K(const unsigned int&)[m[K’ is private within this context
+   91 |     std::thread encoder_A_thread(Encoders::[01;31m[Kcount_number_of_changes[m[K, std::ref(encoder_A));
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:19[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:72:14:[m[K [01;36m[Knote: [m[Kdeclared private here
+   72 |         void [01;36m[Kcount_number_of_changes[m[K(const unsigned int &channel_gpio);
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:91:44:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K(const unsigned int&)[m[K’
+   91 |     std::thread encoder_A_thread(Encoders::[01;31m[Kcount_number_of_changes[m[K, std::ref(encoder_A));
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:92:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K(const unsigned int&)[m[K’ is private within this context
+   92 |     std::thread encoder_B_thread(Encoders::[01;31m[Kcount_number_of_changes[m[K, std::ref(encoder_B));
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:72:14:[m[K [01;36m[Knote: [m[Kdeclared private here
+   72 |         void [01;36m[Kcount_number_of_changes[m[K(const unsigned int &channel_gpio);
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:92:44:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K(const unsigned int&)[m[K’
+   92 |     std::thread encoder_B_thread(Encoders::[01;31m[Kcount_number_of_changes[m[K, std::ref(encoder_B));
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

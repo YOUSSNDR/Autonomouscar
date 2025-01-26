@@ -1,0 +1,13 @@
+/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o: in function `main':
+encoders_publisher.cpp:(.text+0x698): multiple definition of `main'; CMakeFiles/encoders.dir/src/main.cpp.o:main.cpp:(.text+0x60): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:245: encoders] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/encoders.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/robot_controller.dir/build.make:179: robot_controller] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/robot_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,27 @@
+[0.058s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.397s] [ 13%] Built target robot_controller
+[0.405s] [ 26%] Built target position_publisher
+[0.410s] [ 33%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.431s] [ 46%] Built target listener
+[0.507s] [ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[0.580s] [ 66%] Built target position_reader
+[0.601s] [ 80%] Built target motor_subscriber
+[3.756s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_encoder_rps[m[K()[m[K’:
+[3.756s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:197:50:[m[K [01;31m[Kerror: [m[K‘[01m[K_number_of_changes_on_channel[m[K’ was not declared in this scope; did you mean ‘[01m[K_number_of_changes_on_channel_A[m[K’?
+[3.757s]   197 |     unsigned int encoder_number_of_revolutions = [01;31m[K_number_of_changes_on_channel[m[K/_PPR; //revolutions
+[3.758s]       |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.758s]       |                                                  [32m[K_number_of_changes_on_channel_A[m[K
+[3.779s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes_on_channel_A[m[K()[m[K’:
+[3.780s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:229:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel_value[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_value_A[m[K’?
+[3.780s]   229 |     [01;31m[K_channel_value[m[K = gpioRead(_channel_A_gpio);
+[3.781s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.782s]       |     [32m[K_channel_value_A[m[K
+[3.801s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes_on_channel_B[m[K()[m[K’:
+[3.802s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:245:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel_value[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_value_A[m[K’?
+[3.802s]   245 |     [01;31m[K_channel_value[m[K = gpioRead(_channel_B_gpio);
+[3.803s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.803s]       |     [32m[K_channel_value_A[m[K
+[4.142s] gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+[4.143s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+[4.144s] gmake: *** [Makefile:146: all] Error 2
+[4.153s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

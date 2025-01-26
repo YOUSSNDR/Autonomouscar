@@ -1,0 +1,16 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.355s] [ 27%] Built target encoders_subscriber
+[0.355s] [ 27%] Built target encoders_publisher
+[0.370s] [ 38%] Built target robot_controller
+[0.386s] [ 44%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.498s] [ 55%] Built target motor_subscriber
+[0.504s] [ 66%] Built target position_publisher
+[0.531s] [ 77%] Built target position_reader
+[14.404s] [ 83%] [32m[1mLinking CXX executable main[0m
+[14.855s] [100%] Built target main
+[14.908s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[15.265s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[15.305s] -- Install configuration: ""
+[15.308s] -- Up-to-date: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/launch
+[15.310s] -- Installing: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv
+[15.318s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot

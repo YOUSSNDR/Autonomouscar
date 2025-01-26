@@ -1,0 +1,94 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.306s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
+[2.389s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K(const unsigned int&, const unsigned int&, const unsigned int&, const unsigned int&)[m[K’:
+[2.389s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:150:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompute_rps_on_channel[m[K’ was not declared in this scope; did you mean ‘[01m[Kcompute_rps_on_channels[m[K’?
+[2.390s]   150 |     timer_start([01;31m[Kcompute_rps_on_channel[m[K, 1000);
+[2.390s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.391s]       |                 [32m[Kcompute_rps_on_channels[m[K
+[2.402s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In constructor ‘[01m[KEncoders::[01;32m[KEncoders[m[K()[m[K’:
+[2.402s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:167:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompute_rps_on_channel[m[K’ was not declared in this scope; did you mean ‘[01m[Kcompute_rps_on_channels[m[K’?
+[2.404s]   167 |     timer_start([01;31m[Kcompute_rps_on_channel[m[K, 1000);
+[2.405s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.405s]       |                 [32m[Kcompute_rps_on_channels[m[K
+[2.406s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In static member function ‘[01m[Kstatic int Encoders::[01;32m[Kcompute_rps_on_channels[m[K()[m[K’:
+[2.406s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:178:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_A_channel[m[K’ in static member function
+[2.407s]   178 |     A_rps = ([01;31m[K_number_of_changes_A_channel[m[K/_PPR)/_gear_ratio;
+[2.408s]       |              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.408s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:13[m[K:
+[2.409s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:34:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.409s]    34 |         unsigned int [01;36m[K_number_of_changes_A_channel[m[K = 0;
+[2.410s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.410s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:178:43:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_PPR[m[K’ in static member function
+[2.411s]   178 |     A_rps = (_number_of_changes_A_channel/[01;31m[K_PPR[m[K)/_gear_ratio;
+[2.411s]       |                                           [01;31m[K^~~~[m[K
+[2.411s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:30:28:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.412s]    30 |         const unsigned int [01;36m[K_PPR[m[K = 8;
+[2.412s]       |                            [01;36m[K^~~~[m[K
+[2.412s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:178:49:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_gear_ratio[m[K’ in static member function
+[2.413s]   178 |     A_rps = (_number_of_changes_A_channel/_PPR)/[01;31m[K_gear_ratio[m[K;
+[2.414s]       |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[2.414s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:31:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.415s]    31 |         const double [01;36m[K_gear_ratio[m[K = 900/8;
+[2.415s]       |                      [01;36m[K^~~~~~~~~~~[m[K
+[2.415s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:179:52:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_A_channel[m[K’ in static member function
+[2.416s]   179 |     cout << "number of changes on channel A : " << [01;31m[K_number_of_changes_A_channel[m[K << endl;
+[2.416s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.417s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:34:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.417s]    34 |         unsigned int [01;36m[K_number_of_changes_A_channel[m[K = 0;
+[2.417s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.418s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:181:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_A_channel[m[K’ in static member function
+[2.418s]   181 |     [01;31m[K_number_of_changes_A_channel[m[K = 0;
+[2.419s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.419s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:34:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.419s]    34 |         unsigned int [01;36m[K_number_of_changes_A_channel[m[K = 0;
+[2.420s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.420s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:183:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_B_channel[m[K’ in static member function
+[2.421s]   183 |     B_rps = ([01;31m[K_number_of_changes_B_channel[m[K/_PPR)/_gear_ratio;
+[2.421s]       |              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.421s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:35:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.422s]    35 |         unsigned int [01;36m[K_number_of_changes_B_channel[m[K = 0;
+[2.422s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.422s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:183:43:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_PPR[m[K’ in static member function
+[2.423s]   183 |     B_rps = (_number_of_changes_B_channel/[01;31m[K_PPR[m[K)/_gear_ratio;
+[2.423s]       |                                           [01;31m[K^~~~[m[K
+[2.424s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:30:28:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.424s]    30 |         const unsigned int [01;36m[K_PPR[m[K = 8;
+[2.424s]       |                            [01;36m[K^~~~[m[K
+[2.425s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:183:49:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_gear_ratio[m[K’ in static member function
+[2.425s]   183 |     B_rps = (_number_of_changes_B_channel/_PPR)/[01;31m[K_gear_ratio[m[K;
+[2.425s]       |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[2.426s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:31:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.426s]    31 |         const double [01;36m[K_gear_ratio[m[K = 900/8;
+[2.427s]       |                      [01;36m[K^~~~~~~~~~~[m[K
+[2.427s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:184:52:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_B_channel[m[K’ in static member function
+[2.427s]   184 |     cout << "number of changes on channel B : " << [01;31m[K_number_of_changes_B_channel[m[K << endl;
+[2.428s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.428s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:35:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.429s]    35 |         unsigned int [01;36m[K_number_of_changes_B_channel[m[K = 0;
+[2.429s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.429s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:186:6:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KEncoders::_number_of_changes_B_channel[m[K’ in static member function
+[2.430s]   186 |      [01;31m[K_number_of_changes_B_channel[m[K = 0;
+[2.430s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.431s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.h:35:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.431s]    35 |         unsigned int [01;36m[K_number_of_changes_B_channel[m[K = 0;
+[2.431s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.432s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:189:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[2.432s]   189 | [01;35m[K}[m[K
+[2.432s]       | [01;35m[K^[m[K
+[2.642s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kbool Encoders::[01;32m[Kconfigure_pin_as_output[m[K(const unsigned int&)[m[K’:
+[2.642s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:46:56:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[2.643s]    46 |                 cout << gpio << "is a bad gpio pin" << [01;35m[Kendl[m[K;
+[2.643s]       |                                                        [01;35m[K^~~~[m[K
+[2.644s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:47:13:[m[K [01;36m[Knote: [m[Khere
+[2.644s]    47 |             [01;36m[Kcase[m[K PI_BAD_MODE:
+[2.644s]       |             [01;36m[K^~~~[m[K
+[2.645s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:48:57:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[2.645s]    48 |                 cout << "Bad mode for gpio " << gpio << [01;35m[Kendl[m[K;
+[2.646s]       |                                                         [01;35m[K^~~~[m[K
+[2.646s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:49:13:[m[K [01;36m[Knote: [m[Khere
+[2.646s]    49 |             [01;36m[Kdefault[m[K:
+[2.647s]       |             [01;36m[K^~~~~~~[m[K
+[2.677s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
+[2.677s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[2.678s] gmake: *** [Makefile:146: all] Error 2
+[2.686s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

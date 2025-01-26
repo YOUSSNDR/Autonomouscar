@@ -1,0 +1,39 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[ 13%] Built target encoders_subscriber
+[ 26%] Built target robot_controller
+[ 40%] Built target position_publisher
+[ 73%] Built target main
+[ 93%] Built target position_reader
+[ 93%] [32m[1mLinking CXX executable motor_subscriber[0m
+/usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o: in function `Motor_subscriber::set_motors_duty_cycle(std::unique_ptr<geometry_msgs::msg::Twist_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::Twist_<std::allocator<void> > > > const&, Motor&, Motor&) const':
+motor_subscriber.cpp:(.text+0x11ac): undefined reference to `Motor::set_duty_cycle(unsigned int const&)'
+/usr/bin/ld: motor_subscriber.cpp:(.text+0x11bc): undefined reference to `Motor::set_duty_cycle(unsigned int const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:179: motor_subscriber] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,38 @@
+[0.048s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.348s] [ 13%] Built target encoders_subscriber
+[0.352s] [ 46%] Built target main
+[0.353s] [ 60%] Built target position_publisher
+[0.379s] [ 73%] Built target robot_controller
+[0.478s] [ 93%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[0.479s] [ 93%] Built target position_reader
+[11.339s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:1[m[K:
+[11.340s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:27:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kgemoetry_msgs[m[K’ does not name a type
+[11.340s]    27 |         void set_motors_duty_cycle(const [01;31m[Kgemoetry_msgs[m[K::msg::Twist::UniquePtr &msg,
+[11.341s]       |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[11.341s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:27:60:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[11.342s]    27 |         void set_motors_duty_cycle(const gemoetry_msgs::msg[01;31m[K::[m[KTwist::UniquePtr &msg,
+[11.342s]       |                                                            [01;31m[K^~[m[K
+[11.343s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:27:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[11.343s]    27 |         void set_motors_duty_cycle[34m[K([m[Kconst gemoetry_msgs::msg[01;31m[K:[m[K[32m[K:[m[KTwist::UniquePtr &msg,
+[11.343s]       |                                   [34m[K~[m[K                        [01;31m[K^[m[K[32m[K~[m[K
+[11.344s]       |                                                            [32m[K)[m[K
+[11.344s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:27:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.345s]    27 |         void set_motors_duty_cycle(const gemoetry_msgs::[01;31m[Kmsg[m[K::Twist::UniquePtr &msg,
+[11.345s]       |                                                         [01;31m[K^~~[m[K
+[11.346s]       |                                                            [32m[K;[m[K
+[11.349s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:27:62:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[11.349s]    27 |         void set_motors_duty_cycle(const gemoetry_msgs::msg::[01;31m[KTwist[m[K::UniquePtr &msg,
+[11.350s]       |                                                              [01;31m[K^~~~~[m[K
+[11.420s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:82:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(const geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr&, Motor&, Motor&) const[m[K’
+[11.421s]    82 | void [01;31m[KMotor_subscriber[m[K::set_motors_duty_cycle(const geometry_msgs::msg::Twist::UniquePtr &msg,
+[11.421s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[11.422s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:27:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(...)[m[K’
+[11.422s]    27 |         void [01;36m[Kset_motors_duty_cycle[m[K(const gemoetry_msgs::msg::Twist::UniquePtr &msg,
+[11.422s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[11.423s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor_subscriber.h:19:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct Motor_subscriber[m[K’ defined here
+[11.423s]    19 | struct [01;36m[KMotor_subscriber[m[K : public rclcpp::Node
+[11.424s]       |        [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[20.135s] gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:76: CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o] Error 1
+[20.137s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+[20.137s] gmake: *** [Makefile:146: all] Error 2
+[20.145s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

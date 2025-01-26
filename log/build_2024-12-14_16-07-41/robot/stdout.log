@@ -1,0 +1,7 @@
+[ 13%] Built target robot_controller
+[ 26%] Built target position_publisher
+[ 33%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[ 46%] Built target listener
+[ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[ 66%] Built target position_reader
+[ 80%] Built target motor_subscriber

@@ -1,0 +1,19 @@
+[0.053s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.362s] [ 18%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o[0m
+[0.363s] [ 18%] Built target listener
+[0.372s] [ 31%] Built target position_publisher
+[0.461s] [ 37%] [32mBuilding CXX object CMakeFiles/main.dir/src/robot_controller.cpp.o[0m
+[0.521s] [ 50%] Built target motor_subscriber
+[0.528s] [ 62%] Built target position_reader
+[58.930s] [ 68%] [32m[1mLinking CXX executable robot_controller[0m
+[59.225s] [ 75%] [32m[1mLinking CXX executable main[0m
+[61.093s] /usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[61.094s] (.text+0x1c): undefined reference to `main'
+[61.096s] /usr/bin/ld: (.text+0x20): undefined reference to `main'
+[61.466s] collect2: error: ld returned 1 exit status
+[61.478s] gmake[2]: *** [CMakeFiles/robot_controller.dir/build.make:179: robot_controller] Error 1
+[61.479s] gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/robot_controller.dir/all] Error 2
+[61.481s] gmake[1]: *** Waiting for unfinished jobs....
+[61.941s] [100%] Built target main
+[61.948s] gmake: *** [Makefile:146: all] Error 2
+[61.956s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

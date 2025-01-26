@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:28:
+  Parse error.  Expected a command name, got unquoted argument with text "/".
+
+[0m
+-- Configuring incomplete, errors occurred!
+gmake: *** [Makefile:512: cmake_check_build_system] Error 1

@@ -1,0 +1,99 @@
+#There is no implementation of shared parameters in ROS2
+#There could be hacks to share parameters across several nodes, but I am not doing it.
+#Please modify the shared parameters in all nodes if you have to.
+#Fortunately, shared parameters should not change often.
+
+#To run a node with the config file :
+# 1) Go to the ros_ws folder
+# 2) Run the node with ros2 run <package_name> <node_name> --ros-args --params-file path/to/yaml/config/file
+# Example : ros2 run robot mpu_publisher --ros-args --params-file ./src/robot/config/config.yaml
+
+
+
+
+################################################ motor_subscriber node ###############################################
+
+
+motor_subscriber:
+  ros__parameters:
+  # ---------------------- Shared parameters -------------------
+    WHEEL_RADIUS: 0.034 #in meters
+    MIN_LINEAR_X: 0 #in m/s
+    MAX_LINEAR_X: 0.7 #in m/s
+    MAX_DUTY_CYCLE: 255 #8-bit 
+    REAR_AXIS_LENGTH: 0.185 #m
+    MAX_TURN_RATE: 0.3 #rad/s
+    
+    #rpi4 pinout
+    #left motor
+    M1A_GPIO: 17
+    M1B_GPIO: 18
+
+    #right motor
+    M2A_GPIO: 23
+    M2B_GPIO: 24
+
+    #encoders
+    A_CHANNEL_GPIO_M1: 5
+    B_CHANNEL_GPIO_M1: 6
+
+    A_CHANNEL_GPIO_M2: 20
+    B_CHANNEL_GPIO_M2: 21
+
+  # ---------------------- Node specific parameters -------------------
+
+
+
+
+################################################ encoders_publisher node ###############################################
+
+
+encoders_publisher:
+  ros__parameters:
+  # ---------------------- Shared parameters -------------------
+    WHEEL_RADIUS: 0.034 #in meters
+    MIN_LINEAR_X: 0 #in m/s
+    MAX_LINEAR_X: 0.7 #in m/s
+    MAX_DUTY_CYCLE: 255 #8-bit 
+    REAR_AXIS_LENGTH: 0.185 #m
+    MAX_TURN_RATE: 0.3 #rad/s
+
+    #rpi4 pinout
+    #left motor
+    M1A_GPIO: 17
+    M1B_GPIO: 18
+
+    #right motor
+    M2A_GPIO: 23
+    M2B_GPIO: 24
+
+    #encoders
+    A_CHANNEL_GPIO_M1: 5
+    B_CHANNEL_GPIO_M1: 6
+
+    A_CHANNEL_GPIO_M2: 20
+    B_CHANNEL_GPIO_M2: 21
+  # ---------------------- Node specific parameters -------------------
+
+
+############################################### mpu_publisher node ###############################################
+
+
+mpu_publisher:
+  ros__parameters:
+  # ---------------------- Node specific parameters -------------------
+    PUBLISH_RATE: 1000.0 #Hz
+
+
+
+############################################### robot_controller node ###############################################
+
+robot_controller:
+  ros__parameters:
+  # ---------------------- Shared parameters -------------------
+    MIN_LINEAR_X: 0.0 #in m/s
+    MAX_LINEAR_X: 0.7 #in m/s
+    MAX_TURN_RATE: 0.0 #rad/s
+    MAX_TURN_RATE: 0.3 #rad/s
+    SAFETY_DISTANCE: 1.5 #m
+    ALPHA_POSITION_LOW_PASS: 0.1 # unitless, equal to exp(omega_c*Ts), but chosen arbitrarly here

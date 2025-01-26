@@ -1,0 +1,40 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.180s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.161s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.315s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.354s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.402s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.689s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.695s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.963s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.183s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.231s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.287s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.847s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.848s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.848s] -- Configured cppcheck exclude dirs and/or files: 
+[2.852s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.852s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.857s] -- Added test 'lint_cmake' to check CMake code style
+[2.860s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.876s] -- Added test 'uncrustify' to check C / C++ code style
+[2.876s] -- Configured uncrustify additional arguments: 
+[2.879s] -- Added test 'xmllint' to check XML markup files
+[2.909s] -- Configuring done (2.7s)
+[3.089s] -- Generating done (0.1s)
+[3.110s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.323s] [  5%] [32m[1mLinking CXX executable main[0m
+[3.343s] [ 16%] Built target encoders_subscriber
+[3.362s] [ 33%] Built target encoders_publisher
+[3.369s] [ 44%] Built target robot_controller
+[3.511s] [ 55%] Built target position_publisher
+[3.532s] [ 66%] Built target motor_subscriber
+[3.555s] [ 77%] Built target position_reader
+[3.800s] [100%] Built target main
+[3.851s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[4.203s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[4.242s] -- Install configuration: ""
+[4.245s] -- Up-to-date: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/launch
+[4.247s] -- Installing: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv
+[4.255s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot

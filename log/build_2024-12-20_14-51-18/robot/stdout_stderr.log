@@ -1,0 +1,14 @@
+[ 11%] Built target encoders_subscriber
+[ 27%] Built target encoders_publisher
+[ 33%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[ 44%] Built target robot_controller
+[ 55%] Built target position_publisher
+[ 72%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[ 72%] Built target position_reader
+[ 77%] [32m[1mLinking CXX executable main[0m
+[ 94%] Built target main
+[100%] [32m[1mLinking CXX executable motor_subscriber[0m
+[100%] Built target motor_subscriber
+-- Install configuration: ""
+-- Up-to-date: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/launch
+-- Installing: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv

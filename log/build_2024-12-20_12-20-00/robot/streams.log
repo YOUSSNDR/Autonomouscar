@@ -1,0 +1,19 @@
+[0.051s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.354s] [ 27%] Built target main
+[0.357s] [ 38%] Built target encoders_subscriber
+[0.362s] [ 50%] Built target robot_controller
+[0.386s] [ 55%] [32mBuilding CXX object CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o[0m
+[0.503s] [ 66%] Built target position_publisher
+[0.506s] [ 77%] Built target position_reader
+[0.514s] [ 94%] Built target motor_subscriber
+[21.368s] [100%] [32m[1mLinking CXX executable encoders_publisher[0m
+[22.171s] /usr/bin/ld: CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: in function `Encoders_publisher::Encoders_publisher(Encoders const&)::{lambda()#1}::operator()() const':
+[22.172s] encoders_publisher.cpp:(.text+0xcc): undefined reference to `Encoders::get_rps_A() const'
+[22.172s] /usr/bin/ld: CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: in function `main':
+[22.173s] encoders_publisher.cpp:(.text+0x6c8): undefined reference to `Encoders::Encoders()'
+[22.173s] /usr/bin/ld: encoders_publisher.cpp:(.text+0x6dc): undefined reference to `Encoders::set_rps_A(unsigned int const&)'
+[22.236s] collect2: error: ld returned 1 exit status
+[22.243s] gmake[2]: *** [CMakeFiles/encoders_publisher.dir/build.make:179: encoders_publisher] Error 1
+[22.243s] gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/encoders_publisher.dir/all] Error 2
+[22.245s] gmake: *** [Makefile:146: all] Error 2
+[22.254s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

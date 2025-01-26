@@ -1,0 +1,8 @@
+[0.052s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.161s] [31mCMake Error at CMakeLists.txt:28:
+[0.161s]   Parse error.  Expected a command name, got unquoted argument with text "/".
+[0.162s] 
+[0.162s] [0m
+[0.163s] -- Configuring incomplete, errors occurred!
+[0.169s] gmake: *** [Makefile:512: cmake_check_build_system] Error 1
+[0.176s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

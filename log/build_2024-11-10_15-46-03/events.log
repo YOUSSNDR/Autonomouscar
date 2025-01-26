@@ -1,0 +1,43 @@
+[0.000000] (-) TimerEvent: {}
+[0.000463] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001738] (robot) JobStarted: {'identifier': 'robot'}
+[0.037006] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.039674] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.042229] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', '--', '-j4', '-l4'], 'cwd': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youss', 'SSH_CLIENT': '192.168.1.134 33126 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youss', 'OLDPWD': '/home/youss/Documents/Projet/Autonomouscar', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youss', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/youss/Documents/Projet/Autonomouscar/ros_ws/scripts', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '9', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.134 33126 192.168.1.44 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099255] (-) TimerEvent: {}
+[0.160088] (robot) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199417] (-) TimerEvent: {}
+[0.300062] (-) TimerEvent: {}
+[0.400747] (-) TimerEvent: {}
+[0.501439] (-) TimerEvent: {}
+[0.601998] (-) TimerEvent: {}
+[0.702634] (-) TimerEvent: {}
+[0.803249] (-) TimerEvent: {}
+[0.903812] (-) TimerEvent: {}
+[1.004399] (-) TimerEvent: {}
+[1.105227] (-) TimerEvent: {}
+[1.129458] (robot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.163545] (robot) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (target_include_directories):\n'}
+[1.165429] (robot) StderrLine: {'line': b'  Cannot specify include directories for target "encoders" which is not built\n'}
+[1.165873] (robot) StderrLine: {'line': b'  by this project.\n'}
+[1.166267] (robot) StderrLine: {'line': b'\n'}
+[1.166616] (robot) StderrLine: {'line': b'\x1b[0m\n'}
+[1.166918] (robot) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (target_compile_features):\n'}
+[1.167240] (robot) StderrLine: {'line': b'  Cannot specify compile features for target "encoders" which is not built by\n'}
+[1.167598] (robot) StderrLine: {'line': b'  this project.\n'}
+[1.167949] (robot) StderrLine: {'line': b'\n'}
+[1.168490] (robot) StderrLine: {'line': b'\x1b[0m\n'}
+[1.168978] (robot) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:67 (message):\n'}
+[1.169509] (robot) StderrLine: {'line': b"  ament_cmake_symlink_install_targets() 'encoders' is not a target\n"}
+[1.169978] (robot) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.171013] (robot) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)\n'}
+[1.172484] (robot) StderrLine: {'line': b'  CMakeLists.txt:23 (install)\n'}
+[1.172933] (robot) StderrLine: {'line': b'\n'}
+[1.173356] (robot) StderrLine: {'line': b'\x1b[0m\n'}
+[1.173722] (robot) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.178645] (robot) StderrLine: {'line': b'gmake: *** [Makefile:267: cmake_check_build_system] Error 1\n'}
+[1.185653] (robot) CommandEnded: {'returncode': 2}
+[1.205402] (-) TimerEvent: {}
+[1.306086] (-) TimerEvent: {}
+[1.381870] (robot) JobEnded: {'identifier': 'robot', 'rc': 2}
+[1.393010] (-) EventReactorShutdown: {}

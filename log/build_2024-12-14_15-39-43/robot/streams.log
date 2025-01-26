@@ -1,0 +1,37 @@
+[0.076s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.428s] [  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.437s] [ 20%] Built target listener
+[0.465s] [ 33%] Built target robot_controller
+[0.470s] [ 46%] Built target position_publisher
+[0.593s] [ 60%] Built target motor_subscriber
+[0.608s] [ 73%] Built target position_reader
+[3.545s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[3.545s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:92:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void Encoders::[01;32m[Kcompute_encoder_rps_handler[m[K(Encoders&)[m[K’ is private within this context
+[3.545s]    92 |     std::thread encoder_A_thread(Encoders::[01;31m[Kcompute_encoder_rps_handler[m[K, std::ref(encoder_A));
+[3.546s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.546s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:19[m[K:
+[3.546s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:74:21:[m[K [01;36m[Knote: [m[Kdeclared private here
+[3.547s]    74 |         static void [01;36m[Kcompute_encoder_rps_handler[m[K(Encoders &encoder);
+[3.547s]       |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.549s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:93:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void Encoders::[01;32m[Kcompute_encoder_rps_handler[m[K(Encoders&)[m[K’ is private within this context
+[3.550s]    93 |     std::thread encoder_B_thread(Encoders::[01;31m[Kcompute_encoder_rps_handler[m[K, std::ref(encoder_B));
+[3.551s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.551s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:74:21:[m[K [01;36m[Knote: [m[Kdeclared private here
+[3.552s]    74 |         static void [01;36m[Kcompute_encoder_rps_handler[m[K(Encoders &encoder);
+[3.552s]       |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.552s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:95:61:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K(const unsigned int&)[m[K’
+[3.553s]    95 |     auto count_A = std::async(std::launch::async, [01;31m[Kencoder_A.count_number_of_changes[m[K);
+[3.553s]       |                                                   [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.554s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:72:14:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.554s]    72 |         void [01;36m[Kcount_number_of_changes[m[K(const unsigned int &channel_gpio);
+[3.554s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.555s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:96:61:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K(const unsigned int&)[m[K’
+[3.555s]    96 |     auto count_B = std::async(std::launch::async, [01;31m[Kencoder_B.count_number_of_changes[m[K);
+[3.556s]       |                                                   [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.556s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:72:14:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.556s]    72 |         void [01;36m[Kcount_number_of_changes[m[K(const unsigned int &channel_gpio);
+[3.557s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.981s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+[3.981s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+[3.982s] gmake: *** [Makefile:146: all] Error 2
+[3.990s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

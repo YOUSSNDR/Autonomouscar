@@ -1,0 +1,18 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In lambda function:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:83:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’ is private within this context
+   83 |                     [01;31m[Kencoder_A.compute_rps()[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:18[m[K:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:68:14:[m[K [01;36m[Knote: [m[Kdeclared private here
+   68 |         void [01;36m[Kcompute_rps[m[K();
+      |              [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:84:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’ is private within this context
+   84 |                     [01;31m[Kencoder_B.compute_rps()[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:68:14:[m[K [01;36m[Knote: [m[Kdeclared private here
+   68 |         void [01;36m[Kcompute_rps[m[K();
+      |              [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

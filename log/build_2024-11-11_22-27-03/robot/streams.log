@@ -1,0 +1,24 @@
+[0.053s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.391s] [ 16%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[11.563s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In constructor ‘[01m[KEncoders_publisher::[01;32m[KEncoders_publisher[m[K(const std::string&, const std::string&, const Encoders&)[m[K’:
+[11.566s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:6:1:[m[K [01;31m[Kerror: [m[Kuninitialized reference member in ‘[01m[Kstruct Encoders&[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[11.566s]     6 | [01;31m[KEncoders_publisher[m[K::Encoders_publisher(const std::string &node_name,
+[11.567s]       | [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.567s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:3[m[K:
+[11.568s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders_publisher.h:17:19:[m[K [01;36m[Knote: [m[K‘[01m[KEncoders& Encoders_publisher::_encoder[m[K’ should be initialized
+[11.568s]    17 |         Encoders &[01;36m[K_encoder[m[K;
+[11.568s]       |                   [01;36m[K^~~~~~~~[m[K
+[11.569s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:9:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K_encoder[m[K’
+[11.569s]     9 |                                     : Node(node_name), _topic_name(topic_name) [01;31m[K_encoder[m[K(encoder)
+[11.570s]       |                                                                                [01;31m[K^~~~~~~~[m[K
+[11.570s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:8:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kencoder[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.570s]     8 |                                         [01;35m[Kconst Encoders &encoder[m[K)
+[11.571s]       |                                         [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[11.571s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K At global scope:
+[11.572s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:9:88:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[11.572s]     9 |                                     : Node(node_name), _topic_name(topic_name) _encoder[01;31m[K([m[Kencoder)
+[11.573s]       |                                                                                        [01;31m[K^[m[K
+[14.452s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
+[14.452s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[14.454s] gmake: *** [Makefile:146: all] Error 2
+[14.462s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

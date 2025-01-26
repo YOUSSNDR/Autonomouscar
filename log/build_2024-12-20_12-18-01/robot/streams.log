@@ -1,0 +1,45 @@
+[0.051s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.173s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.129s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.163s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.317s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.356s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.459s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.691s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.697s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.969s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.189s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.237s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.293s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.864s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.865s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>
+[2.865s] -- Configured cppcheck exclude dirs and/or files: 
+[2.869s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.869s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.874s] -- Added test 'lint_cmake' to check CMake code style
+[2.877s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.893s] -- Added test 'uncrustify' to check C / C++ code style
+[2.893s] -- Configured uncrustify additional arguments: 
+[2.896s] -- Added test 'xmllint' to check XML markup files
+[2.928s] -- Configuring done (2.8s)
+[3.090s] -- Generating done (0.1s)
+[3.106s] -- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot
+[3.298s] [  5%] [32mBuilding CXX object CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o[0m
+[3.340s] [ 16%] Built target encoders_subscriber
+[3.351s] [ 27%] Built target robot_controller
+[3.356s] [ 55%] Built target main
+[3.502s] [ 66%] Built target position_publisher
+[3.508s] [ 83%] Built target motor_subscriber
+[3.514s] [ 94%] Built target position_reader
+[23.094s] [100%] [32m[1mLinking CXX executable encoders_publisher[0m
+[23.880s] /usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[23.880s] (.text+0x1c): undefined reference to `main'
+[23.881s] /usr/bin/ld: (.text+0x20): undefined reference to `main'
+[23.888s] /usr/bin/ld: CMakeFiles/encoders_publisher.dir/src/encoders_publisher.cpp.o: in function `Encoders_publisher::Encoders_publisher(Encoders const&)::{lambda()#1}::operator()() const':
+[23.888s] encoders_publisher.cpp:(.text+0xcc): undefined reference to `Encoders::get_rps_A() const'
+[23.952s] collect2: error: ld returned 1 exit status
+[23.958s] gmake[2]: *** [CMakeFiles/encoders_publisher.dir/build.make:179: encoders_publisher] Error 1
+[23.959s] gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/encoders_publisher.dir/all] Error 2
+[23.960s] gmake: *** [Makefile:146: all] Error 2
+[23.969s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

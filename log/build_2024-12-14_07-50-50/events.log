@@ -1,0 +1,316 @@
+[0.000000] (-) TimerEvent: {}
+[0.000952] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001719] (robot) JobStarted: {'identifier': 'robot'}
+[0.035911] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.039322] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.042451] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', '--', '-j4', '-l4'], 'cwd': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youss', 'SSH_CLIENT': '10.42.0.1 33814 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youss', 'OLDPWD': '/home/youss', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youss', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '52', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/youss/Documents/Projet/Autonomouscar/ros_ws/scripts', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '9', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 33814 10.42.0.59 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099247] (-) TimerEvent: {}
+[0.172577] (robot) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199472] (-) TimerEvent: {}
+[0.300130] (-) TimerEvent: {}
+[0.401028] (-) TimerEvent: {}
+[0.501794] (-) TimerEvent: {}
+[0.602539] (-) TimerEvent: {}
+[0.703324] (-) TimerEvent: {}
+[0.804122] (-) TimerEvent: {}
+[0.904865] (-) TimerEvent: {}
+[1.005416] (-) TimerEvent: {}
+[1.106081] (-) TimerEvent: {}
+[1.138625] (robot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.172126] (robot) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.206241] (-) TimerEvent: {}
+[1.306882] (-) TimerEvent: {}
+[1.322758] (robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.361555] (robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.407055] (-) TimerEvent: {}
+[1.408622] (robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.463153] (robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.507234] (-) TimerEvent: {}
+[1.607866] (-) TimerEvent: {}
+[1.692667] (robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.698421] (robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.708037] (-) TimerEvent: {}
+[1.808611] (-) TimerEvent: {}
+[1.909377] (-) TimerEvent: {}
+[1.966503] (robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.009574] (-) TimerEvent: {}
+[2.110197] (-) TimerEvent: {}
+[2.185860] (robot) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.210369] (-) TimerEvent: {}
+[2.233989] (robot) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[2.288286] (robot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.310565] (-) TimerEvent: {}
+[2.411277] (-) TimerEvent: {}
+[2.511896] (-) TimerEvent: {}
+[2.612613] (-) TimerEvent: {}
+[2.713409] (-) TimerEvent: {}
+[2.734129] (robot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.735255] (robot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include>\n'}
+[2.735743] (robot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.738540] (robot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.739043] (robot) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[2.742951] (robot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.745881] (robot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.759078] (robot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.759693] (robot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.762258] (robot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.784394] (robot) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[2.813599] (-) TimerEvent: {}
+[2.914235] (-) TimerEvent: {}
+[2.918762] (robot) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.933062] (robot) StdoutLine: {'line': b'-- Build files have been written to: /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot\n'}
+[3.014414] (-) TimerEvent: {}
+[3.115193] (-) TimerEvent: {}
+[3.169864] (robot) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/encoders.dir/src/main.cpp.o\x1b[0m\n'}
+[3.170973] (robot) StdoutLine: {'line': b'[ 23%] Built target listener\n'}
+[3.176600] (robot) StdoutLine: {'line': b'[ 38%] Built target robot_controller\n'}
+[3.178923] (robot) StdoutLine: {'line': b'[ 53%] Built target position_publisher\n'}
+[3.215704] (-) TimerEvent: {}
+[3.228954] (robot) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/encoders.dir/src/motor.cpp.o\x1b[0m\n'}
+[3.315953] (-) TimerEvent: {}
+[3.320093] (robot) StdoutLine: {'line': b'[ 76%] Built target motor_subscriber\n'}
+[3.416139] (-) TimerEvent: {}
+[3.516801] (-) TimerEvent: {}
+[3.617723] (-) TimerEvent: {}
+[3.718363] (-) TimerEvent: {}
+[3.819021] (-) TimerEvent: {}
+[3.919828] (-) TimerEvent: {}
+[4.020794] (-) TimerEvent: {}
+[4.121483] (-) TimerEvent: {}
+[4.222355] (-) TimerEvent: {}
+[4.323040] (-) TimerEvent: {}
+[4.423760] (-) TimerEvent: {}
+[4.524398] (-) TimerEvent: {}
+[4.625070] (-) TimerEvent: {}
+[4.725741] (-) TimerEvent: {}
+[4.826470] (-) TimerEvent: {}
+[4.927162] (-) TimerEvent: {}
+[5.027894] (-) TimerEvent: {}
+[5.128666] (-) TimerEvent: {}
+[5.229529] (-) TimerEvent: {}
+[5.330239] (-) TimerEvent: {}
+[5.430971] (-) TimerEvent: {}
+[5.531687] (-) TimerEvent: {}
+[5.632373] (-) TimerEvent: {}
+[5.733117] (-) TimerEvent: {}
+[5.833852] (-) TimerEvent: {}
+[5.934553] (-) TimerEvent: {}
+[6.035213] (-) TimerEvent: {}
+[6.135963] (-) TimerEvent: {}
+[6.236856] (-) TimerEvent: {}
+[6.337590] (-) TimerEvent: {}
+[6.438389] (-) TimerEvent: {}
+[6.539201] (-) TimerEvent: {}
+[6.639923] (-) TimerEvent: {}
+[6.740597] (-) TimerEvent: {}
+[6.841480] (-) TimerEvent: {}
+[6.942259] (-) TimerEvent: {}
+[7.043195] (-) TimerEvent: {}
+[7.144017] (-) TimerEvent: {}
+[7.244804] (-) TimerEvent: {}
+[7.345553] (-) TimerEvent: {}
+[7.446382] (-) TimerEvent: {}
+[7.547223] (-) TimerEvent: {}
+[7.650639] (-) TimerEvent: {}
+[7.751547] (-) TimerEvent: {}
+[7.852244] (-) TimerEvent: {}
+[7.953008] (-) TimerEvent: {}
+[8.053807] (-) TimerEvent: {}
+[8.154550] (-) TimerEvent: {}
+[8.255254] (-) TimerEvent: {}
+[8.355998] (-) TimerEvent: {}
+[8.456779] (-) TimerEvent: {}
+[8.557689] (-) TimerEvent: {}
+[8.658365] (-) TimerEvent: {}
+[8.759134] (-) TimerEvent: {}
+[8.860033] (-) TimerEvent: {}
+[8.960826] (-) TimerEvent: {}
+[9.061606] (-) TimerEvent: {}
+[9.162299] (-) TimerEvent: {}
+[9.263037] (-) TimerEvent: {}
+[9.363853] (-) TimerEvent: {}
+[9.464603] (-) TimerEvent: {}
+[9.565574] (-) TimerEvent: {}
+[9.666377] (-) TimerEvent: {}
+[9.767238] (-) TimerEvent: {}
+[9.868041] (-) TimerEvent: {}
+[9.968844] (-) TimerEvent: {}
+[10.069579] (-) TimerEvent: {}
+[10.170265] (-) TimerEvent: {}
+[10.271001] (-) TimerEvent: {}
+[10.371740] (-) TimerEvent: {}
+[10.472547] (-) TimerEvent: {}
+[10.573255] (-) TimerEvent: {}
+[10.674031] (-) TimerEvent: {}
+[10.774793] (-) TimerEvent: {}
+[10.875610] (-) TimerEvent: {}
+[10.976306] (-) TimerEvent: {}
+[11.077050] (-) TimerEvent: {}
+[11.177817] (-) TimerEvent: {}
+[11.278634] (-) TimerEvent: {}
+[11.379607] (-) TimerEvent: {}
+[11.480283] (-) TimerEvent: {}
+[11.581030] (-) TimerEvent: {}
+[11.681881] (-) TimerEvent: {}
+[11.782821] (-) TimerEvent: {}
+[11.883576] (-) TimerEvent: {}
+[11.984316] (-) TimerEvent: {}
+[12.085090] (-) TimerEvent: {}
+[12.185833] (-) TimerEvent: {}
+[12.286553] (-) TimerEvent: {}
+[12.387289] (-) TimerEvent: {}
+[12.488057] (-) TimerEvent: {}
+[12.588882] (-) TimerEvent: {}
+[12.689591] (-) TimerEvent: {}
+[12.790344] (-) TimerEvent: {}
+[12.891084] (-) TimerEvent: {}
+[12.991828] (-) TimerEvent: {}
+[13.092547] (-) TimerEvent: {}
+[13.193260] (-) TimerEvent: {}
+[13.293986] (-) TimerEvent: {}
+[13.394771] (-) TimerEvent: {}
+[13.495539] (-) TimerEvent: {}
+[13.596285] (-) TimerEvent: {}
+[13.697096] (-) TimerEvent: {}
+[13.798002] (-) TimerEvent: {}
+[13.898968] (-) TimerEvent: {}
+[13.999931] (-) TimerEvent: {}
+[14.100641] (-) TimerEvent: {}
+[14.201506] (-) TimerEvent: {}
+[14.302216] (-) TimerEvent: {}
+[14.402988] (-) TimerEvent: {}
+[14.503870] (-) TimerEvent: {}
+[14.604586] (-) TimerEvent: {}
+[14.705282] (-) TimerEvent: {}
+[14.806034] (-) TimerEvent: {}
+[14.906837] (-) TimerEvent: {}
+[15.007575] (-) TimerEvent: {}
+[15.108281] (-) TimerEvent: {}
+[15.209012] (-) TimerEvent: {}
+[15.309804] (-) TimerEvent: {}
+[15.410624] (-) TimerEvent: {}
+[15.511325] (-) TimerEvent: {}
+[15.612093] (-) TimerEvent: {}
+[15.712855] (-) TimerEvent: {}
+[15.771652] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMotor::\x1b[01;32m\x1b[KMotor\x1b[m\x1b[K(const unsigned int&, const unsigned int&, const unsigned int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.774129] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:18:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.774849] (robot) StderrLine: {'line': b'   18 |     _duty_cycle(duty_cycle\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[15.775502] (robot) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.776119] (robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[15.777330] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[15.778241] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[15.778949] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/motor.h:1\x1b[m\x1b[K,\n'}
+[15.779604] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:3\x1b[m\x1b[K:\n'}
+[15.780256] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::\x1b[01;32m\x1b[KNode\x1b[m\x1b[K(const rclcpp::Node&, const std::string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.781052] (robot) StderrLine: {'line': b' 1629 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[15.781792] (robot) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[15.782533] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[15.783245] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::\x1b[01;32m\x1b[KNode\x1b[m\x1b[K(const std::string&, const std::string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.783991] (robot) StderrLine: {'line': b'  103 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[15.784770] (robot) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[15.785519] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[15.786263] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::\x1b[01;32m\x1b[KNode\x1b[m\x1b[K(const std::string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.787154] (robot) StderrLine: {'line': b'   91 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[15.787980] (robot) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[15.788743] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[15.789613] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:\x1b[m\x1b[K At global scope:\n'}
+[15.790534] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:36:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot declare member function \xe2\x80\x98\x1b[01m\x1b[Kstatic bool Motor::\x1b[01;32m\x1b[Kinit_pwm\x1b[m\x1b[K(const unsigned int&, const unsigned int&)\x1b[m\x1b[K\xe2\x80\x99 to have static linkage [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.791111] (robot) StderrLine: {'line': b'   36 |                         const unsigned int &duty_cycle\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[15.791734] (robot) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.792203] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic bool Motor::\x1b[01;32m\x1b[Kinit_pwm\x1b[m\x1b[K(const unsigned int&, const unsigned int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.792816] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:42:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of unsigned expression in \xe2\x80\x98\x1b[01m\x1b[K< 0\x1b[m\x1b[K\xe2\x80\x99 is always false [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits\x07-Wtype-limits\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.793634] (robot) StderrLine: {'line': b'   42 |     if (duty_cycle < MIN_DUTY_CYCLE)\n'}
+[15.808182] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:51:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgpioPWM\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgpio\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.808965] (robot) StderrLine: {'line': b'   51 |     gpio_result = \x1b[01;31m\x1b[KgpioPWM\x1b[m\x1b[K(gpio, duty_cycle);\n'}
+[15.809567] (robot) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[15.810155] (robot) StderrLine: {'line': b'      |                   \x1b[32m\x1b[Kgpio\x1b[m\x1b[K\n'}
+[15.812786] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:\x1b[m\x1b[K At global scope:\n'}
+[15.813736] (-) TimerEvent: {}
+[15.814210] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:65:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot declare member function \xe2\x80\x98\x1b[01m\x1b[Kstatic bool Motor::\x1b[01;32m\x1b[Kconfigure_gpio_as_output\x1b[m\x1b[K(const unsigned int&)\x1b[m\x1b[K\xe2\x80\x99 to have static linkage [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.815034] (robot) StderrLine: {'line': b'   65 | static bool Motor::configure_gpio_as_output(const unsigned int &gpio\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[15.815849] (robot) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.844355] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic bool Motor::\x1b[01;32m\x1b[Kconfigure_gpio_as_output\x1b[m\x1b[K(const unsigned int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.845289] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:69:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPI_OUTPUT\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.846050] (robot) StderrLine: {'line': b'   69 |     int gpio_result = gpioSetMode(gpio, \x1b[01;31m\x1b[KPI_OUTPUT\x1b[m\x1b[K);\n'}
+[15.846862] (robot) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.877938] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:69:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgpioSetMode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.878995] (robot) StderrLine: {'line': b'   69 |     int gpio_result = \x1b[01;31m\x1b[KgpioSetMode\x1b[m\x1b[K(gpio, PI_OUTPUT);\n'}
+[15.879694] (robot) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.913021] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:75:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPI_BAD_GPIO\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.914072] (-) TimerEvent: {}
+[15.914701] (robot) StderrLine: {'line': b'   75 |             case \x1b[01;31m\x1b[KPI_BAD_GPIO\x1b[m\x1b[K:\n'}
+[15.916576] (robot) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.950614] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:78:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPI_BAD_MODE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.951362] (robot) StderrLine: {'line': b'   78 |             case \x1b[01;31m\x1b[KPI_BAD_MODE\x1b[m\x1b[K:\n'}
+[15.952086] (robot) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.956152] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Motor::\x1b[01;32m\x1b[Kset_duty_cycle\x1b[m\x1b[K(const unsigned int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.956921] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:100:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of unsigned expression in \xe2\x80\x98\x1b[01m\x1b[K< 0\x1b[m\x1b[K\xe2\x80\x99 is always false [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits\x07-Wtype-limits\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.957525] (robot) StderrLine: {'line': b'  100 |     else if (duty_cycle < MIN_DUTY_CYCLE)\n'}
+[15.988771] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.989890] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:113:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.990516] (robot) StderrLine: {'line': b'  113 |     rclcpp::spin(std::make_shared<Motor>())\n'}
+[15.991096] (robot) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.991669] (robot) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[15.992212] (robot) StderrLine: {'line': b'  114 |     \x1b[32m\x1b[Kreturn\x1b[m\x1b[K 0;\n'}
+[15.992797] (robot) StderrLine: {'line': b'      |     \x1b[32m\x1b[K~~~~~~\x1b[m\x1b[K                                  \n'}
+[16.014287] (-) TimerEvent: {}
+[16.115138] (-) TimerEvent: {}
+[16.216410] (-) TimerEvent: {}
+[16.317306] (-) TimerEvent: {}
+[16.418603] (-) TimerEvent: {}
+[16.519478] (-) TimerEvent: {}
+[16.620707] (-) TimerEvent: {}
+[16.721479] (-) TimerEvent: {}
+[16.822645] (-) TimerEvent: {}
+[16.923361] (-) TimerEvent: {}
+[17.024596] (-) TimerEvent: {}
+[17.125407] (-) TimerEvent: {}
+[17.226577] (-) TimerEvent: {}
+[17.327399] (-) TimerEvent: {}
+[17.428583] (-) TimerEvent: {}
+[17.529418] (-) TimerEvent: {}
+[17.631071] (-) TimerEvent: {}
+[17.731850] (-) TimerEvent: {}
+[17.833095] (-) TimerEvent: {}
+[17.933841] (-) TimerEvent: {}
+[18.035020] (-) TimerEvent: {}
+[18.136226] (-) TimerEvent: {}
+[18.237081] (-) TimerEvent: {}
+[18.338290] (-) TimerEvent: {}
+[18.439111] (-) TimerEvent: {}
+[18.540342] (-) TimerEvent: {}
+[18.641149] (-) TimerEvent: {}
+[18.741927] (-) TimerEvent: {}
+[18.827755] (robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_tempbuf.h:61\x1b[m\x1b[K,\n'}
+[18.828552] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:66\x1b[m\x1b[K,\n'}
+[18.829193] (robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K:\n'}
+[18.829873] (robot) StderrLine: {'line': b'/usr/include/c++/13/bits/stl_construct.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::\x1b[01;32m\x1b[K_Construct\x1b[m\x1b[K(_Tp*, _Args&& ...) \x1b[35m\x1b[K[with _Tp = Motor; _Args = {}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.830487] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/alloc_traits.h:661:19:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<void> >::\x1b[01;32m\x1b[Kconstruct\x1b[m\x1b[K(allocator_type&, _Up*, _Args&& ...) \x1b[35m\x1b[K[with _Up = Motor; _Args = {}; allocator_type = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.831100] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:604:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::\x1b[01;32m\x1b[K_Sp_counted_ptr_inplace\x1b[m\x1b[K(_Alloc, _Args&& ...) \x1b[35m\x1b[K[with _Args = {}; _Tp = Motor; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.831819] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:971:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::\x1b[01;32m\x1b[K__shared_count\x1b[m\x1b[K(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) \x1b[35m\x1b[K[with _Tp = Motor; _Alloc = std::allocator<void>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.832392] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1712:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::\x1b[01;32m\x1b[K__shared_ptr\x1b[m\x1b[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) \x1b[35m\x1b[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = Motor; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.833091] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:464:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::\x1b[01;32m\x1b[Kshared_ptr\x1b[m\x1b[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) \x1b[35m\x1b[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = Motor]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.833697] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:1009:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::\x1b[01;32m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&& ...) \x1b[35m\x1b[K[with _Tp = Motor; _Args = {}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = Motor]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.834353] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:113:41:\x1b[m\x1b[K   required from here\n'}
+[18.834963] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_construct.h:119:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KMotor::Motor()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.835550] (robot) StderrLine: {'line': b'  119 |       \x1b[01;31m\x1b[K::new((void*)__p) _Tp(std::forward<_Args>(__args)...)\x1b[m\x1b[K;\n'}
+[18.836136] (robot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.836808] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:13:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KMotor::\x1b[01;32m\x1b[KMotor\x1b[m\x1b[K(const unsigned int&, const unsigned int&, const unsigned int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.837367] (robot) StderrLine: {'line': b'   13 | \x1b[01;36m\x1b[KMotor\x1b[m\x1b[K::Motor(const unsigned int &MxA_gpio,\n'}
+[18.838136] (robot) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[18.838714] (robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:13:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[18.842140] (-) TimerEvent: {}
+[18.942920] (-) TimerEvent: {}
+[19.043666] (-) TimerEvent: {}
+[19.144662] (-) TimerEvent: {}
+[19.245594] (-) TimerEvent: {}
+[19.302375] (robot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/motor.cpp.o] Error 1\n'}
+[19.303300] (robot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/encoders.dir/all] Error 2\n'}
+[19.304300] (robot) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[19.311839] (robot) CommandEnded: {'returncode': 2}
+[19.345792] (-) TimerEvent: {}
+[19.446417] (-) TimerEvent: {}
+[19.547172] (-) TimerEvent: {}
+[19.636655] (robot) JobEnded: {'identifier': 'robot', 'rc': 2}
+[19.647533] (-) TimerEvent: {}
+[19.648492] (-) EventReactorShutdown: {}

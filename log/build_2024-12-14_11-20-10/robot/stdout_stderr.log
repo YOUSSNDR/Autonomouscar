@@ -1,0 +1,37 @@
+[  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[ 20%] Built target listener
+[ 33%] Built target robot_controller
+[ 46%] Built target position_publisher
+[ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/motor.cpp.o[0m
+[ 66%] Built target position_reader
+[ 73%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In member function ‘[01m[Kbool Motor::[01;32m[Kinit_pwm[m[K(const unsigned int&, const unsigned int&) const[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:47:20:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+   47 |     if (duty_cycle < MIN_DUTY_CYCLE)
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Motor::[01;32m[Kset_duty_cycle[m[K(const unsigned int&)[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:105:25:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+  105 |     else if (duty_cycle < MIN_DUTY_CYCLE)
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Motor::[01;32m[Kstop[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:129:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio[m[K’ was not declared in this scope
+  129 |         cerr << "PWM Error on gpio " << [01;31m[Kgpio[m[K << " - motor.cpp, stop - function" << endl;
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:130:16:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  130 |         return [01;31m[Kfalse[m[K;
+      |                [01;31m[K^~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor.cpp:133:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio[m[K’ was not declared in this scope
+  133 |     cout << "PWM Success on stopping the motor " << [01;31m[Kgpio[m[K << endl;
+      |                                                     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:90: CMakeFiles/main.dir/src/motor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_motors_duty_cycle[m[K(Motor&, Motor&) const[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:25:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 | void Motor_subscriber::set_motors_duty_cycle([01;35m[KMotor &left_motor[m[K, Motor &right_motor) const
+      |                                              [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:25:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_motor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 | void Motor_subscriber::set_motors_duty_cycle(Motor &left_motor, [01;35m[KMotor &right_motor[m[K) const
+      |                                                                 [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[ 80%] [32m[1mLinking CXX executable motor_subscriber[0m
+[ 80%] Built target motor_subscriber
+gmake: *** [Makefile:146: all] Error 2

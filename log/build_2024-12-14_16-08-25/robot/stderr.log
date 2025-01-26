@@ -1,0 +1,13 @@
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_encoder_rps[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:197:50:[m[K [01;31m[Kerror: [m[K‘[01m[K_number_of_changes_on_channel[m[K’ was not declared in this scope; did you mean ‘[01m[K_number_of_changes_on_channel_A[m[K’?
+  197 |     unsigned int encoder_number_of_revolutions = [01;31m[K_number_of_changes_on_channel[m[K/_PPR; //revolutions
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                  [32m[K_number_of_changes_on_channel_A[m[K
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes_on_channel_B[m[K()[m[K’:
+[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:246:28:[m[K [01;31m[Kerror: [m[K‘[01m[K_channel_value[m[K’ was not declared in this scope; did you mean ‘[01m[K_channel_value_A[m[K’?
+  246 |     _change_in_channel_B = [01;31m[K_channel_value[m[K != _old_channel_value_B;
+      |                            [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                            [32m[K_channel_value_A[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

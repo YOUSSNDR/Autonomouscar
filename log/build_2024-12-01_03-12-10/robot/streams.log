@@ -1,0 +1,10 @@
+[0.055s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.361s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o[0m
+[23.460s] [100%] [32m[1mLinking CXX executable encoders[0m
+[24.361s] /usr/bin/ld: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o: in function `Encoders_publisher::Encoders_publisher(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Encoders const&, unsigned int const&)::{lambda()#1}::operator()() const':
+[24.362s] encoders_publisher.cpp:(.text+0xcc): undefined reference to `Encoders::get_rps() const'
+[24.432s] collect2: error: ld returned 1 exit status
+[24.440s] gmake[2]: *** [CMakeFiles/encoders.dir/build.make:173: encoders] Error 1
+[24.442s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
+[24.443s] gmake: *** [Makefile:146: all] Error 2
+[24.451s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

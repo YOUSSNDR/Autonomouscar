@@ -1,0 +1,12 @@
+[  5%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[ 16%] Built target encoders_subscriber
+[ 27%] Built target robot_controller
+[ 44%] Built target encoders_publisher
+[ 55%] Built target position_publisher
+[ 77%] Built target position_reader
+[ 77%] Built target motor_subscriber
+[ 83%] [32m[1mLinking CXX executable main[0m
+[100%] Built target main
+-- Install configuration: ""
+-- Up-to-date: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/launch
+-- Installing: /home/youss/Documents/Projet/Autonomouscar/ros_ws/install/robot/share/robot/package.dsv

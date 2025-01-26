@@ -1,0 +1,19 @@
+[0.051s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.345s] [ 12%] Built target encoders_subscriber
+[0.346s] [ 25%] Built target robot_controller
+[0.348s] [ 37%] Built target position_publisher
+[0.377s] [ 68%] Built target main
+[0.476s] [ 81%] Built target position_reader
+[0.508s] [ 87%] [32m[1mLinking CXX executable motor_subscriber[0m
+[1.843s] /usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::init_pwm(unsigned int const&, unsigned int const&) const':
+[1.843s] motor.cpp:(.text+0x14c): undefined reference to `gpioPWM'
+[1.843s] /usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::configure_gpio_as_output(unsigned int const&) const':
+[1.844s] motor.cpp:(.text+0x214): undefined reference to `gpioSetMode'
+[1.844s] /usr/bin/ld: CMakeFiles/motor_subscriber.dir/src/motor.cpp.o: in function `Motor::stop()':
+[1.845s] motor.cpp:(.text+0x3d4): undefined reference to `gpioPWM'
+[1.845s] /usr/bin/ld: motor.cpp:(.text+0x3f4): undefined reference to `gpioPWM'
+[1.928s] collect2: error: ld returned 1 exit status
+[1.934s] gmake[2]: *** [CMakeFiles/motor_subscriber.dir/build.make:195: motor_subscriber] Error 1
+[1.935s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/motor_subscriber.dir/all] Error 2
+[1.936s] gmake: *** [Makefile:146: all] Error 2
+[1.945s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

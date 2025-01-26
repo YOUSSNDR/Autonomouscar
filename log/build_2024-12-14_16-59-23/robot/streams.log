@@ -1,0 +1,22 @@
+[0.055s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.358s] [  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[0.361s] [ 20%] Built target listener
+[0.366s] [ 33%] Built target robot_controller
+[0.369s] [ 46%] Built target position_publisher
+[0.419s] [ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/encoders.cpp.o[0m
+[0.513s] [ 66%] Built target motor_subscriber
+[0.515s] [ 80%] Built target position_reader
+[0.560s] [ 86%] [32mBuilding CXX object CMakeFiles/main.dir/src/rpi4.cpp.o[0m
+[4.023s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[4.024s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:91:45:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Encoders::[01;32m[Kcount_number_of_changes[m[K()[m[K’
+[4.024s]    91 |     gpioSetAlertFunc(M1A_CHANNEL, [01;31m[Kencoder_A.count_number_of_changes[m[K)
+[4.025s]       |                                   [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.026s] In file included from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:19[m[K:
+[4.026s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/include/robot/encoders.h:21:14:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.027s]    21 |         void [01;36m[Kcount_number_of_changes[m[K();
+[4.028s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.246s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+[4.248s] gmake[2]: *** Waiting for unfinished jobs....
+[4.848s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
+[4.850s] gmake: *** [Makefile:146: all] Error 2
+[4.858s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4

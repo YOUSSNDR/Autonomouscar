@@ -1,0 +1,20 @@
+[0.060s] Invoking command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
+[0.389s] [ 60%] Built target encoders
+[0.413s] [ 80%] [32mBuilding CXX object CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o[0m
+[12.203s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.203s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[12.204s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[12.204s]                  from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:2[m[K:
+[12.205s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:[m[K In lambda function:
+[12.205s] [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:20:9:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(const std::unique_ptr<_Tp, _Dp>&) [35m[K[with _Tp = std_msgs::msg::Float32_<std::allocator<void> >; _Dp = std::default_delete<std_msgs::msg::Float32_<std::allocator<void> > >][m[K[m[K’
+[12.205s]    20 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "I heard %f", msg);
+[12.206s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[12.206s] In file included from [01m[K/usr/include/c++/13/memory:78[m[K,
+[12.207s]                  from [01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_subscriber.cpp:1[m[K:
+[12.207s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:522:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.208s]   522 |       [01;36m[Kunique_ptr[m[K(const unique_ptr&) = delete;
+[12.208s]       |       [01;36m[K^~~~~~~~~~[m[K
+[22.019s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o] Error 1
+[22.020s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+[22.021s] gmake: *** [Makefile:146: all] Error 2
+[22.030s] Invoked command in '/home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youss/Documents/Projet/Autonomouscar/ros_ws/build/robot -- -j4 -l4
