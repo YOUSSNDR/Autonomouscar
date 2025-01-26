@@ -1,5 +1,0 @@
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:[m[K In member function ‘[01m[Kvoid Motor_subscriber::[01;32m[Kset_left_motor_and_right_motor_duty_cycle[m[K(const geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr&)[m[K’:
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/motor_subscriber.cpp:128:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-  128 | ber::set_left_motor_and_right_motor_duty_cycle([01;35m[Kconst geometry_msgs::msg::Twist::UniquePtr &msg[m[K)
-      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
-

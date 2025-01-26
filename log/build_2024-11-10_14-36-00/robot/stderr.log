@@ -1,8 +1,0 @@
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:24:43:[m[K [01;31m[Kerror: [m[Kcannot call constructor ‘[01m[KEncoders::Encoders[m[K’ directly [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
-   24 |     Encoders encoders = [01;31m[KEncoders::Encoders()[m[K;
-      |                         [01;31m[K~~~~~~~~~~~~~~~~~~^~[m[K
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:24:43:[m[K [01;36m[Knote: [m[Kfor a function-style cast, remove the redundant ‘[01m[K::Encoders[m[K’
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/main.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

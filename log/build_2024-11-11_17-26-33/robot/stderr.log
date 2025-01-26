@@ -1,7 +1,0 @@
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Krobot/encoders_publisher.h: No such file or directory
-    3 | #include [01;31m[K"robot/encoders_publisher.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

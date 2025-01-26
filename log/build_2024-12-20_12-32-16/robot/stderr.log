@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/main.dir/src/encoders_publisher.cpp.o: in function `main':
-encoders_publisher.cpp:(.text+0x698): multiple definition of `main'; CMakeFiles/main.dir/src/main.cpp.o:main.cpp:(.text+0x60): first defined here
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/main.dir/build.make:244: main] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/main.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

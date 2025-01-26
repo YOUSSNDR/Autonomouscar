@@ -39,6 +39,9 @@ The best batteries found are the following:
 
 An other criteria for the choice will be the size of the batterie which will be seen in the [README]() in the CAO directory.
 
-#### Programmation
+#### src
 
-The [Programm](https://github.com/YOUSSNDR/Autonomouscar/tree/main/Programm) directory will be gathering all the programm needed for each component from the MPU6050 to the motors.
+The [src](https://github.com/YOUSSNDR/Autonomouscar/tree/main/src) directory will be gathering all packages used in this project.
+
+the autoflow package can be used to launch a simulation of the robot.
+The robot package contain the programms to use the real robot.

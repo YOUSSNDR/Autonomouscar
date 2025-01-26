@@ -1,9 +1,0 @@
-[ 50%] [32m[1mLinking CXX executable encoders[0m
-/usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `main':
-main.cpp:(.text+0x24): undefined reference to `Encoders::Encoders()'
-/usr/bin/ld: main.cpp:(.text+0x2c): undefined reference to `Encoders::count_number_of_changes_on_channels()'
-/usr/bin/ld: main.cpp:(.text+0x34): undefined reference to `Encoders::compute_rps_on_channels()'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:99: encoders] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

@@ -1,8 +1,0 @@
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid Encoders::[01;32m[Kcompute_rps[m[K()[m[K’:
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders.cpp:272:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before string constant
-  272 |     cout << _channel_name[01;31m[K [m[K[32m[K" "[m[K;
-      |                          [01;31m[K^[m[K[32m[K~~~[m[K
-      |                          [32m[K;[m[K
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:90: CMakeFiles/encoders.dir/src/encoders.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

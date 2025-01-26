@@ -1,4 +1,0 @@
-[ 14%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o[0m
-[ 57%] Built target encoders
-[ 85%] Built target listener
-[100%] [32m[1mLinking CXX executable robot_controller[0m

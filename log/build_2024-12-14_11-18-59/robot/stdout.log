@@ -1,9 +1,0 @@
-[  6%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
-[ 20%] Built target listener
-[ 33%] Built target robot_controller
-[ 46%] Built target position_publisher
-[ 53%] [32mBuilding CXX object CMakeFiles/main.dir/src/motor.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/motor_subscriber.dir/src/motor_subscriber.cpp.o[0m
-[ 73%] Built target position_reader
-[ 80%] [32m[1mLinking CXX executable motor_subscriber[0m
-[ 80%] Built target motor_subscriber

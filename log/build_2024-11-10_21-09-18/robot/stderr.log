@@ -1,8 +1,0 @@
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K signalHandler[m[K(int)[m[K’:
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/main.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_running[m[K’ was not declared in this scope
-   25 |     [01;31m[Kis_running[m[K = false;
-      |     [01;31m[K^~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:76: CMakeFiles/encoders.dir/src/main.cpp.o] Error 1
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

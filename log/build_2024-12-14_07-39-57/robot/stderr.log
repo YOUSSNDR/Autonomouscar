@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `Encoders::signal_handler(int)':
-encoders.cpp:(.text+0x374): undefined reference to `Encoders::signal_handler_callback(int)'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:197: encoders] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

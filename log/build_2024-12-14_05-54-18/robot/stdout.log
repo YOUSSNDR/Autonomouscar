@@ -1,5 +1,0 @@
-[  9%] [32mBuilding CXX object CMakeFiles/listener.dir/src/encoders_subscriber.cpp.o[0m
-[ 27%] Built target position_publisher
-[ 54%] Built target encoders
-[ 72%] Built target robot_controller
-[ 90%] Built target motor_subscriber

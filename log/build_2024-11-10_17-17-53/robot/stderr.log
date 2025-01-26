@@ -1,7 +1,0 @@
-/usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `main':
-main.cpp:(.text+0x8c): undefined reference to `RPI4::RPI4()'
-/usr/bin/ld: main.cpp:(.text+0x94): undefined reference to `RPI4::init()'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:115: encoders] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

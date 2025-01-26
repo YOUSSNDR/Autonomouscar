@@ -1,8 +1,0 @@
-[ 16%] [32mBuilding CXX object CMakeFiles/encoders.dir/src/encoders.cpp.o[0m
-[ 33%] [32m[1mLinking CXX executable encoders[0m
-/usr/bin/ld: CMakeFiles/encoders.dir/src/encoders.cpp.o: in function `main':
-encoders.cpp:(.text+0x9b4): multiple definition of `main'; CMakeFiles/encoders.dir/src/main.cpp.o:main.cpp:(.text+0x60): first defined here
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:237: encoders] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

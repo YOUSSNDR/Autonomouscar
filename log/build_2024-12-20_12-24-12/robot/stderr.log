@@ -1,9 +1,0 @@
-/usr/bin/ld: CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o: in function `Encoders::Encoders(unsigned int const&, unsigned int const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
-encoders.cpp:(.text+0x280): undefined reference to `gpioSetAlertFunc'
-/usr/bin/ld: encoders.cpp:(.text+0x298): undefined reference to `gpioSetAlertFunc'
-/usr/bin/ld: CMakeFiles/encoders_publisher.dir/src/encoders.cpp.o: in function `Encoders::configure_gpio_as_input(unsigned int const&)':
-encoders.cpp:(.text+0x55c): undefined reference to `gpioSetMode'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/encoders_publisher.dir/build.make:195: encoders_publisher] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/encoders_publisher.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

@@ -1,7 +1,7 @@
 ### ROS2 ###
 log/
 build/
-
+install/
 # Ignore generated docs
 *.dox
 *.wikidoc

@@ -1,9 +1,0 @@
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In lambda function:
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:33:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct Encoders[m[K’ has no member named ‘[01m[Kget_rps[m[K’; did you mean ‘[01m[Kset_rps[m[K’?
-   33 |         unsigned int rps = this->_encoder.[01;31m[Kget_rps[m[K();
-      |                                           [01;31m[K^~~~~~~[m[K
-      |                                           [32m[Kset_rps[m[K
-gmake[2]: *** [CMakeFiles/main.dir/build.make:118: CMakeFiles/main.dir/src/encoders_publisher.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/main.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
-gmake: *** [Makefile:146: all] Error 2

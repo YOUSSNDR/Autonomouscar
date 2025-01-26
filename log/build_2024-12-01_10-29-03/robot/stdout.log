@@ -1,7 +1,0 @@
-[ 22%] Built target listener
-[ 55%] Built target encoders
-[ 66%] [32mBuilding CXX object CMakeFiles/position_publisher.dir/src/DWM1001_reader.cpp.o[0m
-[ 77%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/robot_controller.cpp.o[0m
-[ 88%] [32m[1mLinking CXX executable position_publisher[0m
-[100%] [32m[1mLinking CXX executable robot_controller[0m
-[100%] Built target robot_controller

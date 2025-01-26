@@ -1,7 +1,0 @@
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:[m[K In lambda function:
-[01m[K/home/youss/Documents/Projet/Autonomouscar/ros_ws/src/robot/src/encoders_publisher.cpp:33:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::msgs[m[K’ has not been declared
-   33 |         auto message = std::[01;31m[Kmsgs[m[K::msg::Float32();
-      |                             [01;31m[K^~~~[m[K
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:132: CMakeFiles/encoders.dir/src/encoders_publisher.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

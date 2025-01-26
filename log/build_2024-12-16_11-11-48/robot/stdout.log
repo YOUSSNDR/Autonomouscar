@@ -1,6 +1,0 @@
-[ 12%] Built target encoders_subscriber
-[ 25%] Built target robot_controller
-[ 37%] Built target position_publisher
-[ 68%] Built target main
-[ 81%] Built target position_reader
-[ 87%] [32m[1mLinking CXX executable motor_subscriber[0m

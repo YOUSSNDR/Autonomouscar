@@ -1,9 +1,0 @@
-/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
-(.text+0x1c): undefined reference to `main'
-/usr/bin/ld: (.text+0x20): undefined reference to `main'
-/usr/bin/ld: CMakeFiles/encoders.dir/src/main.cpp.o: in function `__static_initialization_and_destruction_0()':
-main.cpp:(.text+0x70): undefined reference to `RPI4::RPI4()'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/encoders.dir/build.make:173: encoders] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

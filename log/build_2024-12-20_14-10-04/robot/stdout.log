@@ -1,8 +1,0 @@
-[ 22%] Built target encoders_subscriber
-[ 27%] Built target encoders_publisher
-[ 33%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
-[ 44%] Built target robot_controller
-[ 55%] Built target position_publisher
-[ 66%] Built target motor_subscriber
-[ 77%] Built target position_reader
-[ 83%] [32m[1mLinking CXX executable main[0m
